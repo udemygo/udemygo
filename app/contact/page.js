@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { useForm } from "react-hook-form";
 import {
   FaUser,
@@ -9,48 +10,38 @@ import {
 } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { useState } from "react";
+import emailjs from "@emailjs/browser"; // Import EmailJS
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset,  // Add reset function from react-hook-form
+    reset,
   } = useForm();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const FORM_ACTION_URL =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeeRwPXF24ldI4Iha4EzYZnM9SR7zv5_MfTqarxXiuc7FGVKg/formResponse";
-  
-  const ENTRY_NAME = "entry.555180317";
-  const ENTRY_EMAIL = "entry.426706447";
-  const ENTRY_PHONE = "entry.41285101";
-  const ENTRY_MESSAGE = "entry.662598996";
-  
-  // Function to handle form submission
+  // EmailJS configuration from environment variables
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
+  // Function to handle form submission with EmailJS
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
-    // Prepare form data for Google Form submission
-    const formData = {
-      [ENTRY_NAME]: data.name,
-      [ENTRY_EMAIL]: data.email,
-      [ENTRY_PHONE]: data.phone,
-      [ENTRY_MESSAGE]: data.message,
+    const params = {
+      from_name: data.name,
+      phone: data.phone,
+      email: data.email,
+      message: data.message,
     };
 
-    // Encode the form data
-    const formDataEncoded = new URLSearchParams(formData).toString();
-    const requestUrl = `${FORM_ACTION_URL}?${formDataEncoded}`;
-
     try {
-      // Submit form data to Google Form using GET request
-      await fetch(requestUrl, { method: "GET", mode: "no-cors" });
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
       alert("Your message has been sent successfully!");
-
-      // Reset the form fields after successful submission
-      reset();
+      reset(); // Reset form fields
     } catch (error) {
       console.error("Error submitting form: ", error);
       alert("There was an error submitting your form. Please try again.");
@@ -119,51 +110,48 @@ const Contact = () => {
                 </span>
               )}
             </div>
-          <div>
-          <button
-  type="submit"
-  disabled={isSubmitting}
-  className={`flex items-center justify-center gap-2 py-3 px-6 rounded-md text-white transition ${
-    isSubmitting
-      ? "bg-gray-400 cursor-not-allowed"
-      : "bg-gradient-to-r from-[#bd1e2d] to-[#faa318] hover:opacity-90"
-  }`}
->
-  {isSubmitting ? (
-    <>
-      <svg
-        className="animate-spin h-5 w-5 text-white"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <circle
-          className="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          strokeWidth="4"
-        ></circle>
-        <path
-          className="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
-        ></path>
-      </svg>
-      Sending...
-    </>
-  ) : (
-    <>
-      <IoSend /> Send Message
-    </>
-  )}
-</button>
-
-          </div>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={`flex items-center justify-center gap-2 py-3 px-6 rounded-md text-white transition ${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#bd1e2d] to-[#faa318] hover:opacity-90"
+              }`}
+            >
+              {isSubmitting ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
+                    ></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <IoSend /> Send Message
+                </>
+              )}
+            </button>
           </form>
         </div>
-        
+
         {/* Contact Details */}
         <div className="flex-1 space-y-4 text-gray-700">
           <div className="flex items-center gap-3">
@@ -182,7 +170,7 @@ const Contact = () => {
             <FaLinkedin className="text-[#bd1e2d] text-2xl" />
             <p>linkedin.com/in/UdemyGo</p>
           </div>
-          
+
           {/* Google Map */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.0193222481!2d76.7635797951935!3d28.6442879489248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea3aefaaaaab%3A0x5a9a5e9a5c5b0b45!2sNukleus%20Coworking%20%26%20Managed%20Offices!5e0!3m2!1sen!2sin!4v1616694721229!5m2!1sen!2sin"
