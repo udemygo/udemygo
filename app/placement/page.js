@@ -1,5 +1,6 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const placementData = [
   {
@@ -60,7 +61,7 @@ const placementData = [
     id: 10,
     name: "HERO",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJmZQxombCBw6DtxPMBoUHUWQw5WXQoRx-w&s",
-    website: "https://www.heromotocorp.com//",
+    website: "https://www.heromotocorp.com/",
   },
   {
     id: 11,
@@ -80,7 +81,6 @@ const placementData = [
     logo: "https://bsmedia.business-standard.com/_media/bs/img/about-page/1562575696.png?im=FitAndFill=(826,465)",
     website: "https://www.samsung.com/in/",
   },
-
   {
     id: 14,
     name: "Nokia",
@@ -132,34 +132,105 @@ const placementData = [
 ];
 
 const Placement = () => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
+
+  // Variants for container
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  // Variants for heading
+  const headingVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants for cards
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+      },
+    },
+  };
+
+  // Variants for logos
+  const logoVariants = {
+    hidden: { opacity: 0, rotate: 0 },
+    visible: {
+      opacity: 1,
+      rotate: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 py-12 pt-18 rounded-4xl">
-      <div className="container mx-auto px-4 pt-14  ">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
+    <motion.div
+      ref={sectionRef}
+      className="min-h-screen bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 py-12 pt-18 rounded-4xl"
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
+      <div className="container mx-auto px-4 pt-14">
+        <motion.h1
+          className="text-4xl font-bold text-center mb-12 text-gray-800"
+          variants={headingVariants}
+        >
           Universities Top Placement Partners
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 bg-white bg-opacity-80 shadow-xl rounded-4xl p-6">
+        </motion.h1>
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 bg-white bg-opacity-80 shadow-xl rounded-4xl p-6"
+          variants={containerVariants}
+        >
           {placementData.map((partner) => (
-            <a
+            <motion.a
               key={partner.id}
               href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105"
+              variants={cardVariants}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
-              <img
+              <motion.img
                 src={partner.logo}
-                alt={partner.name}
+                alt={`${partner.name} logo`}
                 className="w-24 h-24 object-contain mb-4"
+                variants={logoVariants}
+                whileHover={{ rotate: 10, scale: 1.2 }}
               />
               <h2 className="text-xl font-semibold text-gray-700">
                 {partner.name}
               </h2>
-            </a>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

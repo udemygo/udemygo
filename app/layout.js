@@ -7,7 +7,6 @@ import ScrollToTop from "@/components/Global/ScrollToTop";
 import Question from "@/components/Home/Question";
 import Footer from "@/components/Global/Footer";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,7 +34,7 @@ export default function RootLayout({ children }) {
       </div> */}
           <Header />
           <Social />
-          <PopUpContact />
+          {/* <PopUpContact /> */}
           <ScrollToTop />
           {children}
           {/* <Outlet /> */}

@@ -1,14 +1,16 @@
 "use client";
-import { useState } from "react";
-// import gradient_blur_pink_blue_abstract from '../../public/assets/gradient-blur-pink-blue-abstract.webp';
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
 
 const Question = () => {
-  const [clicked, setClicked] = useState(null); // Store index instead of boolean
+  const [clicked, setClicked] = useState(null);
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
 
   const handleClick = (index) => {
-    setClicked((prev) => (prev === index ? null : index)); // Toggle logic
+    setClicked((prev) => (prev === index ? null : index));
   };
 
   const questions = [
@@ -22,7 +24,7 @@ const Question = () => {
     },
     {
       q: "How do I apply for an online degree?",
-      a: "It’s easier than you think — apply through Udemygo. Explore top-rated MBA and degree programs from globally recognized universities.And you’re not alone — our expert advisors will guide you through every step, from choosing the right course to enrollment.Flexible. Affordable. Future-ready.Start your journey today at Udemygo — where success begins.",
+      a: "It’s easier than you think — apply through Udemygo. Explore top-rated MBA and degree programs from globally recognized universities. And you’re not alone — our expert advisors will guide you through every step, from choosing the right course to enrollment. Flexible. Affordable. Future-ready. Start your journey today at Udemygo — where success begins.",
     },
     {
       q: "Can I pursue an online degree while working full-time?",
@@ -38,79 +40,221 @@ const Question = () => {
     },
   ];
 
+  // Variants for container
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  // Variants for heading
+  const headingVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants for mentor card
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+      },
+    },
+  };
+
+  // Variants for FAQ items
+  const faqVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants for answer
+  const answerVariants = {
+    hidden: { opacity: 0, height: 0 },
+    visible: {
+      opacity: 1,
+      height: "auto",
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeIn",
+      },
+    },
+  };
+
+  // Variants for background image
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 1.1 },
+    visible: {
+      opacity: 0.8,
+      scale: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <div className="relative w-full min-h-[600px] flex flex-col lg:flex-row items-center gap-4 bg-[#1d3e987b] rounded-4xl text-white p-6 my-5 lg:p-12">
+    <motion.div
+      ref={sectionRef}
+      className="relative w-full min-h-[600px] flex flex-col lg:flex-row items-center gap-4 bg-[#1d3e987b] rounded-4xl text-white p-6 my-5 lg:p-12"
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
       {/* Background Image */}
-      <div className="absolute inset-0 rounded-4xl overflow-hidden -z-10">
+      <motion.div
+        className="absolute inset-0 rounded-4xl overflow-hidden -z-10"
+        variants={imageVariants}
+      >
         <img
-          src={"/assets/gradient-blur-pink-blue-abstract.webp"}
+          src="/assets/gradient-blur-pink-blue-abstract.webp"
           alt="Gradient Background"
           className="w-full h-full object-cover"
         />
-      </div>
+      </motion.div>
 
       {/* Mentor Section */}
-      <div className="w-full lg:w-1/2 flex justify-center">
+      <motion.div
+        className="w-full lg:w-1/2 flex justify-center"
+        variants={cardVariants}
+      >
         <div className="w-full max-w-lg p-6 shadow-xl backdrop-blur-lg bg-white/10 rounded-xl">
-          <div className="bg-[#273353] p-6 rounded-lg flex gap-4 items-center">
-            <div className="w-1/2">
+          <motion.div
+            className="bg-[#273353] p-6 rounded-lg flex gap-4 items-center"
+            variants={containerVariants}
+          >
+            <motion.div className="w-1/2" variants={cardVariants}>
               <img
                 src="https://eduverticals.com/assets/images/free-consultation/1.png"
                 alt="Mentor"
                 className="w-full"
               />
-            </div>
-            <div className="w-1/2 flex flex-col gap-4">
-              <h3 className="text-xl md:text-2xl font-bold">
+            </motion.div>
+            <motion.div
+              className="w-1/2 flex flex-col gap-4"
+              variants={containerVariants}
+            >
+              <motion.h3
+                className="text-xl md:text-2xl font-bold"
+                variants={headingVariants}
+              >
                 Meet Our Mentors
-              </h3>
-              <p className="text-sm md:text-base text-gray-300">
-                We have a team of over 12 experienced mentors with over 26+
-                years of collective experience available to guide you at a
-                moment's notice.
-              </p>
-              <a
+              </motion.h3>
+              <motion.p
+                className="text-sm md:text-base text-gray-300"
+                variants={headingVariants}
+              >
+                We have a team of over 12 experienced mentors with over 26+ years
+                of collective experience available to guide you at a moment's
+                notice.
+              </motion.p>
+              <motion.a
                 target="_blank"
                 href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
+                variants={cardVariants}
               >
-                <button className="w-full py-2 bg-green-600 hover:bg-green-700 transition rounded-lg shadow-md cursor-pointer">
+                <motion.button
+                  className="w-full py-2 bg-green-600 hover:bg-green-700 transition rounded-lg shadow-md cursor-pointer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   WhatsApp Us
-                </button>
-              </a>
-            </div>
-          </div>
+                </motion.button>
+              </motion.a>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
 
       {/* FAQ Section */}
-      <div className="w-full lg:w-1/2 flex flex-col items-center">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">
+      <motion.div
+        className="w-full lg:w-1/2 flex flex-col items-center"
+        variants={containerVariants}
+      >
+        <motion.div className="text-center" variants={containerVariants}>
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold"
+            variants={headingVariants}
+          >
             <span className="text-yellow-500">Got </span>
             <span className="text-[#bd1e2d]">Questions?</span>
-          </h2>
-        </div>
+          </motion.h2>
+        </motion.div>
 
-        <div className="mt-6 w-full max-w-lg bg-white/10 p-4 rounded-xl shadow-md">
+        <motion.div
+          className="mt-6 w-full max-w-lg bg-white/10 p-4 rounded-xl shadow-md"
+          variants={containerVariants}
+        >
           {questions.map((item, index) => (
-            <div key={index} className="my-3">
+            <motion.div
+              key={index}
+              className="my-3"
+              variants={faqVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
               <button
                 className="flex items-center justify-between w-full text-left text-lg font-semibold text-white py-2 px-3 rounded-md bg-[#273353] hover:bg-[#1b2745] transition"
                 onClick={() => handleClick(index)}
               >
                 {item.q}
-                {clicked === index ? <FiMinus /> : <FaPlus />}
+                <motion.span
+                  animate={{ rotate: clicked === index ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {clicked === index ? <FiMinus /> : <FaPlus />}
+                </motion.span>
               </button>
-              {clicked === index && (
-                <p className="text-md text-gray-300 font-medium p-3 bg-[#1b2745] rounded-md mt-2">
-                  {item.a}
-                </p>
-              )}
-            </div>
+              <AnimatePresence>
+                {clicked === index && (
+                  <motion.p
+                    className="text-md text-gray-300 font-medium p-3 bg-[#1b2745] rounded-md mt-2"
+                    variants={answerVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                  >
+                    {item.a}
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

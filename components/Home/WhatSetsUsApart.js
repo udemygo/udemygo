@@ -1,63 +1,169 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Link from "next/link";
+import { motion, useInView } from "framer-motion";
 
 const WhatSetsUsApart = () => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
+
+  // Variants for container
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants for header
+  const headerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Variants for grid items
+  const gridItemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+      },
+    },
+  };
+
+  // Variants for cards
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+      },
+    },
+  };
+
+  // Variants for image
+  const imageVariants = {
+    hidden: { opacity: 0, clipPath: "inset(100% 0 0 0)" },
+    visible: {
+      opacity: 1,
+      clipPath: "inset(0% 0 0 0)",
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <div className="bg-gradient-to-b from-white to-indigo-100 p-8 md:p-16 rounded-xl my-2">
+    <motion.div
+      ref={sectionRef}
+      className="bg-gradient-to-b from-white to-indigo-100 p-8 md:p-16 rounded-xl my-2"
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Heading and Button */}
-        <div className="flex justify-between items-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <motion.div
+          className="flex justify-between items-center mb-10"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.2 },
+            },
+          }}
+        >
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold text-gray-900"
+            variants={headerVariants}
+          >
             What Sets us Apart
-          </h2>
-          <Link href={"/about"}>
-            <button className="border border-gray-300 px-5 py-2 rounded-lg text-gray-900 hover:bg-gray-100 transition-all flex items-center gap-2">
-              About us ↗
-            </button>
-          </Link>
-        </div>
+          </motion.h2>
+          <motion.div variants={headerVariants}>
+            <Link href={"/about"}>
+              <motion.button
+                className="border border-gray-300 px-5 py-2 rounded-lg text-gray-900 hover:bg-gray-100 transition-all flex items-center gap-2"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                About us ↗
+              </motion.button>
+            </Link>
+          </motion.div>
+        </motion.div>
 
         {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <motion.div
+          className="grid md:grid-cols-2 gap-6 mb-10"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.3 },
+            },
+          }}
+        >
           {/* Dark Grid */}
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-xl grid grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-bold mb-1">Personal Mentorship</h4>
-              <p className="text-sm">
-                Enhanced learning experiences tailored to individual growth
-                paths
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-1">Handpicked Programs</h4>
-              <p className="text-sm">
-                Handpicked online MBA programs and career-focused certifications
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-1">Collaborations</h4>
-              <p className="text-sm">
-                Collaborations with top-tier institutions and domain experts
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-1">Flexibility</h4>
-              <p className="text-sm">
-                Learner-first design: flexible schedules, lifetime access, EMI
-                options.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-1">Real Support</h4>
-              <p className="text-sm">
-                Real people, real support: Our guidance doesn’t end after
-                enrollment.
-              </p>
-            </div>
-          </div>
+          <motion.div
+            className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-xl grid grid-cols-2 gap-6"
+            variants={cardVariants}
+          >
+            {[
+              {
+                title: "Personal Mentorship",
+                desc: "Enhanced learning experiences tailored to individual growth paths",
+              },
+              {
+                title: "Handpicked Programs",
+                desc: "Handpicked online MBA programs and career-focused certifications",
+              },
+              {
+                title: "Collaborations",
+                desc: "Collaborations with top-tier institutions and domain experts",
+              },
+              {
+                title: "Flexibility",
+                desc: "Learner-first design: flexible schedules, lifetime access, EMI options.",
+              },
+              {
+                title: "Real Support",
+                desc: "Real people, real support: Our guidance doesn’t end after enrollment.",
+              },
+            ].map((item, index) => (
+              <motion.div key={index} variants={gridItemVariants}>
+                <h4 className="font-bold mb-1">{item.title}</h4>
+                <p className="text-sm">{item.desc}</p>
+              </motion.div>
+            ))}
+          </motion.div>
 
           {/* Thriving Card */}
-          <div className="bg-white p-6 rounded-xl shadow-md">
+          <motion.div
+            className="bg-white p-6 rounded-xl shadow-md"
+            variants={cardVariants}
+            whileHover={{ scale: 1.02 }}
+          >
             <h4 className="italic font-semibold text-lg mb-2">
               Why Learners Trust Udemygo.
             </h4>
@@ -79,21 +185,34 @@ const WhatSetsUsApart = () => {
               </li>
               <li>Excelling in your field of expertise.</li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Bottom Two Cards */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <motion.div
+          className="grid md:grid-cols-2 gap-6"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.3 },
+            },
+          }}
+        >
           {/* Image + Text */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-2">
-            <div className="">
+          <motion.div
+            className="bg-white rounded-xl overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-2"
+            variants={cardVariants}
+            whileHover={{ scale: 1.02 }}
+          >
+            <motion.div variants={imageVariants}>
               <img
                 src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
                 alt="students"
                 className="object-cover h-full w-full block"
               />
-            </div>
-            <div className="p-6">
+            </motion.div>
+            <motion.div className="p-6" variants={gridItemVariants}>
               <h4 className="italic font-semibold mb-2">
                 Strategic Career Consulting
               </h4>
@@ -127,13 +246,17 @@ const WhatSetsUsApart = () => {
                   Maximize your chances of admission into top-tier programs.
                 </li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Community Card */}
-          <div className="bg-white p-6 rounded-xl shadow-md">
+          <motion.div
+            className="bg-white p-6 rounded-xl shadow-md"
+            variants={cardVariants}
+            whileHover={{ scale: 1.02 }}
+          >
             <h4 className="italic font-semibold mb-2">
-              End-to-End Admission Support.
+              End-to-End Admission Support
             </h4>
             <p className="text-sm text-gray-700 mb-2">
               We stay with you — from inquiry to intake.
@@ -160,10 +283,10 @@ const WhatSetsUsApart = () => {
               <li>Reduced stress, increased clarity.</li>
               <li>A smoother, faster journey into your dream university.</li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
