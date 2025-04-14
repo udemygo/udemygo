@@ -27,6 +27,8 @@ const Contact = () => {
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
+  console.log(SERVICE_ID, TEMPLATE_ID, USER_ID);
+
   // Refs for scroll triggers
   const formRef = useRef(null);
   const detailsRef = useRef(null);
