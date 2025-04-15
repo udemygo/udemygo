@@ -1,5 +1,6 @@
 import React from "react";
 import { wikkiUniversities } from "../Home/UniversityData";
+import Image from "next/image";
 
 const WikiUniversity = ({ id }) => {
   const university = wikkiUniversities.find((u) => u.id.toString() === id?.toString());
@@ -28,7 +29,7 @@ const WikiUniversity = ({ id }) => {
 
         {/* Image */}
         <div className="overflow-hidden rounded-lg mb-6 border">
-          <img
+          <Image width={800} height={400}
             src={university.image}
             alt={university.name}
             className="w-full max-h-[400px] object-cover"
@@ -48,7 +49,7 @@ const WikiUniversity = ({ id }) => {
 
         {/* Logo */}
         <div className="mt-8 text-center">
-          <img
+          <Image width={200} height={200}
             src={university.logo}
             alt={`${university.name} Logo`}
             className="h-20 mx-auto"

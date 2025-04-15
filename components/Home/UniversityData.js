@@ -558,8 +558,7 @@ export const universityDetailData = {
     location: "Noida, Uttar Pradesh",
     description:
       "Amity University, Noida is a private research university located in Noida, Uttar Pradesh, India. It was established in 2005 by an Act of the State Legislature of Uttar Pradesh. It has campuses in India and overseas branch campuses in Dubai and Tashkent.",
-    image:
-      "https://www.learningroutes.in/_next/image?url=https%3A%2F%2Faskusedu.com%2Fblogdashboard%2Fwp-content%2Fuploads%2F2024%2F04%2FAmity-Mohali.webp&w=1920&q=75",
+    image: "/assets/Amity-Mohali.webp",
     logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
     year: 2023,
     naac: "A+",
@@ -580,8 +579,7 @@ export const universityDetailData = {
     location: "Jaipur, India",
     description:
       "Manipal University Jaipur (MUJ), established in 2011, is a part of the Manipal Education Group. It is a NAAC A+ accredited university offering a variety of undergraduate and postgraduate programs, including its renowned Online MBA program.",
-    image:
-      "https://onlinecollegestudy.com/wp-content/uploads/2025/02/manipal-uni.jpg",
+    image: "/assets/manipal-uni.jpg",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzC0Bcea9vAZSQDH8PxOLk_gKPRBhyFEXCUw&s",
     year: 2024,
     naac: "A+",
@@ -602,8 +600,7 @@ export const universityDetailData = {
     location: "Gangtok, Sikkim",
     description:
       "Sikkim Manipal University is a public-private partnership between the Government of Sikkim and Manipal Education & Medical Group. Established in 1995, it offers distance and online education across a wide range of programs.",
-    image:
-      "https://argroupofeducation.com/wp-content/uploads/2024/02/Sikkim-Manipal-University2.jpg",
+    image: "/assets/Sikkim-Manipal-University2.webp",
     logo: "https://sodleducation.com/img/sikkimmanipallogo.webp",
     year: 2024,
     naac: "A++",
@@ -624,7 +621,7 @@ export const universityDetailData = {
     location: "Mumbai, Maharashtra",
     description:
       "Shri Vile Parle Kelavani Mandal&apos;s Narsee Monjee Institute of Management Studies (abbreviated as SVKM&apos;s NMIMS) is a private deemed university located in Mumbai. It has 17 constituent schools that offer both undergraduate and postgraduate courses in management, engineering, commerce, pharmacy, architecture, economics, mathematical sciences, hospitality, science, law, aviation, liberal arts, performing arts, architecture & design.",
-    image: "https://www.nmims.edu/images/gallery/navimumbai-campus/1.jpg",
+    image: "/assets/Narsee.jpg",
     logo: "https://pbs.twimg.com/profile_images/887620877138907136/Zau4_WSX_400x400.jpg",
     year: 2024,
     naac: "A+",
@@ -645,8 +642,7 @@ export const universityDetailData = {
     location: "Navi Mumbai, Maharashtra",
     description:
       "D.Y. Patil University is a private university located in Navi Mumbai, Maharashtra, India. It offers a variety of undergraduate and postgraduate programs across disciplines such as medicine, dentistry, engineering, management, and more.",
-    image:
-      "https://gcetl.in/web2manage/images/Universities/University1719920235dyn%20patil.jpg",
+    image: "/assets/DYPAtil.jpg",
     logo: "https://static.wixstatic.com/media/bff831_b2037f9baf424ffeb229a275ab3da890~mv2.png/v1/fill/w_518,h_222,al_c,lg_1,q_85,enc_avif,quality_auto/dyp-online-logo.png",
     year: 2023,
     naac: "A",
@@ -667,8 +663,7 @@ export const universityDetailData = {
     location: "Jalandhar, Punjab",
     description:
       "Lovely Professional University is a private university located in Chaheru, Phagwara, Punjab, India. The university was established in 2005 by Lovely International Trust, through the Lovely Professional University Act, 2005 and started operation in 2006.",
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1655635763phpVQHm5C.jpeg",
+    image: "/assets/Lovely.jpeg",
     logo: "https://i.pinimg.com/736x/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.jpg",
     year: 2024,
     naac: "A++",
@@ -689,8 +684,7 @@ export const universityDetailData = {
     location: "Mohali, India",
     description:
       "Chandigarh University (CU) is a private university located in Mohali, India. The university was established on 10 July 2012 by an act of Punjab State Legislature. It is recognized by University Grants Commission under Section 2(f) with the right to confer degrees as per Section 22(1) of the UGC Act, 1956.",
-    image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhhTgvVUO5-bFLFJXtTovOE_f4gMjD1ACVzTfZNKtZonYTe77nV8dSeymhqePAkIFqdKMMvTcAfyFyE2KHVdn5E2wlmQM2y_4ukcw-1Op7EE60jOXY-2qwAqSXvThKC8ldt6LLcdOUYLMNyQvQyXeNT5YEq590_0Nq_frXh9WzPEmUx55T1Ufyj-SLkfw=s16000",
+    image: "/assets/CSU.jpg",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mx5Ca8jO1s4RjWBQKke3YPNGUsLU2KCrMA&s",
     year: 2024,
     naac: "A+",
@@ -711,7 +705,7 @@ export const universityDetailData = {
     location: "Dehradun, Uttarakhand",
     description:
       "Uttaranchal University is an academic cum research university located at Dehradun, Uttarakhand, India near Indian Military Academy. It was established by an Act of the Uttarakhand Legislative Assembly under Smt Shushila Devi Education Foundation.",
-    image: "https://www.uudoon.in/about/images/about-image-1.jpg",
+    image: "/assets/UttaranchalUni.jpg",
     logo: "https://doonmanagementschool.in/wp-content/uploads/2023/04/University-logo-new-oct-scaled-1.jpg",
     year: 2024,
     naac: "A+",
@@ -732,7 +726,7 @@ export const universityDetailData = {
     location: "Mathura, India",
     description:
       "GLA University is a private university in Mathura, Uttar Pradesh. It is recognized by University Grants Commission, NCTE and Pharmacy Council of India. It has been accredited by the National Assessment and Accreditation Council with ‘A+’ Grade.",
-    image: "https://www.gla.ac.in/images/institute-overview.jpg",
+    image: "/assets/GLAUni.jpg",
     logo: "https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png",
     year: 2025,
     naac: "A+",
@@ -753,7 +747,7 @@ export const universityDetailData = {
     location: "Jayanagar, Bangalore",
     description:
       "JAIN is a private deemed university in Bengaluru, India. Originating from Sri Bhagawan Mahaveer Jain College of Engineering, it was conferred the deemed-to-be-university status in 2009. In August 2019, Jain University opened its off-campus in Kochi, Kerala.",
-    image: "https://admissionmentor.co.in/img/blog-img/jain.jpg",
+    image: "/assets/JainUni.jpg",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kW1QiwZI1mxMzldLk3AV3fhz6-Wmivebmw&s",
     year: 2024,
     naac: "A++",
@@ -774,8 +768,7 @@ export const universityDetailData = {
     location: "Solan, Himachal Pradesh",
     description:
       "Shoolini University is a research-driven private university recognized for its focus on innovation, quality placements, and academic excellence.",
-    image:
-      " https://distanceeducationschool.com/wp-content/uploads/2024/05/university-page-shoolini-DES.webp",
+    image: "/assets/shoolini.webp",
     logo: " https://online.shooliniuniversity.com/distance/assets/img/logo.png",
     year: 2023,
     naac: "A+",
@@ -796,8 +789,7 @@ export const universityDetailData = {
     location: "Greater Noida, Uttar Pradesh",
     description:
       "Sharda University is a leading educational institution offering a wide range of undergraduate and postgraduate programs with a focus on holistic development.",
-    image:
-      "https://media.collegedekho.com/media/img/institute/crawled_images/1496464164Sharda800x414.jpg",
+    image: "/assets/sharda.avif",
     logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4Pd52Bzy8GLLUsBcY91yPN0VFzkERuN7-g&s",
     year: 2023,
     naac: "A",
@@ -818,9 +810,9 @@ export const universityDetailData = {
     location: "Vadodara, Gujarat",
     description:
       "Parul University is a private university offering a wide range of undergraduate and postgraduate programs across various disciplines.",
-    image:
-      "https://i.pinimg.com/736x/35/4e/41/354e41b970004cac05cbe77bbc681ad8.jpg",
-    logo: "https://paruluniversity.ac.in/pu-content/uploads/2021/12/pu-logo.png",
+    image: "/assets/paruluni.jpg",
+    logo: "https://i.pinimg.com/736x/35/4e/41/354e41b970004cac05cbe77bbc681ad8.jpg",
+
     year: 2023,
     naac: "A+",
     rank: "45th",
@@ -840,8 +832,7 @@ export const universityDetailData = {
     location: "Dehradun, Uttarakhand",
     description:
       "UPES is a multidisciplinary university known for its industry-aligned programs and emphasis on holistic development.",
-    image:
-      " https://collegewaale.com/upes/wp-content/uploads/2023/12/upes-1-1024x768.webp",
+    image: " /assets/UPES.webp",
     logo: " https://indiaeducationdiary.in/wp-content/uploads/2022/01/UPES-LOGO-01.jpg?w=640",
     year: 2023,
     naac: "A",
@@ -861,8 +852,8 @@ export const universityDetailData = {
     name: "Vignan&apos;s University",
     location: "Guntur, Andhra Pradesh",
     description:
-    "Vignan&apos;s University is a private university offering a variety of undergraduate and postgraduate programs with a focus on engineering and technology.",
-    image: " https://vignan.ac.in/images/apex/5.jpg",
+      "Vignan&apos;s University is a private university offering a variety of undergraduate and postgraduate programs with a focus on engineering and technology.",
+    image: "/assets/vignanUni.jpg",
     logo: "https://content.jdmagicbox.com/v2/comp/hyderabad/64/040p7005064/catalogue/vignan-institute-of-technology-and-science-kukatpally-hyderabad-engineering-colleges-pe113r.jpg",
     year: 2023,
     naac: "A+",
@@ -884,7 +875,7 @@ export const universityDetailData = {
     description:
       "Vivekananda Global University (VGU) is a private university located in Jaipur, Rajasthan. It is known for its focus on research, innovation, and entrepreneurship across various disciplines including engineering, management, law, and design.",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM3_HyshA0jjzj3r7qnynSwaiVVCsUnld6A&s",
+      "/assets/vgu.jpg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vivekananda-global-university-jaipur.jpg",
     year: 2023,
     naac: "A+",
@@ -906,7 +897,7 @@ export const universityDetailData = {
     description:
       "Aligarh Muslim University (AMU) is a public central university in Aligarh, Uttar Pradesh, India. Established in 1920, it originated from the Mohammedan Anglo-Oriental College set up by Sir Syed Ahmed Khan in 1875. AMU offers more than 300 courses in both traditional and modern branches of education.",
     image:
-      " https://www.guidanceforever.org/wp-content/uploads/2023/10/aligarh-muslim-university-aligarh-featured-2.jpg",
+      "/assets/AMU.jpg",
     logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskJ0c3dzaabVW_PWcxTUViMR2PQmpHOKfJg&s",
     year: 2023,
     naac: "A+",
@@ -949,7 +940,7 @@ export const universityDetailData = {
     description:
       "Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research university in India, known for its high-quality education and research across various fields.",
     image:
-      "https://images.shiksha.com/mediadata/images/articles/1587994716phpmjYKDq.jpeg",
+      "/assets/AVV.jpeg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amrita-vishwa-vidyapeetham-logo.svg/2560px-Amrita-vishwa-vidyapeetham-logo.svg.png",
     year: 2023,
     naac: "A++",
@@ -971,7 +962,7 @@ export const universityDetailData = {
     description:
       "Dr. D. Y. Patil Vidyapeeth, Pune, is a deemed-to-be university offering a range of undergraduate, postgraduate, and doctoral programs. It is well known for its medical, management, and online education offerings with a focus on innovation and research.",
     image:
-      " https://sardarpateleducation.com/wp-content/uploads/2025/02/Infrastructure-01-1.jpg",
+      "/assets/DPU.jpg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Dr._D._Y._Patil_Medical_College%2C_Hospital_%26_Research_Centre_logo.jpg",
     year: 2023,
     naac: "A++",
@@ -992,7 +983,7 @@ export const universityDetailData = {
     location: "New Delhi, Delhi",
     description:
       "Jamia Hamdard is a deemed-to-be university located in New Delhi, India. Established in 1989, it is renowned for its programs in pharmacy, medicine, nursing, allied health, and management.",
-    image: " https://jamiahamdard.edu/images/explore-kings-accommodation.jpg",
+    image: "/assets/JHU.jpg",
     logo: "https://jamiahamdard.edu/images/top-logo.png",
     year: 2023,
     naac: "A",
@@ -1015,7 +1006,7 @@ export const universityDetailData = {
     description:
       "Mizoram University is a central university established in 2001 in Aizawl, Mizoram, India. It offers various undergraduate and postgraduate programs across multiple disciplines.",
     image:
-      " https://image-static.collegedunia.com/public/college_data/images/appImage/1513313634adminbuilding02.jpg?h=260&w=360&mode=crop",
+      "/assets/MizoramUni.webp",
     logo: " https://www.yugedu.com/media/654/mizoram-university-online-logo.png",
     year: 2023,
     naac: "A",
@@ -1036,7 +1027,7 @@ export const universityDetailData = {
     location: "Kurukshetra, India",
     description:
       "Kurukshetra University, Kurukshetra is a university established on 11 January 1956 in Kurukshetra, in the Indian state of Haryana, 160 kilometres from the capital, Delhi. It is a member of Association of Commonwealth Universities.",
-    image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
+    image: "/assets/kurukshetraUni.jpg",
     logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
     year: 2024,
     naac: "A++",
@@ -1472,8 +1463,8 @@ export const wikkiUniversities = [
     location: "New Delhi",
     description:
       "Jamia Hamdard is a prestigious deemed university located in New Delhi, widely recognized for its academic excellence in modern medicine, pharmacy, management, and especially Unani and allied medical sciences. With a legacy rooted in healthcare and holistic education, the university offers a wide range of professional courses designed to meet modern industry standards while preserving traditional knowledge systems. Its research-driven environment, experienced faculty, and emphasis on innovation make it a leading institution for aspiring healthcare professionals.",
-      image: " https://jamiahamdard.edu/images/explore-kings-accommodation.jpg",
-      logo: "https://jamiahamdard.edu/images/top-logo.png",
+    image: " https://jamiahamdard.edu/images/explore-kings-accommodation.jpg",
+    logo: "https://jamiahamdard.edu/images/top-logo.png",
     year: 1989,
     naac: "A",
     rank: "Top 25 in Pharmacy",
@@ -1493,7 +1484,7 @@ export const wikkiUniversities = [
     location: "Aizawl, Mizoram",
     description:
       "Mizoram University is a central university established by the Government of India, dedicated to providing quality higher education in the northeastern region. The university offers a broad spectrum of academic programs in science, commerce, humanities, and vocational studies. With a focus on regional development, cultural preservation, and academic excellence, Mizoram University fosters a vibrant research environment and promotes inclusive learning. Its scenic campus, diverse student body, and commitment to innovation make it a prominent institution in India’s higher education landscape.",
-      image:
+    image:
       " https://image-static.collegedunia.com/public/college_data/images/appImage/1513313634adminbuilding02.jpg?h=260&w=360&mode=crop",
     logo: " https://www.yugedu.com/media/654/mizoram-university-online-logo.png",
     year: 2001,
@@ -1515,8 +1506,8 @@ export const wikkiUniversities = [
     location: "Kurukshetra, Haryana",
     description:
       "Kurukshetra University is a prominent state university in Haryana, renowned for its academic heritage and cultural legacy. Established in 1956, the university offers a diverse range of undergraduate, postgraduate, and doctoral programs across disciplines such as arts, science, law, management, and education. With a sprawling campus and a commitment to academic excellence, Kurukshetra University has played a pivotal role in shaping higher education in North India. It is also recognized for fostering research, promoting extracurricular engagement, and preserving the historical and spiritual significance of the region.",
-      image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
+    image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
+    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
     year: 1956,
     naac: "A+",
     rank: "Top 100 in India",

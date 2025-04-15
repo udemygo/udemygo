@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const WhatSetsUsApart = () => {
   const sectionRef = useRef(null);
@@ -206,8 +207,10 @@ const WhatSetsUsApart = () => {
             whileHover={{ scale: 1.02 }}
           >
             <motion.div variants={imageVariants}>
-              <img
-                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
+              <Image
+                src="/assets/hurrayGraduate.jpg"
+                width={500}
+                height={500}
                 alt="students"
                 className="object-cover h-full w-full block"
               />

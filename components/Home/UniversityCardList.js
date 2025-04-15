@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { universityCardData } from "./UniversityData";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const UniversityCard = ({ data }) => {
   return (
@@ -34,7 +35,7 @@ const UniversityCard = ({ data }) => {
             visible: { opacity: 1, transition: { delay: 0.2 } },
           }}
         >
-          <img src={data.logo} alt="Logo" className="h-8" />
+          <Image width={500} height={500} src={data.logo} alt="Logo" className="h-8" />
           {data.emiPlan && (
             <span className="bg-blue-500 text-white px-2 py-1 rounded text-xs">
               EMI Plan

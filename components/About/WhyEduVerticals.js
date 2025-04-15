@@ -78,8 +78,8 @@ const WhyEduVerticals = () => {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left Image */}
         <motion.div className="md:w-1/2 w-full" variants={imageVariants}>
-          <img
-            src="https://media.istockphoto.com/id/1066324992/photo/graduation-day.jpg?s=612x612&w=0&k=20&c=cleRpjTZbo430AbH-luZFYMMNqPwhwyTnFgWMbi_AiI="
+          <Image
+            src="/assets/throwcaps.jpg"
             alt="Students celebrating graduation"
             width={612}
             height={612}

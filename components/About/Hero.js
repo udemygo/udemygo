@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { TbCircleArrowUpRight } from "react-icons/tb";
+import Image from "next/image";
 
 const Hero = () => {
   const sectionRef = useRef(null);
@@ -108,21 +109,28 @@ const Hero = () => {
             Learning And Instruction
           </motion.h2>
 
-          <motion.p className="mt-8 text-base md:text-lg" variants={textVariants}>
-          At UdemyGo, we turn your educational dreams into reality by connecting
-  you with top-tier online degree programs from leading universities
-  around the world. Our mission is to make learning flexible,
-  accessible, and career-focused—designed to fit your lifestyle and fuel
-  your ambitions. Whether you&apos;re looking to upskill, switch careers, or
-  earn a degree while working, we&apos;ve got you covered. With globally
-  recognized programs, expert mentorship, and a supportive learning
-  community, UdemyGo empowers you to learn on your terms and succeed in
-  today&apos;s fast-moving world.
+          <motion.p
+            className="mt-8 text-base md:text-lg"
+            variants={textVariants}
+          >
+            At UdemyGo, we turn your educational dreams into reality by
+            connecting you with top-tier online degree programs from leading
+            universities around the world. Our mission is to make learning
+            flexible, accessible, and career-focused—designed to fit your
+            lifestyle and fuel your ambitions. Whether you&apos;re looking to
+            upskill, switch careers, or earn a degree while working, we&apos;ve
+            got you covered. With globally recognized programs, expert
+            mentorship, and a supportive learning community, UdemyGo empowers
+            you to learn on your terms and succeed in today&apos;s fast-moving
+            world.
           </motion.p>
-          <motion.p className="mt-2 text-base md:text-lg" variants={textVariants}>
-          Our mission is to provide a seamless, flexible, and enriching learning
-  experience tailored to meet the demands of today&apos;s dynamic
-  professional landscape.
+          <motion.p
+            className="mt-2 text-base md:text-lg"
+            variants={textVariants}
+          >
+            Our mission is to provide a seamless, flexible, and enriching
+            learning experience tailored to meet the demands of today&apos;s
+            dynamic professional landscape.
           </motion.p>
         </motion.div>
 
@@ -135,8 +143,10 @@ const Hero = () => {
             className="overflow-hidden rounded-2xl h-full md:h-[85%]"
             variants={imageVariants}
           >
-            <img
-              src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F1.webp&w=1920&q=75"
+            <Image
+              src="/assets/001.webp"
+              width={500}
+              height={500}
               alt="Hero image 1"
               className="h-full object-cover rounded-2xl hover:scale-120 transition duration-200 ease-in"
             />
@@ -149,8 +159,10 @@ const Hero = () => {
               className="w-[100%] overflow-hidden rounded-2xl"
               variants={imageVariants}
             >
-              <img
-                src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F2.webp&w=1920&q=75"
+              <Image
+                src="/assets/002.webp"
+                width={500}
+                height={500}
                 alt="Hero image 2"
                 className="h-full object-cover w-[100%] rounded-2xl hover:scale-120 transition duration-200 ease-in"
               />
@@ -159,8 +171,10 @@ const Hero = () => {
               className="w-[100%] overflow-hidden rounded-2xl"
               variants={imageVariants}
             >
-              <img
-                src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F3.webp&w=1920&q=75"
+              <Image
+                src="/assets/003.webp"
+                width={500}
+                height={500}
                 alt="Hero image 3"
                 className="h-full object-cover w-[100%] rounded-2xl hover:scale-120 transition duration-200 ease-in"
               />

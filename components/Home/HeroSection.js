@@ -17,6 +17,7 @@ const synonyms = [
 ];
 
 import { Anta } from "next/font/google";
+import Image from "next/image";
 
 // Anta font configure
 const anta = Anta({
@@ -174,8 +175,10 @@ const HeroSection = () => {
           className="overflow-hidden rounded-2xl h-full"
           variants={imageVariants}
         >
-          <img
-            src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F1.webp&w=1920&q=75"
+          <Image
+            src="/assets/001.webp"
+            width={500}
+            height={500}
             alt="01"
             className="h-full object-cover rounded-2xl hover:scale-120 transition duration-200 ease-in"
           />
@@ -185,8 +188,10 @@ const HeroSection = () => {
             className="w-[100%] overflow-hidden rounded-2xl"
             variants={imageVariants}
           >
-            <img
-              src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F2.webp&w=1920&q=75"
+            <Image
+              src="/assets/002.webp"
+              width={500}
+              height={500}
               alt="02"
               className="h-full object-cover w-[100%] rounded-2xl hover:scale-120 transition duration-200 ease-in"
             />
@@ -195,8 +200,8 @@ const HeroSection = () => {
             className="w-[100%] overflow-hidden rounded-2xl"
             variants={imageVariants}
           >
-            <img
-              src="https://eduverticals.com/_next/image?url=https%3A%2F%2Fpub-cadcc242bdb44ad0a740f236913e5827.r2.dev%2Fpublic%2Fassets%2Fimages%2Fhero-imgs%2Fhome%2F3.webp&w=1920&q=75"
+            <Image
+              src="/assets/003.webp"
               alt="03"
               className="h-full object-cover w-[100%] rounded-2xl hover:scale-120 transition duration-200 ease-in"
             />

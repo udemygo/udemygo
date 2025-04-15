@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { universityDetailData } from "@/components/Home/UniversityData.js";
 import WikiUniversity from "@/components/Wikki/WikkiUniversity.js";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const University = () => {
   const params = useParams();
@@ -128,7 +129,7 @@ const University = () => {
               className="flex items-center gap-2"
               variants={infoVariants}
             >
-              <img
+              <Image
                 src={university.logo}
                 alt={`${university.name} Logo`}
                 className="h-12"

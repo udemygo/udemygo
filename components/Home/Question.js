@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
+import Image from "next/image";
 
 const Question = () => {
   const [clicked, setClicked] = useState(null);
@@ -138,9 +139,11 @@ const Question = () => {
         className="absolute inset-0 rounded-4xl overflow-hidden -z-10"
         variants={imageVariants}
       >
-        <img
+        <Image
           src="/assets/gradient-blur-pink-blue-abstract.webp"
           alt="Gradient Background"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -156,9 +159,11 @@ const Question = () => {
             variants={containerVariants}
           >
             <motion.div className="w-1/2" variants={cardVariants}>
-              <img
-                src="https://eduverticals.com/assets/images/free-consultation/1.png"
+              <Image
+                src="/assets/ques.png"
                 alt="Mentor"
+                width={500}
+                height={500}
                 className="w-full"
               />
             </motion.div>
@@ -176,9 +181,9 @@ const Question = () => {
                 className="text-sm md:text-base text-gray-300"
                 variants={headingVariants}
               >
-                We have a team of over 12 experienced mentors with over 26+ years
-                of collective experience available to guide you at a moment&apos;s
-                notice.
+                We have a team of over 12 experienced mentors with over 26+
+                years of collective experience available to guide you at a
+                moment&apos;s notice.
               </motion.p>
               <motion.a
                 target="_blank"
