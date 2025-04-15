@@ -1,8 +1,7 @@
 "use client";
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import {
   FaUser,
   FaPhoneAlt,
@@ -11,17 +10,20 @@ import {
   FaUserGraduate,
 } from "react-icons/fa";
 import { IoClose, IoSend } from "react-icons/io5";
-import { IoIosCloseCircle, IoMdClose } from "react-icons/io";
-import emailjs from "@emailjs/browser"; // Import EmailJS
+import emailjs from "@emailjs/browser";
 
 const PopUpContact = () => {
   const [close, setClose] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Ref for scroll trigger
+  const popupRef = useRef(null);
+  const isInView = useInView(popupRef, { once: false, amount: 0.3 });
+
   useEffect(() => {
     if (close) {
-      const timer = setTimeout(() => setClose(false), 20000); // Reopen after 10 sec
-      return () => clearTimeout(timer); // Cleanup timer
+      const timer = setTimeout(() => setClose(false), 20000); // Reopen after 20 sec
+      return () => clearTimeout(timer);
     }
   }, [close]);
 
@@ -35,7 +37,7 @@ const PopUpContact = () => {
 
   // EmailJS configuration from environment variables
   const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_POPUP; // Use the popup-specific template ID
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_POPUP;
   const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
   // Function to handle form submission with EmailJS
@@ -48,7 +50,7 @@ const PopUpContact = () => {
       email: data.email,
       degree: data.degree,
       course: data.course,
-      date: new Date().toLocaleDateString(), // Optional: Add submission date
+      date: new Date().toLocaleDateString(),
     };
 
     try {
@@ -69,62 +71,137 @@ const PopUpContact = () => {
   const ugCourses = ["B.COM", "BCA", "BBA", "BA"];
   const pgCourses = ["MBA", "MCA", "MA"];
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.7 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        type: "spring",
+        stiffness: 120,
+      },
+    },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, scale: 0.85 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        damping: 20,
+        stiffness: 120,
+      },
+    },
+  };
+
+  const closeVariants = {
+    hover: { rotate: 90, scale: 1.1 },
+    tap: { scale: 0.9 },
+  };
+
   return (
-    <div
-      className={`fixed bottom-5 right-3 md:right-10 lg:right-20 z-30 bg-opacity-50 rounded-2xl ${
+    <motion.div
+      className={`fixed bottom-5 right-3 md:right-10 lg:right-20 z-30 ${
         close ? "hidden" : "inline-block"
       }`}
+      ref={popupRef}
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
     >
-      <div className="relative p-6 shadow-lg w-72 backdrop-blur-3xl rounded-2xl">
-        <div className="relative text-center items-center text-2xl">
-          <div className="flex w-full gap-8 items-center px-0">
-            <div
-              onClick={handleClose}
-              className="absolute -left-2 cursor-pointer font-extrabold"
-            >
-              <IoClose color="white" size={28} />
-            </div>
-            <motion.h2
-              className="text-3xl font-extrabold text-center w-full text-blue-700"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              Contact Us
-            </motion.h2>
-          </div>
+      <div className="relative p-6 w-80 bg-gradient-to-br from-white/90 to-blue-50/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-blue-200/50">
+        {/* Close Button */}
+        <motion.div
+          onClick={handleClose}
+          className="absolute -top-3 -right-3 cursor-pointer bg-red-500 rounded-full p-1"
+          variants={closeVariants}
+          whileHover="hover"
+          whileTap="tap"
+        >
+          <IoClose color="white" size={24} />
+        </motion.div>
+
+        {/* Headings */}
+        <div className="text-center mb-4">
+          <motion.h2
+            className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"
+            variants={itemVariants}
+          >
+            Contact Us
+          </motion.h2>
           <motion.h1
-            className="text-3xl font-extrabold text-center mb-6 w-full text-red-600 drop-shadow-md"
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: [1, 1.1, 1], opacity: 1 }}
-            transition={{
-              duration: 0.6,
-              repeat: Infinity,
-              repeatType: "reverse",
+            className="text-xl font-bold text-red-600 mt-2"
+            variants={itemVariants}
+            animate={{
+              scale: [1, 1.05, 1],
+              transition: {
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
             }}
           >
-            Avail <strong className="text-yellow-400">Early-Bird</strong>{" "}
-            Discount!! 🎉
+            Avail <span className="text-yellow-400 drop-shadow-md">Early-Bird</span> Discount! 🎉
           </motion.h1>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
           {/* Full Name */}
-          <div className="relative">
-            <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+          <motion.div className="relative" variants={itemVariants}>
+            <motion.div variants={iconVariants}>
+              <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-500" />
+            </motion.div>
             <input
               {...register("fullName", { required: "Full Name is required" })}
-              className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white"
+              className="w-full p-2 pl-10 border border-blue-300/50 rounded-lg bg-white/80 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 placeholder-gray-400"
               placeholder="Full Name"
             />
             {errors.fullName && (
-              <p className="text-red-500 text-sm">{errors.fullName.message}</p>
+              <motion.p
+                className="text-red-500 text-xs mt-1"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {errors.fullName.message}
+              </motion.p>
             )}
-          </div>
+          </motion.div>
 
           {/* Phone */}
-          <div className="relative">
-            <FaPhoneAlt className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+          <motion.div className="relative" variants={itemVariants}>
+            <motion.div variants={iconVariants}>
+              <FaPhoneAlt className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-500" />
+            </motion.div>
             <input
               {...register("phone", {
                 required: "Phone number is required",
@@ -133,17 +210,26 @@ const PopUpContact = () => {
                   message: "Enter a valid 10-digit phone number",
                 },
               })}
-              className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white"
+              className="w-full p-2 pl-10 border border-blue-300/50 rounded-lg bg-white/80 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 placeholder-gray-400"
               placeholder="Phone Number"
             />
             {errors.phone && (
-              <p className="text-red-500 text-sm">{errors.phone.message}</p>
+              <motion.p
+                className="text-red-500 text-xs mt-1"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {errors.phone.message}
+              </motion.p>
             )}
-          </div>
+          </motion.div>
 
           {/* Email */}
-          <div className="relative">
-            <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+          <motion.div className="relative" variants={itemVariants}>
+            <motion.div variants={iconVariants}>
+              <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-500" />
+            </motion.div>
             <input
               {...register("email", {
                 required: "Email is required",
@@ -152,37 +238,55 @@ const PopUpContact = () => {
                   message: "Enter a valid email",
                 },
               })}
-              className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white"
+              className="w-full p-2 pl-10 border border-blue-300/50 rounded-lg bg-white/80 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 placeholder-gray-400"
               placeholder="Email Address"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email.message}</p>
+              <motion.p
+                className="text-red-500 text-xs mt-1"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {errors.email.message}
+              </motion.p>
             )}
-          </div>
+          </motion.div>
 
           {/* Degree Dropdown */}
-          <div className="relative flex items-center">
-            <FaGraduationCap className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+          <motion.div className="relative" variants={itemVariants}>
+            <motion.div variants={iconVariants}>
+              <FaGraduationCap className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-500" />
+            </motion.div>
             <select
               {...register("degree", { required: "Please select a degree" })}
-              className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white appearance-none"
+              className="w-full p-2 pl-10 border border-blue-300/50 rounded-lg bg-white/80 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 appearance-none"
             >
               <option value="">Select Degree</option>
               <option value="UG">Undergraduate (UG)</option>
               <option value="PG">Postgraduate (PG)</option>
             </select>
-          </div>
-          {errors.degree && (
-            <p className="text-red-500 text-sm">{errors.degree.message}</p>
-          )}
+            {errors.degree && (
+              <motion.p
+                className="text-red-500 text-xs mt-1"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                {errors.degree.message}
+              </motion.p>
+            )}
+          </motion.div>
 
           {/* Course Dropdown */}
           {selectedDegree && (
-            <div className="relative flex items-center">
-              <FaUserGraduate className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
+            <motion.div className="relative" variants={itemVariants}>
+              <motion.div variants={iconVariants}>
+                <FaUserGraduate className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-500" />
+              </motion.div>
               <select
                 {...register("course", { required: "Please select a course" })}
-                className="w-full p-2 pl-10 border border-gray-300 rounded-md bg-white appearance-none"
+                className="w-full p-2 pl-10 border border-blue-300/50 rounded-lg bg-white/80 focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 appearance-none"
               >
                 <option value="">Select Course</option>
                 {(selectedDegree === "UG" ? ugCourses : pgCourses).map(
@@ -193,21 +297,31 @@ const PopUpContact = () => {
                   )
                 )}
               </select>
-            </div>
-          )}
-          {errors.course && (
-            <p className="text-red-500 text-sm">{errors.course.message}</p>
+              {errors.course && (
+                <motion.p
+                  className="text-red-500 text-xs mt-1"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {errors.course.message}
+              </motion.p>
+              )}
+            </motion.div>
           )}
 
           {/* Submit Button */}
-          <button
+          <motion.button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full p-2 rounded flex items-center justify-center gap-2 transition ${
+            className={`w-full p-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 ${
               isSubmitting
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gradient-to-r from-[#bd1e2d] to-[#faa318] text-white"
+                : "bg-gradient-to-r from-red-500 to-yellow-500 text-white shadow-lg"
             }`}
+            variants={buttonVariants}
+            whileHover={!isSubmitting ? { scale: 1.05, boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)" } : {}}
+            whileTap={!isSubmitting ? { scale: 0.95 } : {}}
           >
             {isSubmitting ? (
               <>
@@ -234,14 +348,14 @@ const PopUpContact = () => {
                 Submitting...
               </>
             ) : (
-              <>
+              <span className="flex items-center gap-2 cursor-pointer">
                 <IoSend /> Submit
-              </>
+              </span>
             )}
-          </button>
+          </motion.button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
