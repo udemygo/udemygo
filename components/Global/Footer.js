@@ -88,7 +88,7 @@ const Footer = () => {
               </motion.div>
             </div>
             <motion.p variants={sectionVariants}>
-              We're more than just an educational platform; we're a catalyst for
+            We&apos;re more than just an educational platform; we&apos;re a catalyst for
               change. Our mission is to empower students through comprehensive
               support, mentorship, and innovative learning resources.
             </motion.p>

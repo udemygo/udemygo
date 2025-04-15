@@ -383,7 +383,7 @@ export const universityCatalogCardData = [
     rank: "N/A",
     managementRank: "",
     year: 2024,
-    name: "Vignan's University",
+    name: "Vignan&apos;s University",
     location: "Guntur, Andhra Pradesh",
     duration: "2 Years",
     semesters: "4 Semesters",
@@ -623,7 +623,7 @@ export const universityDetailData = {
     name: "Narsee Monjee Institute of Management Studies",
     location: "Mumbai, Maharashtra",
     description:
-      "Shri Vile Parle Kelavani Mandal's Narsee Monjee Institute of Management Studies (abbreviated as SVKM's NMIMS) is a private deemed university located in Mumbai. It has 17 constituent schools that offer both undergraduate and postgraduate courses in management, engineering, commerce, pharmacy, architecture, economics, mathematical sciences, hospitality, science, law, aviation, liberal arts, performing arts, architecture & design.",
+      "Shri Vile Parle Kelavani Mandal&apos;s Narsee Monjee Institute of Management Studies (abbreviated as SVKM&apos;s NMIMS) is a private deemed university located in Mumbai. It has 17 constituent schools that offer both undergraduate and postgraduate courses in management, engineering, commerce, pharmacy, architecture, economics, mathematical sciences, hospitality, science, law, aviation, liberal arts, performing arts, architecture & design.",
     image: "https://www.nmims.edu/images/gallery/navimumbai-campus/1.jpg",
     logo: "https://pbs.twimg.com/profile_images/887620877138907136/Zau4_WSX_400x400.jpg",
     year: 2024,
@@ -858,10 +858,10 @@ export const universityDetailData = {
   },
   15: {
     id: 15,
-    name: "Vignan's University",
+    name: "Vignan&apos;s University",
     location: "Guntur, Andhra Pradesh",
     description:
-      "Vignan's University is a private university offering a variety of undergraduate and postgraduate programs with a focus on engineering and technology.",
+    "Vignan&apos;s University is a private university offering a variety of undergraduate and postgraduate programs with a focus on engineering and technology.",
     image: " https://vignan.ac.in/images/apex/5.jpg",
     logo: "https://content.jdmagicbox.com/v2/comp/hyderabad/64/040p7005064/catalogue/vignan-institute-of-technology-and-science-kukatpally-hyderabad-engineering-colleges-pe113r.jpg",
     year: 2023,
@@ -1360,7 +1360,7 @@ export const wikkiUniversities = [
   },
   {
     id: "15",
-    name: "Vignan's University",
+    name: "Vignan&apos;s University",
     location: "Guntur, Andhra Pradesh",
     description:
       "Vignan’s Foundation for Science, Technology & Research is a reputed private university dedicated to academic excellence in the fields of engineering, science, and management. The institution fosters a dynamic learning environment with a strong emphasis on research, innovation, and industry collaboration. With state-of-the-art infrastructure and experienced faculty, Vignan’s prepares students to meet global challenges with confidence and competence.Vignan’s University offers top-notch programs in engineering, science, and management. It is recognized for its academic rigor, research orientation, and student-centric approach to learning.Vignan’s is a leading private university focused on engineering, science, and management, known for academic excellence and research-driven education.",
