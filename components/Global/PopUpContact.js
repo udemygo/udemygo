@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
@@ -11,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { IoClose, IoSend } from "react-icons/io5";
 import { IoIosCloseCircle, IoMdClose } from "react-icons/io";
+import emailjs from "@emailjs/browser"; // Import EmailJS
 
 const PopUpContact = () => {
   const [close, setClose] = useState(false);
@@ -31,31 +33,26 @@ const PopUpContact = () => {
     formState: { errors },
   } = useForm();
 
-  const FORM_ACTION_URL =
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeXU7QU0sS5xarAk5apgoY72aqmTq_StG0TeQ0yNL6CtH5rJg/formResponse";
+  // EmailJS configuration from environment variables
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_POPUP; // Use the popup-specific template ID
+  const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
-  const ENTRY_NAME = "entry.209042228";
-  const ENTRY_EMAIL = "entry.787613992";
-  const ENTRY_PHONE = "entry.1226632416";
-  const ENTRY_DEGREE = "entry.1712021602";
-  const ENTRY_COURSE = "entry.1641369073";
-
+  // Function to handle form submission with EmailJS
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
-    const formData = new FormData();
-    formData.append(ENTRY_NAME, data.fullName);
-    formData.append(ENTRY_EMAIL, data.email);
-    formData.append(ENTRY_PHONE, data.phone);
-    formData.append(ENTRY_DEGREE, data.degree);
-    formData.append(ENTRY_COURSE, data.course);
+    const params = {
+      full_name: data.fullName,
+      phone: data.phone,
+      email: data.email,
+      degree: data.degree,
+      course: data.course,
+      date: new Date().toLocaleDateString(), // Optional: Add submission date
+    };
 
     try {
-      await fetch(FORM_ACTION_URL, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      });
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
       alert("Form submitted successfully!");
       reset();
     } catch (error) {
