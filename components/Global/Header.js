@@ -213,7 +213,7 @@ const Header = () => {
           >
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="px-4 py-3 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
+              className="px-4  rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
             >
               Explore Universities
             </button>
@@ -282,7 +282,7 @@ const Header = () => {
           <motion.a
             target="_blank"
             href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
-            className="bg-black text-white text-sm rounded-full px-4 py-3 hover:bg-gray-800 transition-all cursor-pointer"
+            className="bg-black text-white text-sm rounded-full px-4 py-2 hover:bg-gray-800 transition-all cursor-pointer"
             variants={buttonVariants}
             initial="hidden"
             animate="visible"

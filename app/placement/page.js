@@ -107,7 +107,7 @@ const placementData = [
   },
   {
     id: 18,
-    name: "McDonald's",
+    name: "McDonalds",
     logo: "https://s7d1.scene7.com/is/image/mcdonalds/History_Timeline_1968_Thumbnail-1:3-column-desktop?resmode=sharp2",
     website: "https://www.mcdonalds.com/",
   },
