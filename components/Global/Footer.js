@@ -238,16 +238,14 @@ const Footer = () => {
                 rights reserved{" "}
               </span>
               <span className="text-sm tracking-wide">
-                Designed by{"  "}
+                Designed & Developed by {" "}
                 <a
                   target="_blank"
                   href="https://febtech.in/"
                   className="text-blue-400"
                 >
-                  www.febtech.in
+                  Feb Tech IT Solutions
                 </a>{" "}
-                & Developed by {" "}
-                <a href="https://github.com/Anasmalik57">Anas</a>
               </span>
             </div>
           </motion.div>
