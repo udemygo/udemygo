@@ -109,20 +109,20 @@ const Hero = () => {
           </motion.h2>
 
           <motion.p className="mt-8 text-base md:text-lg" variants={textVariants}>
-            At UdemyGo, we turn your educational dreams into reality by connecting
-            you with top-tier online degree programs from leading universities
-            around the world. Our mission is to make learning flexible,
-            accessible, and career-focused—designed to fit your lifestyle and fuel
-            your ambitions. Whether you're looking to upskill, switch careers, or
-            earn a degree while working, we’ve got you covered. With globally
-            recognized programs, expert mentorship, and a supportive learning
-            community, UdemyGo empowers you to learn on your terms and succeed in
-            today’s fast-moving world.
+          At UdemyGo, we turn your educational dreams into reality by connecting
+  you with top-tier online degree programs from leading universities
+  around the world. Our mission is to make learning flexible,
+  accessible, and career-focused—designed to fit your lifestyle and fuel
+  your ambitions. Whether you&apos;re looking to upskill, switch careers, or
+  earn a degree while working, we&apos;ve got you covered. With globally
+  recognized programs, expert mentorship, and a supportive learning
+  community, UdemyGo empowers you to learn on your terms and succeed in
+  today&apos;s fast-moving world.
           </motion.p>
           <motion.p className="mt-2 text-base md:text-lg" variants={textVariants}>
-            Our mission is to provide a seamless, flexible, and enriching learning
-            experience tailored to meet the demands of today's dynamic
-            professional landscape.
+          Our mission is to provide a seamless, flexible, and enriching learning
+  experience tailored to meet the demands of today&apos;s dynamic
+  professional landscape.
           </motion.p>
         </motion.div>
 

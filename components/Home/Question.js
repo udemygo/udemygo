@@ -177,7 +177,7 @@ const Question = () => {
                 variants={headingVariants}
               >
                 We have a team of over 12 experienced mentors with over 26+ years
-                of collective experience available to guide you at a moment's
+                of collective experience available to guide you at a moment&apos;s
                 notice.
               </motion.p>
               <motion.a

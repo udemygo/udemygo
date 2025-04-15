@@ -108,7 +108,7 @@ const CareerBoost = () => {
             </h2>
             <p className="text-gray-600 text-lg">
               There are over <span className="font-semibold">500</span> courses
-              offered by the universities. Find exactly what you're looking for
+              offered by the universities. Find exactly what you&apos;re looking for
               through our diverse catalog.
             </p>
           </motion.div>
