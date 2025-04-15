@@ -109,22 +109,22 @@ const FounderSection = () => {
               variants={textVariants}
             >
               Sachin Goswami and Rohit are the founder and co-founder of UdemyGo,
-              trailblazers in the education sector. Driven by a shared mission to
-              democratize learning, they aim to make high-quality education
-              accessible to all. With a vision rooted in innovation, impact, and
-              inclusivity, they’ve built UdemyGo into a next-generation platform
-              that bridges the gap between academic excellence and real-world
-              skills. Their leadership has empowered thousands of students and
-              professionals through programs co-designed with top universities and
-              industry experts. With a deep understanding of education technology
-              and learner behavior, they focus on scalable, personalized, and
-              career-driven learning experiences. As visionary strategists, they
-              ensure every course, program, and partnership at UdemyGo meets the
-              highest standards of pedagogy and learner outcomes. Their commitment
-              to lifelong learning and skill transformation continues to shape the
-              platform's evolution. UdemyGo, under their dual leadership, is more
-              than just a platform — it’s a global movement to reshape education
-              through innovation and accessibility.
+  trailblazers in the education sector. Driven by a shared mission to
+  democratize learning, they aim to make high-quality education
+  accessible to all. With a vision rooted in innovation, impact, and
+  inclusivity, they&apos;ve built UdemyGo into a next-generation platform
+  that bridges the gap between academic excellence and real-world
+  skills. Their leadership has empowered thousands of students and
+  professionals through programs co-designed with top universities and
+  industry experts. With a deep understanding of education technology
+  and learner behavior, they focus on scalable, personalized, and
+  career-driven learning experiences. As visionary strategists, they
+  ensure every course, program, and partnership at UdemyGo meets the
+  highest standards of pedagogy and learner outcomes. Their commitment
+  to lifelong learning and skill transformation continues to shape the
+  platform&apos;s evolution. UdemyGo, under their dual leadership, is more
+  than just a platform — it&apos;s a global movement to reshape education
+  through innovation and accessibility.
             </motion.p>
           </motion.div>
         </motion.div>
@@ -173,7 +173,8 @@ const FounderSection = () => {
             className="font-semibold text-indigo-300"
             variants={textVariants}
           >
-            <strong>Udemygo</strong> "Fueling Ambitions, Transforming Lives".
+            <strong>Udemygo</strong> &quot;Fueling Ambitions, Transforming Lives&quot;.
+
           </motion.p>
         </motion.div>
       </div>

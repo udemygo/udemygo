@@ -160,7 +160,7 @@ const Contact = () => {
             className="text-3xl font-bold text-gray-800 mb-6"
             variants={formVariants}
           >
-            Get in touch, we'll call you back.
+           <p>Get in touch, we&apos;ll call you back.</p>
           </motion.h2>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <motion.div className="relative" variants={formVariants}>
