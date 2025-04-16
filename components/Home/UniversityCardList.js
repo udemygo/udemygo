@@ -42,8 +42,10 @@ const UniversityCard = ({ data }) => {
             </span>
           )}
         </motion.div>
-        <motion.img
+        <Image
           src={data.image}
+          width={500}
+          height={500}
           alt="College"
           className="w-full h-44 object-cover mt-4 rounded"
           variants={{

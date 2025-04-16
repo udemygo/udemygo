@@ -202,6 +202,8 @@ const HeroSection = () => {
           >
             <Image
               src="/assets/003.webp"
+              width={500}
+              height={500}
               alt="03"
               className="h-full object-cover w-[100%] rounded-2xl hover:scale-120 transition duration-200 ease-in"
             />

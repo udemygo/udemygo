@@ -4,6 +4,7 @@ import Link from "next/link";
 import { universityCatalogCardData } from "@/components/Home/UniversityData";
 import UniversityVSCourse from "@/components/StudyMaterial/UniversityVSCourse";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const UniversityCatalog = () => {
   const headingRef = useRef(null);
@@ -123,10 +124,12 @@ const UniversityCatalog = () => {
         >
           {/* University Logo & EMI Plan */}
           <div className="flex justify-between p-2">
-            <motion.img
+            <Image
               src={uni.logo}
               alt="Logo"
-              className="h-8"
+              className="h-8 w-fit"
+              width={500}
+              height={500}
               variants={logoVariants}
             />
             {uni.emiPlan && (
@@ -140,8 +143,10 @@ const UniversityCatalog = () => {
           </div>
 
           {/* University Image */}
-          <motion.img
+          <Image
             src={uni.image}
+            width={500}
+            height={500}
             alt="University"
             className="w-full h-44 object-cover mt-4 rounded"
             variants={imageVariants}

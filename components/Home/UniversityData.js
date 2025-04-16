@@ -1,10 +1,9 @@
 export const universityCardData = [
   {
     id: 1,
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
+    logo: "/assets/amitylogo.png",
     emiPlan: true,
-    image:
-      "https://www.learningroutes.in/_next/image?url=https%3A%2F%2Faskusedu.com%2Fblogdashboard%2Fwp-content%2Fuploads%2F2024%2F04%2FAmity-Mohali.webp&w=1920&q=75",
+    image: "/assets/Amity-Mohali.webp",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "90+",
@@ -17,29 +16,28 @@ export const universityCardData = [
     semesters: "4 Semesters",
     fee: "₹199,000",
   },
-  {
-    id: 23,
-    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
-    emiPlan: true,
-    image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
-    rating: "A++",
-    naac: "NAAC",
-    creditPoints: "96+",
-    rank: "151st",
-    managementRank: "101st",
-    year: 2024,
-    name: "Kurukshetra University",
-    location: "Kurukshetra, India",
-    duration: "2",
-    semesters: "4 Semesters",
-    fee: "80,000",
-  },
+  // {
+  //   id: 23,
+  //   logo: "unilogos/kuru.png",
+  //   emiPlan: true,
+  //   image: "/assets/kurukshetraUni.jpg",
+  //   rating: "A++",
+  //   naac: "NAAC",
+  //   creditPoints: "96+",
+  //   rank: "151st",
+  //   managementRank: "101st",
+  //   year: 2024,
+  //   name: "Kurukshetra University",
+  //   location: "Kurukshetra, India",
+  //   duration: "2",
+  //   semesters: "4 Semesters",
+  //   fee: "80,000",
+  // },
   {
     id: 6,
-    logo: "https://i.pinimg.com/736x/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.jpg",
+    logo: "/unilogos/LPULogo.jpg",
     emiPlan: true,
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1655635763phpVQHm5C.jpeg",
+    image: "/assets/Lovely.jpeg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "102",
@@ -54,9 +52,9 @@ export const universityCardData = [
   },
   {
     id: 10,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kW1QiwZI1mxMzldLk3AV3fhz6-Wmivebmw&s",
+    logo: "/unilogos/jainlogo.jpg",
     emiPlan: true,
-    image: "https://admissionmentor.co.in/img/blog-img/jain.jpg",
+    image: "/assets/JainUni.jpg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "90",
@@ -71,9 +69,9 @@ export const universityCardData = [
   },
   {
     id: 8,
-    logo: "https://doonmanagementschool.in/wp-content/uploads/2023/04/University-logo-new-oct-scaled-1.jpg",
+    logo: "/unilogos/uuuk.jpg",
     emiPlan: true,
-    image: "https://www.uudoon.in/about/images/about-image-1.jpg",
+    image: "/assets/UttaranchalUni.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "80+",
@@ -88,9 +86,9 @@ export const universityCardData = [
   },
   {
     id: 9,
-    logo: "https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png",
+    logo: "/unilogos/glaLogo.png",
     emiPlan: true,
-    image: "https://www.gla.ac.in/images/institute-overview.jpg",
+    image: "/assets/GLAUni.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "110",
@@ -105,10 +103,9 @@ export const universityCardData = [
   },
   {
     id: 7,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mx5Ca8jO1s4RjWBQKke3YPNGUsLU2KCrMA&s",
+    logo: "/unilogos/ccsu.png",
     emiPlan: true,
-    image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhhTgvVUO5-bFLFJXtTovOE_f4gMjD1ACVzTfZNKtZonYTe77nV8dSeymhqePAkIFqdKMMvTcAfyFyE2KHVdn5E2wlmQM2y_4ukcw-1Op7EE60jOXY-2qwAqSXvThKC8ldt6LLcdOUYLMNyQvQyXeNT5YEq590_0Nq_frXh9WzPEmUx55T1Ufyj-SLkfw=s16000",
+    image: "/assets/CSU.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "80",
@@ -125,10 +122,9 @@ export const universityCardData = [
 export const universityCatalogCardData = [
   {
     id: 1,
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
+    logo: "/assets/amitylogo.png",
     emiPlan: true,
-    image:
-      "https://www.learningroutes.in/_next/image?url=https%3A%2F%2Faskusedu.com%2Fblogdashboard%2Fwp-content%2Fuploads%2F2024%2F04%2FAmity-Mohali.webp&w=1920&q=75",
+    image: "/assets/Amity-Mohali.webp",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "90+",
@@ -143,10 +139,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 2,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzC0Bcea9vAZSQDH8PxOLk_gKPRBhyFEXCUw&s",
+    logo: "/assets/manipallogo.png",
     emiPlan: true,
-    image:
-      "https://onlinecollegestudy.com/wp-content/uploads/2025/02/manipal-uni.jpg",
+    image: "/assets/manipal-uni.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "96+",
@@ -161,10 +156,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 3,
-    logo: "https://content.jdmagicbox.com/comp/dehradun/w1/9999pd135.d135.110721154744.r1w1/catalogue/sikkim-manipal-university-toll-free-no-dehradun-gpo-dehradun-institutes-for-disaster-management-klht5.jpg",
+    logo: "/assets/sikkimlogo.avif",
     emiPlan: true,
-    image:
-      "https://argroupofeducation.com/wp-content/uploads/2024/02/Sikkim-Manipal-University2.jpg",
+    image: "/assets/Sikkim-Manipal-University2.webp",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -179,9 +173,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 4,
-    logo: "https://pbs.twimg.com/profile_images/887620877138907136/Zau4_WSX_400x400.jpg",
+    logo: "/unilogos/narseelogo.jpg",
     emiPlan: true,
-    image: "https://www.nmims.edu/images/gallery/navimumbai-campus/1.jpg",
+    image: "/assets/Narsee.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "58",
@@ -196,10 +190,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 5,
-    logo: "https://static.wixstatic.com/media/bff831_b2037f9baf424ffeb229a275ab3da890~mv2.png/v1/fill/w_518,h_222,al_c,lg_1,q_85,enc_avif,quality_auto/dyp-online-logo.png",
+    logo: "/unilogos/dypatil.avif",
     emiPlan: true,
-    image:
-      "https://gcetl.in/web2manage/images/Universities/University1719920235dyn%20patil.jpg",
+    image: "/assets/DYPAtil.jpg",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -214,10 +207,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 6,
-    logo: "https://i.pinimg.com/736x/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.jpg",
+    logo: "/unilogos/lpu.webp",
     emiPlan: true,
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1655635763phpVQHm5C.jpeg",
+    image: "/assets/Lovely.jpeg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "102",
@@ -233,10 +225,9 @@ export const universityCatalogCardData = [
   ,
   {
     id: 7,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mx5Ca8jO1s4RjWBQKke3YPNGUsLU2KCrMA&s",
+    logo: "/unilogos/ccsu.png",
     emiPlan: true,
-    image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhhTgvVUO5-bFLFJXtTovOE_f4gMjD1ACVzTfZNKtZonYTe77nV8dSeymhqePAkIFqdKMMvTcAfyFyE2KHVdn5E2wlmQM2y_4ukcw-1Op7EE60jOXY-2qwAqSXvThKC8ldt6LLcdOUYLMNyQvQyXeNT5YEq590_0Nq_frXh9WzPEmUx55T1Ufyj-SLkfw=s16000",
+    image: "/assets/CSU.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "80",
@@ -251,9 +242,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 8,
-    logo: "https://doonmanagementschool.in/wp-content/uploads/2023/04/University-logo-new-oct-scaled-1.jpg",
+    logo: "/unilogos/uuuk.jpg",
     emiPlan: true,
-    image: "https://www.uudoon.in/about/images/about-image-1.jpg",
+    image: "/assets/UttaranchalUni.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "80+",
@@ -268,9 +259,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 9,
-    logo: "https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png",
+    logo: "/unilogos/glaLogo.png",
     emiPlan: true,
-    image: "https://www.gla.ac.in/images/institute-overview.jpg",
+    image: "/assets/GLAUni.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "110",
@@ -285,9 +276,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 10,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kW1QiwZI1mxMzldLk3AV3fhz6-Wmivebmw&s",
+    logo: "/unilogos/jainlogo.jpg",
     emiPlan: true,
-    image: "https://admissionmentor.co.in/img/blog-img/jain.jpg",
+    image: "/assets/JainUni.jpg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "90",
@@ -302,10 +293,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 11,
-    logo: "https://online.shooliniuniversity.com/distance/assets/img/logo.png",
+    logo: "/unilogos/shoolini.png",
     emiPlan: true,
-    image:
-      "https://distanceeducationschool.com/wp-content/uploads/2024/05/university-page-shoolini-DES.webp",
+    image: "/assets/shoolini.webp",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -320,10 +310,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 12,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4Pd52Bzy8GLLUsBcY91yPN0VFzkERuN7-g&s",
+    logo: "/unilogos/shardalogo.png",
     emiPlan: true,
-    image:
-      "https://media.collegedekho.com/media/img/institute/crawled_images/1496464164Sharda800x414.jpg",
+    image: "/assets/sharda.avif",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "",
@@ -338,10 +327,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 13,
-    logo: "https://i.pinimg.com/736x/35/4e/41/354e41b970004cac05cbe77bbc681ad8.jpg",
+    logo: "/unilogos/parullogo.jpg",
     emiPlan: true,
-    image:
-      "https://paruluniversity.ac.in/app/images/post/blog/featured_image/412491Gate%20Picture%20(1).jpg",
+    image: "/assets/paruluni.jpg",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -356,10 +344,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 14,
-    logo: "https://indiaeducationdiary.in/wp-content/uploads/2022/01/UPES-LOGO-01.jpg?w=640",
+    logo: "/unilogos/UPESLOGO.jpg",
     emiPlan: true,
-    image:
-      "https://collegewaale.com/upes/wp-content/uploads/2023/12/upes-1-1024x768.webp",
+    image: "/assets/UPES.webp",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -374,9 +361,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 15,
-    logo: "https://content.jdmagicbox.com/v2/comp/hyderabad/64/040p7005064/catalogue/vignan-institute-of-technology-and-science-kukatpally-hyderabad-engineering-colleges-pe113r.jpg",
+    logo: "/unilogos/vignanLogo.avif",
     emiPlan: true,
-    image: "https://vignan.ac.in/images/apex/5.jpg",
+    image: "/assets/vignanUni.jpg",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -391,10 +378,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 16,
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vivekananda-global-university-jaipur.jpg",
+    logo: "/unilogos/vguu.jpg",
     emiPlan: true,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM3_HyshA0jjzj3r7qnynSwaiVVCsUnld6A&s",
+    image: "/assets/vgu.jpg",
     rating: "B+",
     naac: "NAAC",
     creditPoints: "",
@@ -409,10 +395,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 17,
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskJ0c3dzaabVW_PWcxTUViMR2PQmpHOKfJg&s",
+    logo: "/unilogos/amuLogo.png",
     emiPlan: true,
-    image:
-      "https://www.guidanceforever.org/wp-content/uploads/2023/10/aligarh-muslim-university-aligarh-featured-2.jpg",
+    image: "/assets/AMU.jpg",
     rating: "A+",
     naac: "NAAC",
     creditPoints: "",
@@ -445,10 +430,9 @@ export const universityCatalogCardData = [
   // },
   {
     id: 19,
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amrita-vishwa-vidyapeetham-logo.svg/2560px-Amrita-vishwa-vidyapeetham-logo.svg.png",
+    logo: "/unilogos/amrita.webp",
     emiPlan: true,
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1587994716phpmjYKDq.jpeg",
+    image: "/assets/AVV.jpeg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "",
@@ -481,10 +465,9 @@ export const universityCatalogCardData = [
   // },
   {
     id: 20,
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Dr._D._Y._Patil_Medical_College%2C_Hospital_%26_Research_Centre_logo.jpg",
+    logo: "/unilogos/dpu.webp",
     emiPlan: true,
-    image:
-      "https://sardarpateleducation.com/wp-content/uploads/2025/02/Infrastructure-01-1.jpg",
+    image: "/assets/DPU.jpg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "",
@@ -499,9 +482,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 21,
-    logo: "https://jamiahamdard.edu/images/top-logo.png",
+    logo: "/unilogos/JMILogo.png",
     emiPlan: true,
-    image: "https://jamiahamdard.edu/images/explore-kings-accommodation.jpg",
+    image: "/assets/JHU.jpg",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -516,10 +499,10 @@ export const universityCatalogCardData = [
   },
   {
     id: 22,
-    logo: "https://www.yugedu.com/media/654/mizoram-university-online-logo.png",
+    logo: "/unilogos/mizoramlogo.png",
     emiPlan: true,
     image:
-      "https://image-static.collegedunia.com/public/college_data/images/appImage/1513313634adminbuilding02.jpg?h=260&w=360&mode=crop",
+      "/assets/MizoramUni.webp",
     rating: "A",
     naac: "NAAC",
     creditPoints: "",
@@ -534,9 +517,9 @@ export const universityCatalogCardData = [
   },
   {
     id: 23,
-    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
+    logo: "/unilogos/kuru.png",
     emiPlan: true,
-    image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
+    image: "/assets/kurukshetraUni.jpg",
     rating: "A++",
     naac: "NAAC",
     creditPoints: "96+",
@@ -559,7 +542,7 @@ export const universityDetailData = {
     description:
       "Amity University, Noida is a private research university located in Noida, Uttar Pradesh, India. It was established in 2005 by an Act of the State Legislature of Uttar Pradesh. It has campuses in India and overseas branch campuses in Dubai and Tashkent.",
     image: "/assets/Amity-Mohali.webp",
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
+    logo: "/assets/amitylogo.png",
     year: 2023,
     naac: "A+",
     rank: "37th",
@@ -580,7 +563,7 @@ export const universityDetailData = {
     description:
       "Manipal University Jaipur (MUJ), established in 2011, is a part of the Manipal Education Group. It is a NAAC A+ accredited university offering a variety of undergraduate and postgraduate programs, including its renowned Online MBA program.",
     image: "/assets/manipal-uni.jpg",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzC0Bcea9vAZSQDH8PxOLk_gKPRBhyFEXCUw&s",
+    logo: "/assets/manipallogo.png",
     year: 2024,
     naac: "A+",
     rank: "101-150",
@@ -664,7 +647,7 @@ export const universityDetailData = {
     description:
       "Lovely Professional University is a private university located in Chaheru, Phagwara, Punjab, India. The university was established in 2005 by Lovely International Trust, through the Lovely Professional University Act, 2005 and started operation in 2006.",
     image: "/assets/Lovely.jpeg",
-    logo: "https://i.pinimg.com/736x/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.jpg",
+    logo: "/unilogos/LPULogo.jpg",
     year: 2024,
     naac: "A++",
     rank: "38th",
@@ -685,7 +668,7 @@ export const universityDetailData = {
     description:
       "Chandigarh University (CU) is a private university located in Mohali, India. The university was established on 10 July 2012 by an act of Punjab State Legislature. It is recognized by University Grants Commission under Section 2(f) with the right to confer degrees as per Section 22(1) of the UGC Act, 1956.",
     image: "/assets/CSU.jpg",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mx5Ca8jO1s4RjWBQKke3YPNGUsLU2KCrMA&s",
+    logo: "/unilogos/ccsu.png",
     year: 2024,
     naac: "A+",
     rank: "20th",
@@ -706,7 +689,7 @@ export const universityDetailData = {
     description:
       "Uttaranchal University is an academic cum research university located at Dehradun, Uttarakhand, India near Indian Military Academy. It was established by an Act of the Uttarakhand Legislative Assembly under Smt Shushila Devi Education Foundation.",
     image: "/assets/UttaranchalUni.jpg",
-    logo: "https://doonmanagementschool.in/wp-content/uploads/2023/04/University-logo-new-oct-scaled-1.jpg",
+    logo: "/unilogos/uuuk.jpg",
     year: 2024,
     naac: "A+",
     rank: "200th",
@@ -727,7 +710,7 @@ export const universityDetailData = {
     description:
       "GLA University is a private university in Mathura, Uttar Pradesh. It is recognized by University Grants Commission, NCTE and Pharmacy Council of India. It has been accredited by the National Assessment and Accreditation Council with ‘A+’ Grade.",
     image: "/assets/GLAUni.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png",
+    logo: "/unilogos/glaLogo.png",
     year: 2025,
     naac: "A+",
     rank: "101st",
@@ -748,7 +731,7 @@ export const universityDetailData = {
     description:
       "JAIN is a private deemed university in Bengaluru, India. Originating from Sri Bhagawan Mahaveer Jain College of Engineering, it was conferred the deemed-to-be-university status in 2009. In August 2019, Jain University opened its off-campus in Kochi, Kerala.",
     image: "/assets/JainUni.jpg",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kW1QiwZI1mxMzldLk3AV3fhz6-Wmivebmw&s",
+    logo: "/unilogos/jainlogo.jpg",
     year: 2024,
     naac: "A++",
     rank: "68th",
@@ -769,7 +752,7 @@ export const universityDetailData = {
     description:
       "Shoolini University is a research-driven private university recognized for its focus on innovation, quality placements, and academic excellence.",
     image: "/assets/shoolini.webp",
-    logo: " https://online.shooliniuniversity.com/distance/assets/img/logo.png",
+    logo: " shoolini.png",
     year: 2023,
     naac: "A+",
     rank: "73rd",
@@ -790,7 +773,7 @@ export const universityDetailData = {
     description:
       "Sharda University is a leading educational institution offering a wide range of undergraduate and postgraduate programs with a focus on holistic development.",
     image: "/assets/sharda.avif",
-    logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4Pd52Bzy8GLLUsBcY91yPN0VFzkERuN7-g&s",
+    logo: " /unilogos/shardalogo.png",
     year: 2023,
     naac: "A",
     rank: "151-200th",
@@ -811,7 +794,7 @@ export const universityDetailData = {
     description:
       "Parul University is a private university offering a wide range of undergraduate and postgraduate programs across various disciplines.",
     image: "/assets/paruluni.jpg",
-    logo: "https://i.pinimg.com/736x/35/4e/41/354e41b970004cac05cbe77bbc681ad8.jpg",
+    logo: "/unilogos/parullogo.jpg",
 
     year: 2023,
     naac: "A+",
@@ -833,7 +816,7 @@ export const universityDetailData = {
     description:
       "UPES is a multidisciplinary university known for its industry-aligned programs and emphasis on holistic development.",
     image: " /assets/UPES.webp",
-    logo: " https://indiaeducationdiary.in/wp-content/uploads/2022/01/UPES-LOGO-01.jpg?w=640",
+    logo: " /unilogos/UPESLOGO.jpg",
     year: 2023,
     naac: "A",
     rank: "46th",
@@ -854,7 +837,7 @@ export const universityDetailData = {
     description:
       "Vignan&apos;s University is a private university offering a variety of undergraduate and postgraduate programs with a focus on engineering and technology.",
     image: "/assets/vignanUni.jpg",
-    logo: "https://content.jdmagicbox.com/v2/comp/hyderabad/64/040p7005064/catalogue/vignan-institute-of-technology-and-science-kukatpally-hyderabad-engineering-colleges-pe113r.jpg",
+    logo: "/unilogos/vignanLogo.avif",
     year: 2023,
     naac: "A+",
     rank: "95th",
@@ -874,9 +857,8 @@ export const universityDetailData = {
     location: "Jaipur, Rajasthan",
     description:
       "Vivekananda Global University (VGU) is a private university located in Jaipur, Rajasthan. It is known for its focus on research, innovation, and entrepreneurship across various disciplines including engineering, management, law, and design.",
-    image:
-      "/assets/vgu.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vivekananda-global-university-jaipur.jpg",
+    image: "/assets/vgu.jpg",
+    logo: "/unilogos/vguu.jpg",
     year: 2023,
     naac: "A+",
     rank: "56th",
@@ -896,9 +878,8 @@ export const universityDetailData = {
     location: "Aligarh, Uttar Pradesh",
     description:
       "Aligarh Muslim University (AMU) is a public central university in Aligarh, Uttar Pradesh, India. Established in 1920, it originated from the Mohammedan Anglo-Oriental College set up by Sir Syed Ahmed Khan in 1875. AMU offers more than 300 courses in both traditional and modern branches of education.",
-    image:
-      "/assets/AMU.jpg",
-    logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskJ0c3dzaabVW_PWcxTUViMR2PQmpHOKfJg&s",
+    image: "/assets/AMU.jpg",
+    logo: " /unilogos/amuLogo.png",
     year: 2023,
     naac: "A+",
     rank: "10th",
@@ -939,9 +920,8 @@ export const universityDetailData = {
     location: "Coimbatore, Tamil Nadu",
     description:
       "Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research university in India, known for its high-quality education and research across various fields.",
-    image:
-      "/assets/AVV.jpeg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amrita-vishwa-vidyapeetham-logo.svg/2560px-Amrita-vishwa-vidyapeetham-logo.svg.png",
+    image: "/assets/AVV.jpeg",
+    logo: "/unilogos/amrita.webp",
     year: 2023,
     naac: "A++",
     rank: "5th",
@@ -961,9 +941,8 @@ export const universityDetailData = {
     location: "Pune, Maharashtra",
     description:
       "Dr. D. Y. Patil Vidyapeeth, Pune, is a deemed-to-be university offering a range of undergraduate, postgraduate, and doctoral programs. It is well known for its medical, management, and online education offerings with a focus on innovation and research.",
-    image:
-      "/assets/DPU.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Dr._D._Y._Patil_Medical_College%2C_Hospital_%26_Research_Centre_logo.jpg",
+    image: "/assets/DPU.jpg",
+    logo: "/unilogos/dpu.webp",
     year: 2023,
     naac: "A++",
     rank: "46th",
@@ -984,7 +963,7 @@ export const universityDetailData = {
     description:
       "Jamia Hamdard is a deemed-to-be university located in New Delhi, India. Established in 1989, it is renowned for its programs in pharmacy, medicine, nursing, allied health, and management.",
     image: "/assets/JHU.jpg",
-    logo: "https://jamiahamdard.edu/images/top-logo.png",
+    logo: "/assets/JMILogo.png",
     year: 2023,
     naac: "A",
     rank: "37th",
@@ -1005,9 +984,8 @@ export const universityDetailData = {
     location: "Aizawl, Mizoram",
     description:
       "Mizoram University is a central university established in 2001 in Aizawl, Mizoram, India. It offers various undergraduate and postgraduate programs across multiple disciplines.",
-    image:
-      "/assets/MizoramUni.webp",
-    logo: " https://www.yugedu.com/media/654/mizoram-university-online-logo.png",
+    image: "/assets/MizoramUni.webp",
+    logo: " /unilogos/mizoramlogo.png",
     year: 2023,
     naac: "A",
     rank: "76th",
@@ -1028,7 +1006,7 @@ export const universityDetailData = {
     description:
       "Kurukshetra University, Kurukshetra is a university established on 11 January 1956 in Kurukshetra, in the Indian state of Haryana, 160 kilometres from the capital, Delhi. It is a member of Association of Commonwealth Universities.",
     image: "/assets/kurukshetraUni.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
+    logo: "/unilogos/kuru.png",
     year: 2024,
     naac: "A++",
     rank: "151st",
@@ -1051,9 +1029,8 @@ export const wikkiUniversities = [
     location: "Noida, Uttar Pradesh",
     description:
       "Amity University is a premier private research university in India, known for its world-class academic ecosystem and industry-aligned curriculum. Offering a broad spectrum of programs in science, technology, engineering, business, arts, law, and healthcare, the university places a strong emphasis on innovation, research, and holistic student development. Its campuses are equipped with cutting-edge facilities, and it maintains strong global partnerships with leading institutions to provide international exposure and opportunities. Amity University isn’t just a place to study — it’s where future leaders, innovators, and change-makers are built. From AI to arts, biotech to business, it offers programs that align with the aspirations of today’s youth. Students benefit from hands-on learning, global internships, and a vibrant campus life that fosters creativity, confidence, and career-readiness. As one of India’s top-ranked private institutions, Amity University stands out for its interdisciplinary approach to education, spanning over 300 academic programs in engineering, sciences, business, humanities, and emerging technologies. The university is driven by a research-intensive culture, supported by advanced laboratories, innovation hubs, and a faculty network that includes leading scholars and professionals. Its commitment to academic rigor, social responsibility, and global engagement makes it a preferred choice among ambitious learners. Amity University is a top private university in India offering globally recognized programs in science, tech, arts, and business, with modern infrastructure and a strong focus on research and industry readiness.",
-    image:
-      "https://www.learningroutes.in/_next/image?url=https%3A%2F%2Faskusedu.com%2Fblogdashboard%2Fwp-content%2Fuploads%2F2024%2F04%2FAmity-Mohali.webp&w=1920&q=75",
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
+    image: "/assets/Amity-Mohali.webp",
+    logo: "/assets/amitylogo.png",
     year: 2005,
     naac: "A+",
     rank: "Top 50 in India",
@@ -1073,9 +1050,8 @@ export const wikkiUniversities = [
     location: "Jaipur, Rajasthan",
     description:
       "Manipal University Jaipur (MUJ), a constituent institution of the prestigious Manipal Education Group, delivers world-class education across a range of disciplines. With a strong focus on academic excellence, cutting-edge research, and innovation, MUJ combines state-of-the-art infrastructure with a vibrant learning environment that nurtures future-ready professionals and global citizens. Part of the renowned Manipal Education Group, Manipal University Jaipur (MUJ) is more than just a university — it’s a launchpad for ambitious learners. With world-class faculty, modern facilities, and a forward-thinking curriculum, MUJ empowers students to explore, innovate, and lead in a rapidly evolving global landscape. As a proud constituent of the Manipal Education Group, Manipal University Jaipur (MUJ) upholds a legacy of academic excellence and innovation. The university offers a diverse array of undergraduate and postgraduate programs, supported by top-tier faculty, advanced laboratories, and a student-centric pedagogy. Its modern campus infrastructure and commitment to research make it a preferred destination for quality higher education in India. MUJ, a part of Manipal Education Group, delivers top-tier education with modern infrastructure, global exposure, and industry-aligned programs designed for the leaders of tomorrow.",
-    image:
-      "https://onlinecollegestudy.com/wp-content/uploads/2025/02/manipal-uni.jpg",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzC0Bcea9vAZSQDH8PxOLk_gKPRBhyFEXCUw&s",
+    image: "/assets/manipal-uni.jpg",
+    logo: "/assets/manipallogo.png",
     year: 2011,
     naac: "A+",
     rank: "Top 75 in India",
@@ -1095,8 +1071,7 @@ export const wikkiUniversities = [
     location: "Gangtok, Sikkim",
     description:
       "Sikkim Manipal University (SMU) is a leading public-private institution renowned for its robust distance education programs and industry-aligned curriculum. With a strong focus on accessibility and academic excellence, SMU empowers students across India to pursue quality higher education from anywhere.Aspirational & Student-Focused Style:Sikkim Manipal University blends flexibility with quality, offering top-notch distance education designed for learners who aspire to grow without boundaries. Its comprehensive, future-ready curriculum ensures students receive the same excellence as on-campus programs — wherever they are.🏛️ Academic & Detailed Style:A pioneering public-private partnership, Sikkim Manipal University (SMU) has established itself as a hub for accessible, high-quality education, especially through its acclaimed distance learning programs. With a curriculum crafted to meet modern industry demands and a strong commitment to student support, SMU continues to reshape the landscape of remote education in India.SMU is a public-private university recognized for its excellence in distance learning and a curriculum designed to meet today’s professional demands..",
-    image:
-      "https://argroupofeducation.com/wp-content/uploads/2024/02/Sikkim-Manipal-University2.jpg",
+    image: "/assets/Sikkim-Manipal-University2.webp",
     logo: "https://sodleducation.com/img/sikkimmanipallogo.webp",
     year: 1995,
     naac: "NA",
@@ -1117,7 +1092,7 @@ export const wikkiUniversities = [
     location: "Mumbai, Maharashtra",
     description:
       "NMIMS is a prestigious private university in India, renowned for its excellence in business, management, and professional education. Recognized by top academic bodies and consistently ranked among the best, it offers a dynamic learning environment, industry-oriented curriculum, and strong placement support.NMIMS is a premier private university celebrated for shaping future leaders in business and management. With a legacy of academic excellence, real-world exposure, and a vibrant campus life, NMIMS empowers students to thrive in the global marketplace. Academic & Detailed Style:Narsee Monjee Institute of Management Studies (NMIMS) stands among India’s elite private universities, offering a diverse array of programs in business, management, technology, and law. Known for its rigorous academics, strong industry linkages, and high employability, NMIMS has become a preferred destination for aspiring professionals.NMIMS is a nationally recognized private university, offering top-ranked programs in business and management with strong industry integration and placement records..",
-    image: "https://www.nmims.edu/images/gallery/navimumbai-campus/1.jpg",
+    image: "/assets/Narsee.jpg",
     logo: "https://pbs.twimg.com/profile_images/887620877138907136/Zau4_WSX_400x400.jpg",
     year: 1981,
     naac: "A+",
@@ -1138,8 +1113,7 @@ export const wikkiUniversities = [
     location: "Navi Mumbai, Maharashtra",
     description:
       "D.Y. Patil University is a well-established institution known for its commitment to academic excellence and holistic development. Offering a wide range of undergraduate and postgraduate programs across disciplines like medicine, engineering, management, and humanities, the university emphasizes practical learning, innovation, and industry readiness.D.Y. Patil University is a renowned educational hub that combines strong academic foundations with real-world application. With modern infrastructure, experienced faculty, and hands-on learning opportunities, it prepares students to excel in their careers and contribute meaningfully to society.D.Y. Patil University is a reputed private institution offering diverse programs across multiple disciplines, with a strong emphasis on experiential learning and career-oriented education.",
-    image:
-      "https://gcetl.in/web2manage/images/Universities/University1719920235dyn%20patil.jpg",
+    image: "/assets/DYPAtil.jpg",
     logo: "https://static.wixstatic.com/media/bff831_b2037f9baf424ffeb229a275ab3da890~mv2.png/v1/fill/w_518,h_222,al_c,lg_1,q_85,enc_avif,quality_auto/dyp-online-logo.png",
     year: 2002,
     naac: "A",
@@ -1160,9 +1134,8 @@ export const wikkiUniversities = [
     location: "Phagwara, Punjab",
     description:
       "Lovely Professional University (LPU) stands as one of India’s largest and most acclaimed private universities. Renowned for its sprawling campus, advanced infrastructure, and global outlook, LPU offers a diverse array of programs in fields like engineering, management, design, law, and liberal arts. With a strong focus on innovation, research, and entrepreneurship, LPU fosters a dynamic learning environment that prepares students for success in a competitive world.LPU is among India’s premier private universities, offering multidisciplinary education with a modern campus, tech-driven infrastructure, and a strong emphasis on innovation and entrepreneurship.🎓 Student-Friendly Style:Lovely Professional University is not just one of India’s biggest universities—it’s also one of the most forward-thinking. With cutting-edge facilities, a vibrant student life, and programs that blend theory with practice, LPU is a great launchpad for future leaders and changemakers.",
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1655635763phpVQHm5C.jpeg",
-    logo: "https://i.pinimg.com/736x/c9/12/d4/c912d49f5f63e3c25aae2465f7577e7a.jpg",
+    image: "/assets/Lovely.jpeg",
+    logo: "/unilogos/LPULogo.jpg",
     year: 2005,
     naac: "A++",
     rank: "Top 100 in India",
@@ -1182,9 +1155,8 @@ export const wikkiUniversities = [
     location: "Mohali, Punjab",
     description:
       "Chandigarh University is a leading private institution in India, offering a wide spectrum of undergraduate and postgraduate programs across various disciplines. Known for its academic rigor, strong placement record, and industry-aligned curriculum, the university also prides itself on extensive global collaborations and research initiatives that prepare students for international opportunities.Chandigarh University is a top-ranked private university offering diverse UG and PG programs. It’s acclaimed for academic excellence, strong industry tie-ups, outstanding placements, and global partnerships.🎓 Student-Centric Style:Chandigarh University combines quality education with real-world exposure. With top-notch faculty, impressive placement stats, and international tie-ups, it’s a popular choice for students aiming for a successful global career.",
-    image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhhTgvVUO5-bFLFJXtTovOE_f4gMjD1ACVzTfZNKtZonYTe77nV8dSeymhqePAkIFqdKMMvTcAfyFyE2KHVdn5E2wlmQM2y_4ukcw-1Op7EE60jOXY-2qwAqSXvThKC8ldt6LLcdOUYLMNyQvQyXeNT5YEq590_0Nq_frXh9WzPEmUx55T1Ufyj-SLkfw=s16000",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mx5Ca8jO1s4RjWBQKke3YPNGUsLU2KCrMA&s",
+    image: "/assets/CSU.jpg",
+    logo: "/unilogos/ccsu.png",
     year: 2012,
     naac: "A+",
     rank: "Top 50 in India",
@@ -1204,8 +1176,8 @@ export const wikkiUniversities = [
     location: "Dehradun, Uttarakhand",
     description:
       "Uttaranchal University is a renowned institution offering high-quality education across disciplines such as law, engineering, management, and applied sciences. With a strong focus on academic excellence, industry relevance, and holistic development, the university provides a dynamic learning environment that nurtures innovation, leadership, and social responsibility.Uttaranchal University is a leading university known for excellence in law, technology, and management education. It emphasizes holistic student growth, cutting-edge curriculum, and career-oriented learning.🎓 Student-Centric Style:At Uttaranchal University, students receive more than just classroom education — they experience hands-on learning, industry interaction, and personal development. From law to tech, it’s a hub for shaping skilled professionals ready to thrive.",
-    image: "https://www.uudoon.in/about/images/about-image-1.jpg",
-    logo: "https://doonmanagementschool.in/wp-content/uploads/2023/04/University-logo-new-oct-scaled-1.jpg",
+    image: "/assets/UttaranchalUni.jpg",
+    logo: "/unilogos/uuuk.jpg",
     year: 2013,
     naac: "A+",
     rank: "Top 100 in India",
@@ -1225,8 +1197,8 @@ export const wikkiUniversities = [
     location: "Mathura, Uttar Pradesh",
     description:
       "GLA University is a premier educational institution in North India, recognized for its strong foundation in technical and management education. The university fosters academic excellence through a rigorous curriculum, experienced faculty, and a research-driven approach, preparing students for global careers and innovation-led industries.Located in the heart of North India, GLA University stands out for its quality education in engineering, management, and applied sciences. With a strong emphasis on research, skill development, and industry integration, it nurtures future-ready professionals.🎓 Student-Centric Version:GLA University offers top-tier programs in engineering and business, supported by experienced faculty and modern infrastructure. Its focus on practical learning, research, and career readiness makes it a popular choice among ambitious students.",
-    image: "https://www.gla.ac.in/images/institute-overview.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/en/4/42/GLA_University_logo.png",
+    image: "/assets/GLAUni.jpg",
+    logo: "/unilogos/glaLogo.png",
     year: 1998,
     naac: "A",
     rank: "Top 100 in India",
@@ -1246,8 +1218,8 @@ export const wikkiUniversities = [
     location: "Bangalore, Karnataka",
     description:
       "Jain University is a premier institution in Bangalore offering UG and PG courses in sciences, commerce, humanities, and technology. It is known for its focus on research and entrepreneurship.",
-    image: "https://admissionmentor.co.in/img/blog-img/jain.jpg",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5kW1QiwZI1mxMzldLk3AV3fhz6-Wmivebmw&s",
+    image: "/assets/JainUni.jpg",
+    logo: "/unilogos/jainlogo.jpg",
     year: 1990,
     naac: "A++",
     rank: "Top 75 in India",
@@ -1267,9 +1239,8 @@ export const wikkiUniversities = [
     location: "Solan, Himachal Pradesh",
     description:
       "Shoolini University is a leading research-centric private university that stands out for its commitment to academic excellence, innovation, and global competitiveness. Offering a diverse range of undergraduate and postgraduate programs, the university places strong emphasis on research, entrepreneurship, and industry-oriented learning.Shoolini University is a high-ranking private institution recognized for its strong research output and innovation-driven ecosystem. It provides comprehensive programs across science, engineering, management, and humanities, preparing students for future-ready careers.🎓 Student-Focused Version:At Shoolini University, learning goes beyond classrooms. With world-class faculty, cutting-edge labs, and a strong research focus, students are empowered to innovate, explore, and succeed across various academic disciplines.",
-    image:
-      " https://distanceeducationschool.com/wp-content/uploads/2024/05/university-page-shoolini-DES.webp",
-    logo: " https://online.shooliniuniversity.com/distance/assets/img/logo.png",
+    image: " /assets/shoolini.webp",
+    logo: "shoolini.png",
     year: 2009,
     naac: "B++",
     rank: "Top 150 in India",
@@ -1289,9 +1260,8 @@ export const wikkiUniversities = [
     location: "Greater Noida, Uttar Pradesh",
     description:
       "🏛️ Professional Description:Sharda University is a premier multi-disciplinary institution offering a comprehensive range of undergraduate and postgraduate programs. Renowned for its academic excellence, modern infrastructure, and international collaborations, the university fosters a global learning environment that emphasizes holistic development and innovation.Sharda University is a top-tier university known for its dynamic campus life, diverse academic offerings, and a strong focus on global exposure and interdisciplinary learning. With students from over 95 countries, it creates a culturally rich and inclusive educational experience.Sharda University blends academic excellence with global perspectives, offering programs that prepare students for success in a rapidly evolving world.",
-    image:
-      "https://media.collegedekho.com/media/img/institute/crawled_images/1496464164Sharda800x414.jpg",
-    logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK4Pd52Bzy8GLLUsBcY91yPN0VFzkERuN7-g&s",
+    image: "/assets/sharda.avif",
+    logo: " /unilogos/shardalogo.png",
     year: 2009,
     naac: "A",
     rank: "Top 100 in India",
@@ -1311,9 +1281,8 @@ export const wikkiUniversities = [
     location: "Vadodara, Gujarat",
     description:
       "🏛️ Professional Description:Parul University is a leading multidisciplinary institution that offers a diverse portfolio of programs in engineering, management, arts, healthcare, and more. Known for its strong emphasis on experiential learning, industry collaborations, and cutting-edge infrastructure, the university prepares students to meet real-world challenges with confidence and competence.Parul University stands out for its innovative teaching methods, hands-on training, and global exposure. With a vibrant campus life and strong industry linkages, it fosters both academic excellence and personal growth.Parul University blends academic diversity with industry-oriented education, empowering students through practical learning and innovation.",
-    image:
-      "https://i.pinimg.com/736x/35/4e/41/354e41b970004cac05cbe77bbc681ad8.jpg",
-    logo: "https://paruluniversity.ac.in/pu-content/uploads/2021/12/pu-logo.png",
+    image: "/unilogos/parullogo.jpg",
+    logo: "/unilogos/parullogo.jpg",
     year: 2015,
     naac: "A++",
     rank: "Top 150 in India",
@@ -1333,9 +1302,8 @@ export const wikkiUniversities = [
     location: "Dehradun, Uttarakhand",
     description:
       "🏛️ Professional Description:The University of Petroleum and Energy Studies (UPES) is a premier institution renowned for its specialized programs in energy, petroleum, and allied sectors. In addition to its core focus, UPES also offers cutting-edge programs in law, business, design, computer science, and engineering. With a strong industry-aligned curriculum, modern infrastructure, and emphasis on innovation, UPES prepares students for future-ready careers in high-demand industries.UPES stands out for its niche academic focus in energy and petroleum, while also excelling in areas like law, business, and technology. Its commitment to industry relevance and holistic development makes it a top choice for aspiring professionals.UPES is a specialized university offering industry-driven programs in energy, law, business, and design, known for its innovation and academic excellence.",
-    image:
-      " https://collegewaale.com/upes/wp-content/uploads/2023/12/upes-1-1024x768.webp",
-    logo: " https://indiaeducationdiary.in/wp-content/uploads/2022/01/UPES-LOGO-01.jpg?w=640",
+    image: " /assets/UPES.webp",
+    logo: " /unilogos/UPESLOGO.jpg",
     year: 2003,
     naac: "A",
     rank: "Top 100 in India",
@@ -1355,8 +1323,8 @@ export const wikkiUniversities = [
     location: "Guntur, Andhra Pradesh",
     description:
       "Vignan’s Foundation for Science, Technology & Research is a reputed private university dedicated to academic excellence in the fields of engineering, science, and management. The institution fosters a dynamic learning environment with a strong emphasis on research, innovation, and industry collaboration. With state-of-the-art infrastructure and experienced faculty, Vignan’s prepares students to meet global challenges with confidence and competence.Vignan’s University offers top-notch programs in engineering, science, and management. It is recognized for its academic rigor, research orientation, and student-centric approach to learning.Vignan’s is a leading private university focused on engineering, science, and management, known for academic excellence and research-driven education.",
-    image: " https://vignan.ac.in/images/apex/5.jpg",
-    logo: "https://content.jdmagicbox.com/v2/comp/hyderabad/64/040p7005064/catalogue/vignan-institute-of-technology-and-science-kukatpally-hyderabad-engineering-colleges-pe113r.jpg",
+    image: " /assets/vignanUni.jpg",
+    logo: "/unilogos/vignanLogo.avif",
     year: 2008,
     naac: "A+",
     rank: "Top 100 in India",
@@ -1376,9 +1344,8 @@ export const wikkiUniversities = [
     location: "Jaipur, Rajasthan",
     description:
       "🏛️ Professional Description:Vivekananda Global University (VGU) is one of Rajasthan’s premier private universities, offering a wide array of programs in engineering, management, law, basic sciences, and more. Known for its commitment to innovation and research, VGU emphasizes experiential learning, industry integration, and holistic student development. With a modern campus, strong academic framework, and global collaborations, the university is shaping future-ready professionals across disciplines.Vivekananda Global University is a top-ranked private university in Rajasthan offering programs in engineering, law, management, and sciences. It is known for its research-driven approach and student-centric learning.VGU is a leading private university in Rajasthan, focused on innovation, research, and multidisciplinary education.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLM3_HyshA0jjzj3r7qnynSwaiVVCsUnld6A&s",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vivekananda-global-university-jaipur.jpg",
+    image: "/assets/vgu.jpg",
+    logo: "/unilogos/vguu.jpg",
     naac: "A",
     rank: "Top 100 in India",
     founded: "2012",
@@ -1397,9 +1364,8 @@ export const wikkiUniversities = [
     location: "Aligarh, Uttar Pradesh",
     description:
       "🏛️ Professional Description:Aligarh Muslim University (AMU) is one of India’s oldest and most prestigious central universities, renowned for its rich cultural heritage, academic excellence, and commitment to inclusive education. Established in 1920, AMU offers a wide spectrum of undergraduate, postgraduate, and doctoral programs across disciplines such as humanities, sciences, engineering, law, and social sciences. The university fosters intellectual growth and national integration while preserving its deep-rooted traditions and values.Aligarh Muslim University is a central university with a historic legacy, offering diverse UG and PG programs. It is celebrated for its academic excellence, inclusive environment, and cultural richness.AMU is a historic central university known for academic excellence and cultural diversity.Let me know if you’d like this version adapted for your frontend display or metadata for SEO!",
-    image:
-      " https://www.guidanceforever.org/wp-content/uploads/2023/10/aligarh-muslim-university-aligarh-featured-2.jpg",
-    logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskJ0c3dzaabVW_PWcxTUViMR2PQmpHOKfJg&s",
+    image: " /assets/AMU.jpg",
+    logo: " /unilogos/amuLogo.png",
     year: 1875,
     naac: "A+",
     rank: "Top 10 Central Universities",
@@ -1419,9 +1385,8 @@ export const wikkiUniversities = [
     location: "Coimbatore, Tamil Nadu",
     description:
       "🏛️ Professional Description:Amrita Vishwa Vidyapeetham is a premier multi-campus, multi-disciplinary research-intensive university in India, renowned for its strong emphasis on academic excellence, cutting-edge research, and humanitarian values. With campuses spread across different states, Amrita offers a diverse range of undergraduate, postgraduate, and doctoral programs in engineering, medicine, management, social sciences, and more. It is consistently ranked among the top private universities in India and is recognized for its commitment to societal development and global collaboration.Amrita Vishwa Vidyapeetham is a leading private research university in India, known for its academic rigor, global collaborations, and focus on education with compassion and societal impact.",
-    image:
-      "https://images.shiksha.com/mediadata/images/articles/1587994716phpmjYKDq.jpeg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amrita-vishwa-vidyapeetham-logo.svg/2560px-Amrita-vishwa-vidyapeetham-logo.svg.png",
+    image: "/assets/AVV.jpeg",
+    logo: "/unilogos/amrita.webp",
     year: 2003,
     naac: "A++",
     rank: "Top 10 in India",
@@ -1441,9 +1406,8 @@ export const wikkiUniversities = [
     location: "Pune, Maharashtra",
     description:
       "Dr. D. Y. Patil Vidyapeeth, Pune is a reputed deemed-to-be university that has made significant contributions in the domains of health sciences, management, and technology education. Known for its state-of-the-art infrastructure, experienced faculty, and focus on research and innovation, the university provides a dynamic learning environment that nurtures academic excellence and professional growth. It is also recognized for its strong industry interface and emphasis on practical, career-oriented training.Dr. D. Y. Patil Vidyapeeth, Pune is a leading deemed university offering quality education in health sciences, management, and technology, with a focus on innovation, research, and industry relevance.",
-    image:
-      " https://sardarpateleducation.com/wp-content/uploads/2025/02/Infrastructure-01-1.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Dr._D._Y._Patil_Medical_College%2C_Hospital_%26_Research_Centre_logo.jpg",
+    image: " /assets/DPU.jpg",
+    logo: "/unilogos/dpu.webp",
     year: 2003,
     naac: "A++",
     rank: "Top 50 in India",
@@ -1463,8 +1427,8 @@ export const wikkiUniversities = [
     location: "New Delhi",
     description:
       "Jamia Hamdard is a prestigious deemed university located in New Delhi, widely recognized for its academic excellence in modern medicine, pharmacy, management, and especially Unani and allied medical sciences. With a legacy rooted in healthcare and holistic education, the university offers a wide range of professional courses designed to meet modern industry standards while preserving traditional knowledge systems. Its research-driven environment, experienced faculty, and emphasis on innovation make it a leading institution for aspiring healthcare professionals.",
-    image: " https://jamiahamdard.edu/images/explore-kings-accommodation.jpg",
-    logo: "https://jamiahamdard.edu/images/top-logo.png",
+    image: " /assets/JHU.jpg",
+    logo: "/assets/JMILogo.png",
     year: 1989,
     naac: "A",
     rank: "Top 25 in Pharmacy",
@@ -1485,8 +1449,8 @@ export const wikkiUniversities = [
     description:
       "Mizoram University is a central university established by the Government of India, dedicated to providing quality higher education in the northeastern region. The university offers a broad spectrum of academic programs in science, commerce, humanities, and vocational studies. With a focus on regional development, cultural preservation, and academic excellence, Mizoram University fosters a vibrant research environment and promotes inclusive learning. Its scenic campus, diverse student body, and commitment to innovation make it a prominent institution in India’s higher education landscape.",
     image:
-      " https://image-static.collegedunia.com/public/college_data/images/appImage/1513313634adminbuilding02.jpg?h=260&w=360&mode=crop",
-    logo: " https://www.yugedu.com/media/654/mizoram-university-online-logo.png",
+      " /assets/MizoramUni.webp",
+    logo: " /unilogos/mizoramlogo.png",
     year: 2001,
     naac: "A",
     rank: "Top 100 in NIRF",
@@ -1506,8 +1470,8 @@ export const wikkiUniversities = [
     location: "Kurukshetra, Haryana",
     description:
       "Kurukshetra University is a prominent state university in Haryana, renowned for its academic heritage and cultural legacy. Established in 1956, the university offers a diverse range of undergraduate, postgraduate, and doctoral programs across disciplines such as arts, science, law, management, and education. With a sprawling campus and a commitment to academic excellence, Kurukshetra University has played a pivotal role in shaping higher education in North India. It is also recognized for fostering research, promoting extracurricular engagement, and preserving the historical and spiritual significance of the region.",
-    image: "https://ku.digitaluniversity.ac/user/pages/images/slides/s3.jpg",
-    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Kurukshetra_University_logo.png",
+    image: "/assets/kurukshetraUni.jpg",
+    logo: "/unilogos/kuru.png",
     year: 1956,
     naac: "A+",
     rank: "Top 100 in India",
