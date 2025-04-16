@@ -77,7 +77,7 @@ const Header = () => {
         </div>
 
         {/* Desktop navigation */}
-        <ul className="hidden lg:flex items-center space-x-1 bg-gray-200 py-3 px-2 rounded-full text-[16px] tracking-wider font-semibold">
+        <ul className="hidden lg:flex items-center space-x-1 bg-gray-200 px-2 rounded-full text-sm tracking-wider font-semibold">
           {navItems.slice(0, 2).map((item, index) => (
             <li key={index}>
               <Link
@@ -169,9 +169,9 @@ const Header = () => {
           <a
             target="_blank"
             href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
-            className="bg-black text-white text-sm rounded-full px-4 py-2 hover:bg-gray-800 transition-all cursor-pointer"
+            className="bg-black text-white text-[13px] rounded-full px-4 py-3 hover:bg-gray-800 transition-all cursor-pointer"
           >
-            WhatsApp Us
+            WhatsAppUs
           </a>
           <div className="lg:hidden">
             <button
