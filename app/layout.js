@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       </div> */}
           <Header />
           <Social />
-          <PopUpContact />
+          {/* <PopUpContact /> */}
           <ScrollToTop />
           {children}
           {/* <Outlet /> */}
