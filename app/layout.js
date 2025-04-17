@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <head>
+      
   {/* Google Analytics */}
   <Script
     strategy="afterInteractive"
@@ -63,8 +63,6 @@ export default function RootLayout({ children }) {
     }}
   />
 </head>
-
-      </head>
 
 
 
