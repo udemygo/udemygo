@@ -29,7 +29,7 @@ const MBAOverview = () => {
           </thead>
           <tbody>
             <tr className="bg-white *:text-xs sm:*:text-sm *:tracking-wide *:text-center">
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">37</td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">21</td>
               <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">2 Years</td>
               <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
                 Graduation or Equivalent

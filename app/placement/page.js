@@ -208,7 +208,6 @@ const Placement = () => {
           {placementData.map((partner) => (
             <motion.a
               key={partner.id}
-              href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105"

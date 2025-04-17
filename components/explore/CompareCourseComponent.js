@@ -39,7 +39,7 @@ const CompareCourseComponent = () => {
             <div className="flex justify-between items-start mb-6 ">
               <div className="text-left pt-4">
                 <h2 className="text-2xl font-bold text-gray-800   ">
-                  Compare & Apply from 100+ Online MBA Universities
+                Compare & Apply from 24+ online MBA Universities Easy, No Cost EMI | ( Early bird Discount )
                 </h2>
                 <p className="text-green-600 font-semibold">
                   No-Cost EMI From ₹4,999 | Subsidy Cashback Available* upto
@@ -55,21 +55,19 @@ const CompareCourseComponent = () => {
 
             <ul className="text-gray-700 space-y-3 mb-8">
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> 100+ Universities
+                <span className="text-green-500 mr-2">★</span> 24+ Universities
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> 80+ Comparison
+                <span className="text-green-500 mr-2">★</span> Comparison Factors
                 Factors
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Free Expert
-                Consultation
+                <span className="text-green-500 mr-2">★</span> Free Expert Consultation
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Quick Loan
-                Facility
+                <span className="text-green-500 mr-2">★</span> Post Admission Support
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Celebrating 1 Lac
                 Admissions
               </li>
@@ -84,19 +82,19 @@ const CompareCourseComponent = () => {
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Job + Internship
                 Portal
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="mt-auto">
             <p className="text-sm text-gray-500">
               Your personal information is secure with us
             </p>
-            <div className="flex justify-between items-center mt-4 text-sm">
+            {/* <div className="flex justify-between items-center mt-4 text-sm">
               <span className="text-gray-600">
                 Connect with Top CV Experts{" "}
                 <span className="text-yellow-500">★ ★ ★ ★ ★</span>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
 
