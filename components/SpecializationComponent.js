@@ -104,7 +104,7 @@ export default function SpecializationComponent() {
             className="bg-white p-4 cursor-pointer rounded-lg shadow flex items-center justify-between hover:bg-gray-100 transition"
           >
             <span className="text-gray-800">{spec.name}</span>
-            <span className="text-green-500">⦿</span>
+            <span className="text-green-500 animate-pulse">⦿</span>
           </div>
         ))}
       </div>

@@ -130,7 +130,7 @@ const PopUpContact = () => {
 
   return (
     <motion.div
-      className={`fixed bottom-5 right-3 md:right-10 lg:right-20 z-30 ${
+      className={`fixed bottom-5 right-4 md:right-10 lg:right-24 z-30 ${
         close ? "hidden" : "inline-block"
       }`}
       ref={popupRef}

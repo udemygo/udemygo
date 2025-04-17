@@ -87,7 +87,7 @@ export default function TopRecruiters() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
         {companies.map((company, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="bg-white rounded-md border border-gray-200 p-3 w-full flex items-center justify-center h-16">
+            <div className="bg-white rounded-md border border-gray-200 p-3 w-full flex items-center justify-center h-16 cursor-pointer hover:scale-105 transition-all duration-150 ease-in">
               <Image
                 src={company.logo}
                 alt={`${company.name} logo`}

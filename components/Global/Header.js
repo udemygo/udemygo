@@ -58,7 +58,7 @@ const Header = () => {
     <div className="w-full md:max-w-[1322px] flex justify-center uppercase bg-amber-100">
       <div
         className={`h-20 p-4 px-6 mt-6 w-[90%] md:w-[70%] md:max-w-[1150px] bg-amber-0 fixed z-50 flex items-center justify-between rounded-full shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
-          isScrolled ? "-translate-y-12" : "translate-y-0"
+          isScrolled ? "-translate-y-7" : "translate-y-0"
         }`}
       >
         {/* Logo */}

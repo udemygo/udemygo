@@ -35,7 +35,7 @@ const UniversityCard = ({ data }) => {
             visible: { opacity: 1, transition: { delay: 0.2 } },
           }}
         >
-          <Image width={500} height={500} src={data.logo} alt="Logo" className="h-8" />
+          <Image width={500} height={500} src={data.logo} alt="Logo" className="h-8 w-fit" />
           {data.emiPlan && (
             <span className="bg-blue-500 text-white px-2 py-1 rounded text-xs">
               EMI Plan

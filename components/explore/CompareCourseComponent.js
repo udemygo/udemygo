@@ -28,7 +28,7 @@ const CompareCourseComponent = () => {
   };
 
   return (
-    <div className="p-7 mt-28 flex items-center justify-center">
+    <div className="p-7 flex items-center justify-center">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl flex flex-col md:flex-row overflow-hidden  transition duration-300">
         {/* Left Partition - Info Section */}
         <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-100 to-white flex flex-col justify-between">

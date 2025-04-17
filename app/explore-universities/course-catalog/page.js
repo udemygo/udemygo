@@ -5,8 +5,8 @@ import CourseCatalog from "@/components/StudyMaterial/CourseCatalog";
 
 export default function Page() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    // <Suspense fallback={<div>Loading...</div>}>
       <CourseCatalog />
-    </Suspense>
+    // </Suspense>
   );
 }
