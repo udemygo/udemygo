@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className=" relative w-screen max-w-[1450px] mx-auto lg:p-10 pt-1   ">
+        <div className=" relative w-screen max-w-screen overflow-x-hidden mx-auto lg:p-10 pt-1   ">
           {/* <div className=' absolute text-3xl '>
       <LuMessagesSquare  className=''/>
       </div> */}
