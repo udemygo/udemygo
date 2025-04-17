@@ -39,7 +39,7 @@ const CompareCourseComponent = () => {
             <div className="flex justify-between items-start mb-6 ">
               <div className="text-left pt-4">
                 <h2 className="text-2xl font-bold text-gray-800   ">
-                Compare & Apply from 21+ online MBA Universities Easy, No Cost EMI | ( Early bird Discount )
+                Compare & Apply from 21+ online MBA Universities No Cost EMI | ( Early bird Discount )
                 </h2>
                 {/* <p className="text-green-600 font-semibold">
                   No-Cost EMI From ₹4,999 | Subsidy Cashback Available* upto
