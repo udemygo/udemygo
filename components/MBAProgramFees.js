@@ -119,9 +119,7 @@ export default function MBAProgramFees() {
   ];
 
   const benefits = [
-    "Join CV Community for peer interaction",
     "Get personalized support via sessions & networking sessions",
-    "Dedicated CV Buddy for your queries",
     "One-on-One career guidance sessions",
     "Ensures timely delivery of LMS & degree",
     "A career advisor for life",
