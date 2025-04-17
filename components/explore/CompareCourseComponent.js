@@ -39,12 +39,12 @@ const CompareCourseComponent = () => {
             <div className="flex justify-between items-start mb-6 ">
               <div className="text-left pt-4">
                 <h2 className="text-2xl font-bold text-gray-800   ">
-                Compare & Apply from 24+ online MBA Universities Easy, No Cost EMI | ( Early bird Discount )
+                Compare & Apply from 21+ online MBA Universities Easy, No Cost EMI | ( Early bird Discount )
                 </h2>
-                <p className="text-green-600 font-semibold">
+                {/* <p className="text-green-600 font-semibold">
                   No-Cost EMI From ₹4,999 | Subsidy Cashback Available* upto
                   ₹20,000
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -55,7 +55,7 @@ const CompareCourseComponent = () => {
 
             <ul className="text-gray-700 space-y-3 mb-8">
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> 24+ Universities
+                <span className="text-green-500 mr-2">★</span> 21+ Universities
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Comparison Factors
