@@ -1,79 +1,82 @@
 // TopMBAUniversities.jsx
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const TopMBAUniversities = () => {
   const universities = [
     {
       name: "NMIMS Online",
       link: "NMIMS Online",
-      accreditations: "UGC-DEB | NIRF | NAAC A+"
+      accreditations: "UGC-DEB | NIRF | NAAC A+",
     },
     {
       name: "Amity University Online",
       link: "Amity University Online",
-      accreditations: "UGC-DEB | AICTE | AIU | NIRF | WES | QS World University Rankings | DEC"
+      accreditations:
+        "UGC-DEB | AICTE | AIU | NIRF | WES | QS World University Rankings | DEC",
     },
     {
       name: "Jain University Online",
       link: "Jain University Online",
-      accreditations: "UGC | AICTE | AIU | NIRF | WES | NAAC A++ | QS World University Rankings | AUAP"
+      accreditations:
+        "UGC | AICTE | AIU | NIRF | WES | NAAC A++ | QS World University Rankings | AUAP",
     },
     {
       name: "DY Patil University Online",
       link: "DY Patil University Online",
-      accreditations: "UGC-DEB | AICTE | AIU | NIRF | WES | NAAC A++ | ISO"
+      accreditations: "UGC-DEB | AICTE | AIU | NIRF | WES | NAAC A++ | ISO",
     },
     {
       name: "OP Jindal Global University Online",
       link: "OP Jindal Global University Online",
-      accreditations: "UGC | AIU | NAAC A | AACSB | QS World"
+      accreditations: "UGC | AIU | NAAC A | AACSB | QS World",
     },
     {
       name: "UPES Online",
       link: "UPES Online",
-      accreditations: "UGC-DEB | NIRF | NAAC A | QS World University Rankings"
+      accreditations: "UGC-DEB | NIRF | NAAC A | QS World University Rankings",
     },
     {
       name: "LPU Online",
       link: "LPU Online",
-      accreditations: "UGC-DEB | AICTE | AIU | NIRF | WES | NAAC A++"
+      accreditations: "UGC-DEB | AICTE | AIU | NIRF | WES | NAAC A++",
     },
     {
       name: "Liverpool John Moores University",
       link: "Liverpool John Moores University",
-      accreditations: "WES | AACSB | Privy Council Accredited"
+      accreditations: "WES | AACSB | Privy Council Accredited",
     },
     {
       name: "SRM University Online - Sikkim",
       link: "SRM University Online - Sikkim",
-      accreditations: "UGC | AICTE | NAAC A+ | ISO"
+      accreditations: "UGC | AICTE | NAAC A+ | ISO",
     },
     {
       name: "DY Patil Vidyapeeth Navi Mumbai Online",
       link: "DY Patil Vidyapeeth Navi Mumbai Online",
-      accreditations: "UGC | AICTE | NIRF | NAAC A++"
+      accreditations: "UGC | AICTE | NIRF | NAAC A++",
     },
     {
       name: "Amrita University Online",
       link: "Amrita University Online",
-      accreditations: "UGC | AICTE | NIRF | WES | NAAC A++"
+      accreditations: "UGC | AICTE | NIRF | WES | NAAC A++",
     },
     {
       name: "Chandigarh University Online",
       link: "Chandigarh University Online",
-      accreditations: "UGC-DEB | AICTE | NIRF | WES | NAAC A+ | ACCA | QS World University Rankings"
+      accreditations:
+        "UGC-DEB | AICTE | NIRF | WES | NAAC A+ | ACCA | QS World University Rankings",
     },
     {
       name: "Parul University Online",
       link: "Parul University Online",
-      accreditations: "UGC | NIRF | NAAC A++"
+      accreditations: "UGC | NIRF | NAAC A++",
     },
     {
       name: "Sikkim Manipal University Online",
       link: "Sikkim Manipal University Online",
-      accreditations: "UGC-DEB | NIRF | NAAC A+"
-    }
+      accreditations: "UGC-DEB | NIRF | NAAC A+",
+    },
   ];
 
   return (
@@ -97,9 +100,12 @@ const TopMBAUniversities = () => {
           </thead>
           <tbody>
             {universities.map((university, index) => (
-              <tr key={index} className={index % 2 === 0 ? "bg-blue-50" : "bg-white"}>
+              <tr
+                key={index}
+                className={index % 2 === 0 ? "bg-blue-50" : "bg-white"}
+              >
                 <td className="p-4 border border-gray-200 text-blue-600 hover:underline cursor-pointer">
-                    {university.name}
+                  {university.name}
                 </td>
                 <td className="p-4 border border-gray-200">
                   {university.accreditations}

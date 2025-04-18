@@ -1,4 +1,4 @@
-// KeyHighlightsMBA.jsx
+"use client"
 import React from "react";
 
 const KeyHighlightsMBA = () => {
@@ -96,9 +96,14 @@ const KeyHighlightsMBA = () => {
           </h3>
           <hr className="mb-4" />
           <p className="text-center mb-4">
-            <a href="#" className="text-blue-600 hover:underline">
+            <button
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              className=" cursor-pointertext-blue-600 hover:underline"
+            >
               Compare & Enroll NOW
-            </a>
+            </button>
           </p>
 
           <div className="space-y-4">

@@ -36,7 +36,10 @@ const Header = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
       }
-      if (exploreDropdownRef.current && !exploreDropdownRef.current.contains(event.target)) {
+      if (
+        exploreDropdownRef.current &&
+        !exploreDropdownRef.current.contains(event.target)
+      ) {
         setIsExploreOpen(false);
       }
     };
@@ -58,7 +61,7 @@ const Header = () => {
     <div className="w-full md:max-w-[1322px] flex justify-center  bg-amber-100">
       <div
         className={`h-20 p-4 px-6 mt-6 w-[90%] md:w-[70%] md:max-w-[1150px] bg-amber-0 fixed z-50 flex items-center justify-between rounded-full shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
-          isScrolled ? "-translate-y-12" : "translate-y-0"
+          isScrolled ? "-translate-y-7" : "translate-y-0"
         }`}
       >
         {/* Logo */}
@@ -67,8 +70,6 @@ const Header = () => {
             <Image
               width={100}
               height={100}
-              placeholder="blur"
-              loading="lazy"
               src={Logo}
               alt="UdemyGo logo"
               className="cursor-pointer"
@@ -178,7 +179,7 @@ const Header = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-4xl py-3"
             >
-              {isOpen ? <X size={30} /> : <IoReorderThreeOutline />}
+              {isOpen ? <X size={30} className="cursor-pointer" /> : <IoReorderThreeOutline className="cursor-pointer" />}
             </button>
           </div>
         </div>
@@ -191,7 +192,7 @@ const Header = () => {
             onClick={() => setIsOpen(false)}
             className="absolute top-4 right-4 text-white text-3xl z-20"
           >
-            <X />
+            <X  className="cursor-pointer"/>
           </button>
           <ul className="flex flex-col my-5 space-y-6 text-lg text-center">
             {navItems.map((item, index) => (

@@ -168,7 +168,7 @@ export default function MBAProgramFees() {
                 <p className="text-lg font-medium">Starting at ₹ 8,775/month</p>
                 <p className="text-sm">Program Fee: ₹80,000 - ₹4,00,000</p>
               </div>
-              <button className="mt-3 md:mt-0 bg-white text-blue-600 font-medium py-2 px-6 rounded-md hover:bg-gray-100 transition">
+              <button onClick={()=>{window.scrollTo(0,0)}} className="mt-3 cursor-pointer md:mt-0 bg-white text-blue-600 font-medium py-2 px-6 rounded-md hover:bg-gray-100 transition">
                 Apply Now
               </button>
             </div>
