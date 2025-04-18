@@ -24,9 +24,9 @@ const page = () => {
           behavior="infinite"
           direction="left"
         >
-          <strong className="text-red-500">Disclaimer</strong>: Udemygo promotes only verified
-          universities and approved courses. We don’t consider enrollment before
-          consulting with our career experts!
+          <strong className="text-red-500">Disclaimer</strong>: Udemygo promotes
+          only verified universities and approved courses. We don’t consider
+          enrollment before consulting with our career experts!
         </marquee>
       </div>
       <CompareCourseComponent />

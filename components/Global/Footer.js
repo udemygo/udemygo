@@ -127,6 +127,7 @@ const Footer = () => {
                   label: "Course Catalog",
                 },
                 { href: "/contact", label: "Contact us" },
+                { href: "/privacy-policy", label: "Privacy Policies" },
               ].map((item, index) => (
                 <motion.li key={index} variants={linkVariants}>
                   <Link

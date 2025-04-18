@@ -21,7 +21,7 @@ const CourseCatalog = () => {
       setSelectedFilter(type);
       if (type === "All") {
         setCourseData(allCourses);
-      } else if (type === "PG" || type === "Executive MBA") {
+      } else if (type === "PG") {
         setCourseData(
           allCourses.filter((course) =>
             course.degree.toLowerCase().includes("master")
@@ -31,9 +31,11 @@ const CourseCatalog = () => {
         setCourseData(
           allCourses.filter((course) => course.degree.toLowerCase() === "ug")
         );
+      } else if (type === "Executive MBA") {
+        router.push("/explore-programs/online-mba");
       }
     },
-    [allCourses]
+    [allCourses, router]
   );
 
   useEffect(() => {
@@ -149,7 +151,7 @@ const CourseCatalog = () => {
               initial="hidden"
               animate={isFilterInView ? "visible" : "hidden"}
               onClick={() => handleFilter(type)}
-              className={`px-4 py-3 rounded-lg text-left ${
+              className={`px-4 py-3 rounded-lg text-left cursor-pointer ${
                 selectedFilter === type
                   ? "bg-gradient-to-r from-blue-400 to-purple-500 text-white"
                   : "bg-gray-100"
