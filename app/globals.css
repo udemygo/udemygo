@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #dddef8;
+  overflow-x: hidden;
 }
 
 @theme inline {
@@ -22,15 +23,16 @@
 body {
   background-color: #dddef8;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 @media (width <= 48rem /* 768px */) {
   body {
     background-color: #d9c572;
   }
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
-}
+} */
 /* .gruppo-regular {
   font-family: "Gruppo", sans-serif;
   font-weight: 400;
