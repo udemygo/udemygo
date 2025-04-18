@@ -21,7 +21,7 @@ const EMILoan = () => {
           <li className="list-disc"><strong>Education Loans</strong>: Avail loans at competitive rates from SBI, HDFC, or Axis Bank.</li>
         </ul>
         <div className="flex space-x-4 mb-6 *:cursor-pointer *:text-sm *:transition-all *:duration-300 *:ease-in-out">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button onClick={()=>{window.scrollTo(0,0)}} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Apply For No Cost EMI
           </button>
         </div>
