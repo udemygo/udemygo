@@ -21,36 +21,25 @@ const CompareCourseComponent = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted! Check console for details.");
-    console.log(formData);
-  };
-
   return (
     <div className="p-7 flex items-center justify-center">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl flex flex-col md:flex-row overflow-hidden  transition duration-300">
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl flex flex-col md:flex-row overflow-hidden transition duration-300">
         {/* Left Partition - Info Section */}
         <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-100 to-white flex flex-col justify-between">
           <div>
             <div className="w-full h-fit overflow-hidden">
               <ScrollLogo />
             </div>
-            <div className="flex justify-between items-start mb-6 ">
+            <div className="flex justify-between items-start mb-6">
               <div className="text-left pt-4">
-                <h2 className="text-2xl font-bold text-gray-800   ">
-                Compare & Apply from 21+ online MBA Universities No Cost EMI | ( Early bird Discount )
+                <h2 className="text-2xl font-bold text-gray-800">
+                  Compare & Apply from 21+ online MBA Universities No Cost EMI | ( Early bird Discount )
                 </h2>
-                {/* <p className="text-green-600 font-semibold">
-                  No-Cost EMI From ₹4,999 | Subsidy Cashback Available* upto
-                  ₹20,000
-                </p> */}
               </div>
             </div>
 
             <p className="text-blue-600 text-lg font-medium mb-6">
-              India’s leading Online Universities on a Single Platform within
-              two minutes.
+              India’s leading Online Universities on a Single Platform within two minutes.
             </p>
 
             <ul className="text-gray-700 space-y-3 mb-8">
@@ -59,7 +48,6 @@ const CompareCourseComponent = () => {
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Comparison Factors
-                Factors
               </li>
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Free Expert Consultation
@@ -67,41 +55,22 @@ const CompareCourseComponent = () => {
               <li className="flex items-center">
                 <span className="text-green-500 mr-2">★</span> Post Admission Support
               </li>
-              {/* <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Celebrating 1 Lac
-                Admissions
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Post Admission
-                Support
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> CV Exclusive
-                Community
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Job + Internship
-                Portal
-              </li> */}
             </ul>
           </div>
           <div className="mt-auto">
             <p className="text-sm text-gray-500">
               Your personal information is secure with us
             </p>
-            {/* <div className="flex justify-between items-center mt-4 text-sm">
-              <span className="text-gray-600">
-                Connect with Top CV Experts{" "}
-                <span className="text-yellow-500">★ ★ ★ ★ ★</span>
-              </span>
-            </div> */}
           </div>
         </div>
 
         {/* Right Partition - Form Section */}
         <div className="md:w-1/2 p-8 bg-white">
-        <h2 className="text-3xl tracking-wide text-center font-bold stroke-3 pb-8 text-transparent bg-clip-text bg-gradient-to-l from-violet-800 via-violet-500 to-blue-500">Choose Your Best One</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <h2 className="text-3xl tracking-wide text-center font-bold stroke-3 pb-8 text-transparent bg-clip-text bg-gradient-to-l from-violet-800 via-violet-500 to-blue-500">Choose Your Best One</h2>
+          <form action="https://formsubmit.co/info@udemygo.com" method="POST" className="space-y-6">
+            <input type="hidden" name="_subject" value="New Course Comparison Form Submission!" />
+            <input type="hidden" name="_next" value="https://udemygo.com/thank-you"/>
+            <input type="hidden" name="_captcha" value="false" />
             <div className="grid grid-cols-1 gap-4">
               <input
                 type="text"

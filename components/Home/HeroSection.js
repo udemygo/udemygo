@@ -18,6 +18,7 @@ const synonyms = [
 
 import { Anta } from "next/font/google";
 import Image from "next/image";
+import StaticContactForm from "../StaticContactForm";
 
 // Anta font configure
 const anta = Anta({
@@ -111,7 +112,7 @@ const HeroSection = () => {
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-120%" }}
-              staggerDuration={0.050}
+              staggerDuration={0.05}
               splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
               transition={{ type: "spring", damping: 30, stiffness: 500 }}
               rotationInterval={3000}
@@ -136,10 +137,7 @@ const HeroSection = () => {
           skills.
         </motion.p>
 
-        <motion.div
-          className="flex gap-3 mt-12"
-          variants={containerVariants}
-        >
+        <motion.div className="flex gap-3 mt-12" variants={containerVariants}>
           <motion.a
             target="_blank"
             href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
@@ -175,13 +173,16 @@ const HeroSection = () => {
           className="overflow-hidden rounded-2xl h-full"
           variants={imageVariants}
         >
-          <Image
+          {/* <Image
             src="/assets/001.webp"
             width={500}
             height={500}
             alt="01"
             className="h-full object-cover rounded-2xl hover:scale-120 transition duration-200 ease-in"
-          />
+          /> */}{" "}
+          <div className=" w-full rounded-xl h-full shadow-xl max-w-2xl">
+            <StaticContactForm />
+          </div>
         </motion.div>
         <div className="w-[50%] min-h-full flex flex-col gap-3">
           <motion.div

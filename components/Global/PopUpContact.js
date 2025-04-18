@@ -20,12 +20,12 @@ const PopUpContact = () => {
   const popupRef = useRef(null);
   const isInView = useInView(popupRef, { once: false, amount: 0.3 });
 
-  useEffect(() => {
-    if (close) {
-      const timer = setTimeout(() => setClose(false), 20000); // Reopen after 20 sec
-      return () => clearTimeout(timer);
-    }
-  }, [close]);
+  // useEffect(() => {
+  //   if (close) {
+  //     const timer = setTimeout(() => setClose(false), 20000); // Reopen after 20 sec
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [close]);
 
   const {
     register,

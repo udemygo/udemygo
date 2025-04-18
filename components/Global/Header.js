@@ -12,6 +12,7 @@ import Image from "next/image";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isExploreOpen, setIsExploreOpen] = useState(false)
   const dropdownRef = useRef(null);
   const yOffset = useSpring(0, { stiffness: 120, damping: 20 });
   const pathname = usePathname();
@@ -156,7 +157,7 @@ const Header = () => {
 
   return (
     <div className="w-full md:max-w-[1322px] flex justify-center  bg-amber-100">
-      <div
+      <motion.div
         className={`h-20 p-4 px-6 mt-6 w-[90%] md:w-[70%] md:max-w-[1150px] bg-amber-0 fixed z-50 flex items-center justify-between rounded-full shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
           isScrolled ? "-translate-y-7" : "translate-y-0"
         }`}
@@ -273,10 +274,10 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            </li>
+            </motion.li>
           ))}
           {/* Explore dropdown */}
-          <li ref={exploreDropdownRef} className="relative">
+          <li className="relative">
             <button
               onClick={() => setIsExploreOpen(!isExploreOpen)}
               className="px-4 py-1 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
