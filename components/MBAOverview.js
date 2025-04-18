@@ -29,7 +29,7 @@ const MBAOverview = () => {
           </thead>
           <tbody>
             <tr className="bg-white *:text-xs sm:*:text-sm *:tracking-wide *:text-center">
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">37</td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">21</td>
               <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">2 Years</td>
               <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
                 Graduation or Equivalent
@@ -54,7 +54,9 @@ const MBAOverview = () => {
           management, and managerial economics. These skills pave the way for
           higher earnings, career growth, enhanced expertise, and a broader
           global outlook. Pursuing an online MBA could be a life-changing step
+
           toward your best career yet—explore where it&#39;s headed, why it&#39;s worth
+
           it, and more on this page.
         </p>
       </div>
@@ -65,7 +67,9 @@ const MBAOverview = () => {
           Where Online MBA Courses be in 2050?
         </h3>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
+
           Online MBA courses are growing fast, and by 2050, they&#39;re expected to
+
           be more immersive and widely accessible. Imagine learning through
           advanced tech like virtual reality (VR) and artificial intelligence
           (AI), tailored to your needs, with a focus on future-ready skills like
@@ -77,7 +81,9 @@ const MBAOverview = () => {
         </p>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
           The Graduate Management Admission Council (GMAC) notes MBA graduates
+
           already earn significantly more than bachelor&#39;s holders, a gap
+
           projected to exceed 77% in 25 years. By 2050, an online MBA could be
           your smartest move for landing leadership roles and boosting your
           salary. Check current in-demand roles and pay scales on Pay-scale for
@@ -104,7 +110,9 @@ const MBAOverview = () => {
           Why an Online MBA Course?
         </h3>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-5">
+
           With countless courses out there, why pick an online MBA? It&#39;s all
+
           about what it offers: flexibility, affordability, and career impact.
           To see how it benefits aspirants, check out the points below
         </p>

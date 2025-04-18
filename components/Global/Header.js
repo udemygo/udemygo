@@ -58,7 +58,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full md:max-w-[1322px] flex justify-center uppercase bg-amber-100">
+    <div className="w-full md:max-w-[1322px] flex justify-center  bg-amber-100">
       <div
         className={`h-20 p-4 px-6 mt-6 w-[90%] md:w-[70%] md:max-w-[1150px] bg-amber-0 fixed z-50 flex items-center justify-between rounded-full shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
           isScrolled ? "-translate-y-7" : "translate-y-0"
@@ -78,7 +78,7 @@ const Header = () => {
         </div>
 
         {/* Desktop navigation */}
-        <ul className="hidden lg:flex items-center space-x-1 bg-gray-200 py-3 px-2 rounded-full text-[16px] tracking-wider font-semibold">
+        <ul className="hidden lg:flex items-center space-x-1 bg-gray-200 px-2 lg:py-1 2xl:py-3 rounded-full text-sm tracking-wider font-semibold uppercase">
           {navItems.slice(0, 2).map((item, index) => (
             <li key={index}>
               <Link
@@ -97,7 +97,7 @@ const Header = () => {
           <li ref={dropdownRef} className="relative">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="px-4 py-3 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
+              className="px-4 py-1 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
             >
               Explore Universities
             </button>
@@ -144,12 +144,12 @@ const Header = () => {
           <li ref={exploreDropdownRef} className="relative">
             <button
               onClick={() => setIsExploreOpen(!isExploreOpen)}
-              className="px-4 py-3 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
+              className="px-4 py-1 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
             >
-              Explore
+              explore program
             </button>
             {isExploreOpen && (
-              <div className="absolute  overflow-hidden mt-2 w-full bg-white text-gray-800 shadow-lg rounded-md z-50 min-w-40 shadow-[#57575778]">
+              <div className="absolute -left-4 overflow-hidden mt-2 w-full bg-white text-gray-800 shadow-lg rounded-md z-50 min-w-40 shadow-[#57575778]">
                 <div>
                   <Link
                     href="/explore-programs/online-mba"
@@ -170,7 +170,7 @@ const Header = () => {
           <a
             target="_blank"
             href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
-            className="bg-black text-white text-sm rounded-full px-4 py-2 hover:bg-gray-800 transition-all cursor-pointer"
+            className="bg-black text-white text-sm rounded-full px-6 text-center py-2 hover:bg-gray-800 transition-all cursor-pointer"
           >
             WhatsApp Us
           </a>
