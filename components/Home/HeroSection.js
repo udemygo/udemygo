@@ -173,14 +173,14 @@ const HeroSection = () => {
           className="overflow-hidden rounded-2xl h-full"
           variants={imageVariants}
         >
-          {/* <Image
+          <Image
             src="/assets/001.webp"
             width={500}
             height={500}
             alt="01"
-            className="h-full object-cover rounded-2xl hover:scale-120 transition duration-200 ease-in"
-          /> */}{" "}
-          <div className=" w-full rounded-xl h-full shadow-xl max-w-2xl">
+            className="h-full object-cover rounded-2xl hover:scale-120 transition duration-200 ease-in md:hidden"
+          />{" "}
+          <div className=" w-full rounded-xl h-full shadow-xl max-w-2xl hidden md:block">
             <StaticContactForm />
           </div>
         </motion.div>

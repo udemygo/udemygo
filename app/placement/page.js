@@ -188,7 +188,7 @@ const Placement = () => {
   return (
     <motion.div
       ref={sectionRef}
-      className="h-auto bg-purple-100 sm:bg-gradient-to-r sm:from-purple-100 sm:via-pink-100 sm:to-blue-100 py-12 rounded-2xl sm:rounded-3xl border"
+      className="h-auto bg-purple-100 sm:bg-gradient-to-r sm:from-purple-100 sm:via-pink-100 sm:to-blue-100 py-12 rounded-2xl sm:rounded-3xl "
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}

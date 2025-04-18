@@ -30,7 +30,7 @@ export default function StaticContactForm() {
   if (!isOpen) return null;
   
   return (
-    <div className="flex items-center justify-center bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div className="flex items-center justify-center bg-gradient-to-r from-blue-50 to-indigo-50 ">
       <Head>
         <title>Contact Form</title>
         <meta name="description" content="Contact Form with Early-Bird Discount" />
