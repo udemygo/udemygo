@@ -152,7 +152,7 @@ const Header = () => {
     { name: "Courses", path: "/explore-universities/course-catalog" },
     { name: "Contact", path: "/contact" },
     { name: "Placement", path: "/placement" },
-    { name: "Explore", path: "/explore-programs" },
+    { name: "Explore", path: "/explore-programs/online-mba" },
   ];
 
   return (

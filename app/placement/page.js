@@ -133,7 +133,7 @@ const placementData = [
 
 const Placement = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   // Variants for container
   const containerVariants = {
@@ -175,10 +175,9 @@ const Placement = () => {
 
   // Variants for logos
   const logoVariants = {
-    hidden: { opacity: 0, rotate: 0 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      rotate: 0,
       transition: {
         duration: 0.5,
         ease: "easeOut",
@@ -189,28 +188,29 @@ const Placement = () => {
   return (
     <motion.div
       ref={sectionRef}
-      className="min-h-screen bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 py-12 pt-18 rounded-4xl"
+      className="h-auto bg-purple-100 sm:bg-gradient-to-r sm:from-purple-100 sm:via-pink-100 sm:to-blue-100 py-12 rounded-2xl sm:rounded-3xl border"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
-      <div className="container mx-auto px-4 pt-14">
+      <div className="container mx-auto px-4">
         <motion.h1
-          className="text-4xl font-bold text-center mb-12 text-gray-800"
+          className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800"
           variants={headingVariants}
         >
           Universities Top Placement Partners
         </motion.h1>
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 bg-white bg-opacity-80 shadow-xl rounded-4xl p-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 bg-white bg-opacity-80 shadow-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 w-full max-w-full"
           variants={containerVariants}
         >
           {placementData.map((partner) => (
             <motion.a
               key={partner.id}
+              // href={partner.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105"
+              className="bg-gradient-to-r cursor-pointer from-purple-100 via-pink-100 to-blue-100 rounded-lg shadow-lg p-4 sm:p-6 flex flex-col items-center transition-transform transform hover:scale-105"
               variants={cardVariants}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -218,11 +218,12 @@ const Placement = () => {
               <motion.img
                 src={partner.logo}
                 alt={`${partner.name} logo`}
-                className="w-24 h-24 object-contain mb-4"
+                className="w-16 h-16 sm:w-24 sm:h-24 object-contain mb-4"
                 variants={logoVariants}
-                whileHover={{ rotate: 10, scale: 1.2 }}
+                whileHover={{ scale: 1.2 }}
+                loading="lazy"
               />
-              <h2 className="text-xl font-semibold text-gray-700">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-700 text-center">
                 {partner.name}
               </h2>
             </motion.a>
