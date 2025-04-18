@@ -370,7 +370,7 @@ export const universityCatalogCardData = [
     rank: "N/A",
     managementRank: "",
     year: 2024,
-    name: "Vignan&apos;s University",
+    name: "Vignan's University",
     location: "Guntur, Andhra Pradesh",
     duration: "2 Years",
     semesters: "4 Semesters",
