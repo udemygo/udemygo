@@ -3,7 +3,7 @@ import React from "react";
 const WhatsappComponent = () => {
   return (
     <div className="w-full mt-4">
-      <div className="max-w-6xl border border-green-600 mx-auto bg-gradient-to-br from-green-500/10 via-green-400/10 to-green-300/10 rounded-2xl flex flex-col justify-center items-center p-8">
+      <div className="max-w-6xl border border-[#eafafe] mx-auto bg-gradient-to-br from-green-500/10 via-green-400/10 to-green-300/10 rounded-2xl flex flex-col justify-center items-center p-8">
         <h5 className="text-lg md:text-xl lg:text-3xl pb-4 font-semibold  font-sans tracking-wide text-green-800">
         Start Your Online MBA Journey Today
         </h5>
