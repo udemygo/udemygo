@@ -34,9 +34,9 @@ const OnlineMbaComponent = () => {
             with costs ranging from INR 80,000 to INR 4,50,000 depending on the
             university. These programs focus on delivering a quick grasp of
             business basics, strategic thinking, leadership, and managerial
-            expertise. Whether you're looking to speed up your career, switch
+            expertise. Whether you&#39;re looking to speed up your career, switch
             industries, or launch a business, an online MBA equips you with the
-            tools to succeed in today's competitive market.
+            tools to succeed in today&#39;s competitive market.
           </p>
 
           {/* Uncomment if you want to include these buttons 

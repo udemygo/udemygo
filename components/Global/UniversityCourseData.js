@@ -756,7 +756,7 @@ export const universitiesCoursesData = [
       fee: "₹1,40,000",
       duration: "2 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
     {
       id: 11,
@@ -766,7 +766,7 @@ export const universitiesCoursesData = [
       fee: "₹1,40,000",
       duration: "2 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
     {
       id: 11,
@@ -776,7 +776,7 @@ export const universitiesCoursesData = [
       fee: "₹1,2,000",
       duration: "3 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
     {
       id: 11,
@@ -786,7 +786,7 @@ export const universitiesCoursesData = [
       fee: "₹1,2,000",
       duration: "3 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
     {
       id: 11,
@@ -796,7 +796,7 @@ export const universitiesCoursesData = [
       fee: "₹1,2,000",
       duration: "3 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
     {
       id: 11,
@@ -806,7 +806,7 @@ export const universitiesCoursesData = [
       fee: "₹1,2,000",
       duration: "3 Years",
       emiPlan: true,
-       logo: "/unilogos/shoolini.png",
+      logo: "/unilogos/shoolini.png",
     },
   ],
 
@@ -1199,7 +1199,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "2 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
     {
       id: 17,
@@ -1209,7 +1209,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "2 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
     {
       id: 17,
@@ -1219,7 +1219,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
     {
       id: 17,
@@ -1229,7 +1229,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
     {
       id: 17,
@@ -1239,7 +1239,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
     {
       id: 17,
@@ -1249,7 +1249,7 @@ export const universitiesCoursesData = [
       fee: "₹1,00,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/amuLogo.png",
+      logo: "/unilogos/amuLogo.png",
     },
   ],
   // ID 19 - Amrita Vishwa Vidyapeetham
@@ -1272,7 +1272,7 @@ export const universitiesCoursesData = [
       fee: "₹2,2,000",
       duration: "2 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
     {
       id: 19,
@@ -1282,7 +1282,7 @@ export const universitiesCoursesData = [
       fee: "₹2,2,000",
       duration: "2 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
     {
       id: 19,
@@ -1292,7 +1292,7 @@ export const universitiesCoursesData = [
       fee: "₹2,00,000",
       duration: "3 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
     {
       id: 19,
@@ -1302,7 +1302,7 @@ export const universitiesCoursesData = [
       fee: "₹2,00,000",
       duration: "3 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
     {
       id: 19,
@@ -1312,7 +1312,7 @@ export const universitiesCoursesData = [
       fee: "₹2,00,000",
       duration: "3 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
     {
       id: 19,
@@ -1322,7 +1322,7 @@ export const universitiesCoursesData = [
       fee: "₹2,00,000",
       duration: "3 Years",
       emiPlan: true,
-        logo: "/unilogos/amritalogo.png",
+      logo: "/unilogos/amritalogo.png",
     },
   ],
   // ID 20 - Dr. D. Y. Patil Vidyapeeth University (DPU)
@@ -1493,7 +1493,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "2 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
     {
       id: 22,
@@ -1503,7 +1503,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "2 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
     {
       id: 22,
@@ -1513,7 +1513,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
     {
       id: 22,
@@ -1523,7 +1523,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
     {
       id: 22,
@@ -1533,7 +1533,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
     {
       id: 22,
@@ -1543,7 +1543,7 @@ export const universitiesCoursesData = [
       fee: "₹60,000",
       duration: "3 Years",
       emiPlan: false,
-       logo: "/unilogos/mizoramlogo.png",
+      logo: "/unilogos/mizoramlogo.png",
     },
   ],
   // ID 23 - Kurukshetra University

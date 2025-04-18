@@ -1,13 +1,16 @@
 // OnlineMBAOffers.jsx
-import React from 'react';
+import React from "react";
 
 const OnlineMBAOffers = () => {
   return (
     <div className="max-w-6xl mx-auto p-4">
-      <h2 className="text-2xl font-bold text-gray-800 mb-2">What offers the Online MBA Course?</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">
+        What offers the Online MBA Course?
+      </h2>
       <p className="text-gray-700 mb-6">
-        Learning the online MBA course merely offers various things, which can be obtainable by reading through the down prospects and
-        thoroughly reading it.
+        Learning the online MBA course merely offers various things, which can
+        be obtainable by reading through the down prospects and thoroughly
+        reading it.
       </p>
 
       <div className="border border-gray-200 mb-8 rounded-xl overflow-hidden">
@@ -18,7 +21,9 @@ const OnlineMBAOffers = () => {
         {/* Cost Effectiveness Row */}
         <div className="grid grid-cols-1 md:grid-cols-5 border-b border-gray-200">
           <div className="md:col-span-1 bg-blue-50 p-4 font-medium md:border-r border-gray-200">
-            <span className="font-semibold md:font-medium">Cost Effectiveness</span>
+            <span className="font-semibold md:font-medium">
+              Cost Effectiveness
+            </span>
           </div>
           <div className="md:col-span-4 p-4 bg-blue-50">
             <ul className="list-disc pl-5 space-y-1">
@@ -98,7 +103,11 @@ const OnlineMBAOffers = () => {
           </div>
           <div className="md:col-span-4 p-4 bg-blue-50">
             <ul className="list-disc pl-5 space-y-1">
-              <li>Apprehension of the acknowledgment of the business practices throughout the numerous disciplines over the marketing, operations, strategy, finance, and HR, or more.</li>
+              <li>
+                Apprehension of the acknowledgment of the business practices
+                throughout the numerous disciplines over the marketing,
+                operations, strategy, finance, and HR, or more.
+              </li>
             </ul>
           </div>
         </div>

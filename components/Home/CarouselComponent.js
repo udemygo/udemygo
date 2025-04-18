@@ -70,12 +70,10 @@
 
 // export default CarouselComponent;
 
-import React from 'react'
+import React from "react";
 
 const CarouselComponent = () => {
-  return (
-    <div>CarouselComponent</div>
-  )
-}
+  return <div>CarouselComponent</div>;
+};
 
-export default CarouselComponent
+export default CarouselComponent;
