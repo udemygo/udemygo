@@ -1,5 +1,6 @@
 import React from "react";
 import TopMBAUniversities from "./TopMBAUniversities";
+import { FaWhatsapp } from "react-icons/fa";
 
 const WhoPursuMBA = () => {
   return (
@@ -56,9 +57,24 @@ const WhoPursuMBA = () => {
         <p className="text-gray-700 mb-5 ml-1">
           Top Universities of Online MBA Courses
         </p>
-{/* table of universities */}
-<TopMBAUniversities />
+        {/* table of universities */}
+        <TopMBAUniversities />
+{/*  Whatsapp Button Here */}
+        <div className="w-full max-w-6xl mx-auto px-6 py-10 border border-slate-200 shadow-xl shadow-slate-200 rounded-3xl bg-white flex flex-col items-center gap-6">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 text-center ">
+            Still Confused? <br /> Chat with Our Career Experts on WhatsApp 😄
+          </h2>
 
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-br from-green-700 via-green-600 to-green-500 text-white text-lg font-semibold shadow-md transition-all duration-300 hover:scale-105 hover:from-green-600 hover:to-green-400"
+          >
+            <FaWhatsapp className="text-2xl" />
+            <span>Chat Now</span>
+          </a>
+        </div>
       </div>
     </>
   );

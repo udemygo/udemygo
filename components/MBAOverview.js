@@ -1,4 +1,5 @@
 // MBAOverview.jsx
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -29,13 +30,21 @@ const MBAOverview = () => {
           </thead>
           <tbody>
             <tr className="bg-white *:text-xs sm:*:text-sm *:tracking-wide *:text-center">
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">21</td>
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">2 Years</td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
+                21
+              </td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
+                2 Years
+              </td>
               <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
                 Graduation or Equivalent
               </td>
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">Online</td>
-              <td className="px-2 sm:px-4 py-3 sm:py-5 border-gray-300">Available</td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-r border-gray-300">
+                Online
+              </td>
+              <td className="px-2 sm:px-4 py-3 sm:py-5 border-gray-300">
+                Available
+              </td>
             </tr>
           </tbody>
         </table>
@@ -54,10 +63,8 @@ const MBAOverview = () => {
           management, and managerial economics. These skills pave the way for
           higher earnings, career growth, enhanced expertise, and a broader
           global outlook. Pursuing an online MBA could be a life-changing step
-
-          toward your best career yet—explore where it&#39;s headed, why it&#39;s worth
-
-          it, and more on this page.
+          toward your best career yet—explore where it&#39;s headed, why
+          it&#39;s worth it, and more on this page.
         </p>
       </div>
 
@@ -67,10 +74,8 @@ const MBAOverview = () => {
           Where Online MBA Courses be in 2050?
         </h3>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
-
-          Online MBA courses are growing fast, and by 2050, they&#39;re expected to
-
-          be more immersive and widely accessible. Imagine learning through
+          Online MBA courses are growing fast, and by 2050, they&#39;re expected
+          to be more immersive and widely accessible. Imagine learning through
           advanced tech like virtual reality (VR) and artificial intelligence
           (AI), tailored to your needs, with a focus on future-ready skills like
           sustainability, data analytics, and ethical leadership. Expect
@@ -81,16 +86,14 @@ const MBAOverview = () => {
         </p>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
           The Graduate Management Admission Council (GMAC) notes MBA graduates
-
           already earn significantly more than bachelor&#39;s holders, a gap
-
           projected to exceed 77% in 25 years. By 2050, an online MBA could be
           your smartest move for landing leadership roles and boosting your
           salary. Check current in-demand roles and pay scales on Pay-scale for
           a sneak peek.
         </p>
       </div>
-      
+
       {/* Image Section */}
       <div className="px-2 sm:px-4 md:px-8 py-2">
         <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96">
@@ -104,15 +107,27 @@ const MBAOverview = () => {
           />
         </div>
       </div>
-      
+      {/* contact button */}
+      <div className=" w-full p-4 max-w-6xl flex justify-center items-center rounded-2xl mt-2 bg-gradient-to-bl from-white to-slate-50 shadow-lg shadow-slate-200">
+        <a
+          href="tel:+91 8104550586"
+          className="group inline-flex items-center gap-2 px-6 py-4 rounded-full bg-gradient-to-tr from-violet-600 to-blue-500 hover:from-violet-700 hover:to-blue-600 transition-all duration-300 shadow-lg hover:scale-105"
+        >
+          <span className="  p-2 rounded-full">
+            <Phone size={24} color="#ffff" />
+          </span>
+          <span className="text-white text-base font-semibold capitalize ">
+            Contact for free consult
+          </span>
+        </a>
+      </div>
+      {/* ................... */}
       <div className="rounded-lg pt-4 my-6 md:my-8 pb-6 md:pb-8">
         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
           Why an Online MBA Course?
         </h3>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-5">
-
           With countless courses out there, why pick an online MBA? It&#39;s all
-
           about what it offers: flexibility, affordability, and career impact.
           To see how it benefits aspirants, check out the points below
         </p>
