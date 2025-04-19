@@ -2,9 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import { CheckCircle, ArrowLeft, Share2 } from "lucide-react";
+import Question from "@/components/Home/Question";
+import { thankYouQuestions } from "@/components/homeQuestions";
 
 export default function ThankYou() {
-  return (
+  return (<>
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col rounded-2xl items-center justify-center p-4 md:p-32">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6 md:p-8">
         <div className="flex flex-col items-center text-center">
@@ -55,5 +57,7 @@ export default function ThankYou() {
         <p className="mt-1">If you have any questions, please contact <span className="text-blue-600">support@example.com</span></p>
       </div> */}
     </div>
+    <Question questions={thankYouQuestions} />
+    </>
   );
 }

@@ -6,6 +6,8 @@ import { universityDetailData } from "@/components/Home/UniversityData.js";
 import WikiUniversity from "@/components/Wikki/WikkiUniversity.js";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import Question from "@/components/Home/Question";
+import { universityQuestions } from "@/components/homeQuestions";
 
 const University = () => {
   const params = useParams();
@@ -113,7 +115,7 @@ const University = () => {
     },
   };
 
-  return (
+  return (<>
     <div className="min-h-fit md:py-[10%] pt-[30%] p-5 bg-amber-400 rounded-4xl">
       <div className="max-w-6xl mx-auto p-8 bg-gradient-to-r from-gray-100 to-purple-100 rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row items-center gap-6">
@@ -288,6 +290,8 @@ const University = () => {
         <WikiUniversity id={id} />
       </motion.div>
     </div>
+    <Question questions={universityQuestions} />
+    </>
   );
 };
 
