@@ -1,5 +1,7 @@
 import EMILoan from "@/components/EMILoan";
 import CompareCourseComponent from "@/components/explore/CompareCourseComponent";
+import Question from "@/components/Home/Question";
+import { onlineMbaQuestions } from "@/components/homeQuestions";
 import JobOpportunities from "@/components/JobOpportunities";
 import KeyHighlightsMBA from "@/components/KeyHighlightsMBA";
 import MBAAdmissionProcedure from "@/components/MBAAdmissionProcedure";
@@ -44,6 +46,7 @@ const page = () => {
       <JobOpportunities />
       <TopRecruiters />
       <WhatsappComponent />
+      <Question questions={onlineMbaQuestions} />
     </div>
   );
 };

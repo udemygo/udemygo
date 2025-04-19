@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
           <ScrollToTop />
           {children}
           {/* <Outlet /> */}
-          <Question />
+          {/* <Question /> */}
           <Footer />
         </div>
       </body>

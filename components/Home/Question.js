@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
 import Image from "next/image";
 
-const Question = () => {
+const Question = ({ questions }) => {
   const [clicked, setClicked] = useState(null);
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
@@ -13,33 +13,6 @@ const Question = () => {
   const handleClick = (index) => {
     setClicked((prev) => (prev === index ? null : index));
   };
-
-  const questions = [
-    {
-      q: "What are the benefits of online degree programs?",
-      a: "Online degree programs offer flexibility, affordability, and accessibility, allowing you to study from anywhere while balancing work and personal commitments.",
-    },
-    {
-      q: "Are online degrees recognized by employers?",
-      a: "Yes! Many online programs are accredited and widely recognized by employers, especially when offered by reputable universities.",
-    },
-    {
-      q: "How do I apply for an online degree?",
-      a: "It’s easier than you think — apply through Udemygo. Explore top-rated MBA and degree programs from globally recognized universities. And you’re not alone — our expert advisors will guide you through every step, from choosing the right course to enrollment. Flexible. Affordable. Future-ready. Start your journey today at Udemygo — where success begins.",
-    },
-    {
-      q: "Can I pursue an online degree while working full-time?",
-      a: "Absolutely! Online courses are designed for working professionals, offering self-paced learning and flexible schedules.",
-    },
-    {
-      q: "What technology do I need for online learning?",
-      a: "You’ll need a computer/laptop, a stable internet connection, and basic software like a web browser and video conferencing tools.",
-    },
-    {
-      q: "How do I interact with professors and classmates?",
-      a: "Most programs provide discussion forums, live lectures, email support, and virtual meetings to engage with instructors and peers.",
-    },
-  ];
 
   // Variants for container
   const containerVariants = {
@@ -183,7 +156,7 @@ const Question = () => {
               >
                 We have a team of over 12 experienced mentors with over 26+
                 years of collective experience available to guide you at a
-                moment&apos;s notice.
+                moment's notice.
               </motion.p>
               <motion.a
                 target="_blank"
@@ -233,6 +206,8 @@ const Question = () => {
               <button
                 className="flex items-center justify-between w-full text-left text-lg font-semibold text-white py-2 px-3 rounded-md bg-[#273353] hover:bg-[#1b2745] transition"
                 onClick={() => handleClick(index)}
+                aria-expanded={clicked === index}
+                aria-controls={`answer-${index}`}
               >
                 {item.q}
                 <motion.span
@@ -244,15 +219,20 @@ const Question = () => {
               </button>
               <AnimatePresence>
                 {clicked === index && (
-                  <motion.p
-                    className="text-md text-gray-300 font-medium p-3 bg-[#1b2745] rounded-md mt-2"
+                  <motion.div
+                    id={`answer-${index}`}
+                    className="text-[15px] text-gray-300 font-medium p-3 bg-[#1b2745] rounded-md mt-2"
                     variants={answerVariants}
                     initial="hidden"
                     animate="visible"
                     exit="exit"
                   >
-                    {item.a}
-                  </motion.p>
+                    {item.a.split(".").map((line, i) => (
+                      <p key={i} className="mb-2">
+                        {line}
+                      </p>
+                    ))}
+                  </motion.div>
                 )}
               </AnimatePresence>
             </motion.div>

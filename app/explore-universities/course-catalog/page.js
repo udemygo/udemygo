@@ -1,12 +1,15 @@
 export const dynamic = "force-dynamic";
 
-import React, { Suspense } from "react";
+import React from "react";
 import CourseCatalog from "@/components/StudyMaterial/CourseCatalog";
+import Question from "@/components/Home/Question";
+import { courseCatalogQuestions } from "@/components/homeQuestions";
 
 export default function Page() {
   return (
-    // <Suspense fallback={<div>Loading...</div>}>
+    <>
       <CourseCatalog />
-    // </Suspense>
+      <Question questions={courseCatalogQuestions} />
+    </>
   );
 }

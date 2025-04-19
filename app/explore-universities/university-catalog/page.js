@@ -5,6 +5,8 @@ import { universityCatalogCardData } from "@/components/Home/UniversityData";
 import UniversityVSCourse from "@/components/StudyMaterial/UniversityVSCourse";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import Question from "@/components/Home/Question";
+import { exploreUniversitiesQuestions } from "@/components/homeQuestions";
 
 const UniversityCatalog = () => {
   const headingRef = useRef(null);
@@ -225,7 +227,7 @@ const UniversityCatalog = () => {
     );
   };
 
-  return (
+  return (<>
     <div className="bg-amber-50 rounded-4xl px-2 pb-2">
       <UniversityVSCourse />
       <div className="w-full py-6 pt-[5%] my-2 bg-[#bd1f2e] rounded-4xl">
@@ -245,6 +247,8 @@ const UniversityCatalog = () => {
         </div>
       </div>
     </div>
+    <Question questions={exploreUniversitiesQuestions} />
+    </>
   );
 };
 

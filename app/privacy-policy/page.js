@@ -1,4 +1,6 @@
 "use client";
+import Question from "@/components/Home/Question";
+import { privacyPolicyQuestions } from "@/components/homeQuestions";
 import { useState } from "react";
 
 export default function PrivacyPolicy() {
@@ -180,7 +182,7 @@ export default function PrivacyPolicy() {
     },
   ];
 
-  return (
+  return (<>
     <div className="bg-white rounded-2xl pt-32">
       {/* Social icons sidebar */}
       <div className="hidden lg:flex flex-col fixed right-0 top-1/3 bg-transparent">
@@ -334,5 +336,7 @@ export default function PrivacyPolicy() {
         </div>
       </div>
     </div>
+    <Question questions={privacyPolicyQuestions} />
+    </>
   );
 }

@@ -1,6 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { placementQuestions } from "@/components/homeQuestions";
+import Question from "@/components/Home/Question";
 
 const placementData = [
   {
@@ -185,7 +187,7 @@ const Placement = () => {
     },
   };
 
-  return (
+  return ( <>
     <motion.div
       ref={sectionRef}
       className="h-auto bg-purple-100 sm:bg-gradient-to-r sm:from-purple-100 sm:via-pink-100 sm:to-blue-100 py-12 rounded-2xl sm:rounded-3xl "
@@ -231,6 +233,8 @@ const Placement = () => {
         </motion.div>
       </div>
     </motion.div>
+    <Question questions={placementQuestions} />
+    </>
   );
 };
 
