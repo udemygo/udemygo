@@ -101,7 +101,7 @@ export default function UniversityVSCourse({ children }) {
 
         {/* Heading */}
         <motion.div
-          className="my-5 text-4xl font-black text-gray-800 flex flex-col justify-center items-center"
+          className="my-5 text-[26px] md:text-4xl font-black text-gray-800 flex flex-col justify-center items-center"
           variants={containerVariants}
         >
           <motion.p variants={headingVariants}>
