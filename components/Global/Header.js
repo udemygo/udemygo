@@ -12,7 +12,7 @@ import Image from "next/image";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isExploreOpen, setIsExploreOpen] = useState(false)
+  const [isExploreOpen, setIsExploreOpen] = useState(false);
   const dropdownRef = useRef(null);
   const yOffset = useSpring(0, { stiffness: 120, damping: 20 });
   const pathname = usePathname();
@@ -38,6 +38,7 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
+        setIsExploreOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -145,18 +146,8 @@ const Header = () => {
     closed: { rotate: 0 },
   };
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "University", path: "/explore-universities/university-catalog" },
-    { name: "Courses", path: "/explore-universities/course-catalog" },
-    { name: "Contact", path: "/contact" },
-    { name: "Placement", path: "/placement" },
-    { name: "Explore", path: "/explore-programs/online-mba" },
-  ];
-
   return (
-    <div className="w-full md:max-w-[1322px] flex justify-center  bg-amber-100">
+    <div className="w-full md:max-w-[1322px] flex justify-center bg-amber-100">
       <motion.div
         className={`h-20 p-4 px-6 mt-6 w-[90%] md:w-[70%] md:max-w-[1150px] bg-amber-0 fixed z-50 flex items-center justify-between rounded-full shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
           isScrolled ? "-translate-y-7" : "translate-y-0"
@@ -184,26 +175,36 @@ const Header = () => {
 
         {/* Desktop navigation */}
         <ul className="hidden lg:flex items-center space-x-1 bg-gray-200 px-2 lg:py-1 2xl:py-3 rounded-full text-sm tracking-wider font-semibold uppercase">
-          {navItems.slice(0, 2).map((item, index) => (
-            <motion.li
-              key={index}
-              custom={index}
-              variants={linkVariants}
-              initial="hidden"
-              animate="visible"
+          <motion.li
+            custom={0}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
+              href={"/"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
             >
-              <Link
-                href={item.path}
-                className={`px-4 py-3 rounded-full transition-all ${
-                  pathname === item.path
-                    ? "bg-black text-white"
-                    : "hover:bg-black hover:text-white cursor-pointer"
-                }`}
-              >
-                {item.name}
-              </Link>
-            </motion.li>
-          ))}
+              Home
+            </Link>
+          </motion.li>
+          <motion.li
+            custom={1}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
+              href={"/about"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/about" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
+            >
+              About
+            </Link>
+          </motion.li>
           {/* Explore Universities dropdown */}
           <motion.li
             custom={2}
@@ -228,76 +229,109 @@ const Header = () => {
                   animate="visible"
                   exit="exit"
                 >
-                  {[
-                    {
-                      href: "/explore-universities/university-catalog",
-                      label: "University Catalog",
-                    },
-                    {
-                      href: "/explore-universities/course-catalog",
-                      label: "Course Catalog",
-                    },
-                  ].map((dropdownItem, index) => (
-                    <motion.div
-                      key={index}
-                      custom={index}
-                      variants={dropdownItemVariants}
+                  <motion.div
+                    custom={0}
+                    variants={dropdownItemVariants}
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <Link
+                      href="/explore-universities/university-catalog"
+                      className="block px-4 py-2 hover:bg-gray-200"
+                      onClick={() => setIsOpen(false)}
                     >
-                      <Link
-                        href={dropdownItem.href}
-                        className="block px-4 py-2 hover:bg-gray-200"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {dropdownItem.label}
-                      </Link>
-                    </motion.div>
-                  ))}
+                      University Catalog
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    custom={1}
+                    variants={dropdownItemVariants}
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <Link
+                      href="/explore-universities/course-catalog"
+                      className="block px-4 py-2 hover:bg-gray-200"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Course Catalog
+                    </Link>
+                  </motion.div>
                 </motion.div>
               )}
             </AnimatePresence>
           </motion.li>
-          {navItems.slice(4).map((item, index) => (
-            <motion.li
-              key={index}
-              custom={index + 3}
-              variants={linkVariants}
-              initial="hidden"
-              animate="visible"
+          <motion.li
+            custom={3}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
+              href={"/contact"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/contact" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
             >
-              <Link
-                href={item.path}
-                className={`px-4 py-3 rounded-full transition-all ${
-                  pathname === item.path
-                    ? "bg-black text-white"
-                    : "hover:bg-black hover:text-white cursor-pointer"
-                }`}
-              >
-                {item.name}
-              </Link>
-            </motion.li>
-          ))}
+              Contact
+            </Link>
+          </motion.li>
+          <motion.li
+            custom={4}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
+              href={"/placement"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
+            >
+              Placement
+            </Link>
+          </motion.li>
           {/* Explore dropdown */}
-          <li className="relative">
+          <motion.li
+            custom={5}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+            className="relative"
+          >
             <button
               onClick={() => setIsExploreOpen(!isExploreOpen)}
               className="px-4 py-1 rounded-full transition-all hover:bg-black hover:text-white cursor-pointer uppercase"
             >
-              explore program
+              Explore Programs
             </button>
-            {isExploreOpen && (
-              <div className="absolute -left-4 overflow-hidden mt-2 w-full bg-white text-gray-800 shadow-lg rounded-md z-50 min-w-40 shadow-[#57575778]">
-                <div>
-                  <Link
-                    href="/explore-programs/online-mba"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => setIsExploreOpen(false)}
+            <AnimatePresence>
+              {isExploreOpen && (
+                <motion.div
+                  className="absolute -left-4 mt-2 w-full bg-white text-gray-800 shadow-lg rounded-md z-50 min-w-40 shadow-[#57575778]"
+                  variants={dropdownMenuVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                >
+                  <motion.div
+                    custom={0}
+                    variants={dropdownItemVariants}
+                    initial="hidden"
+                    animate="visible"
                   >
-                    Online MBA
-                  </Link>
-                </div>
-              </div>
-            )}
-          </li>
+                    <Link
+                      href="/explore-programs/online-mba"
+                      className="block px-4 py-2 hover:bg-gray-200"
+                      onClick={() => setIsExploreOpen(false)}
+                    >
+                      Online MBA
+                    </Link>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.li>
         </ul>
 
         {/* WhatsApp button and mobile menu toggle */}
@@ -307,6 +341,10 @@ const Header = () => {
             target="_blank"
             href="https://api.whatsapp.com/send?phone=918104550586&text=hello%20iam%20intrested"
             className="bg-black text-white text-sm rounded-full px-6 text-center py-2 hover:bg-gray-800 transition-all cursor-pointer"
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
           >
             WhatsApp Us
           </motion.a>
@@ -343,27 +381,124 @@ const Header = () => {
               <X />
             </motion.button>
             <ul className="flex flex-col my-5 space-y-6 text-lg text-center">
-              {navItems.map((item, index) => (
-                <motion.li
-                  key={index}
-                  custom={index}
-                  variants={mobileLinkVariants}
-                  initial="hidden"
-                  animate="visible"
+              <motion.li
+                custom={0}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/"
+                  className={`mobile-nav-link ${
+                    pathname === "/" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
                 >
-                  <Link
-                    href={item.path}
-                    className={`mobile-nav-link ${
-                      pathname === item.path
-                        ? "bg-black text-white"
-                        : "hover:bg-black hover:text-white"
-                    }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                </motion.li>
-              ))}
+                  Home
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={1}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/about"
+                  className={`mobile-nav-link ${
+                    pathname === "/about" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  About
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={2}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/explore-universities/university-catalog"
+                  className={`mobile-nav-link ${
+                    pathname === "/explore-universities/university-catalog"
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  University
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={3}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/explore-universities/course-catalog"
+                  className={`mobile-nav-link ${
+                    pathname === "/explore-universities/course-catalog"
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Courses
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={4}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/contact"
+                  className={`mobile-nav-link ${
+                    pathname === "/contact" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={5}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/placement"
+                  className={`mobile-nav-link ${
+                    pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Placement
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={6}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/explore-programs/online-mba"
+                  className={`mobile-nav-link ${
+                    pathname === "/explore-programs/online-mba"
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Explore
+                </Link>
+              </motion.li>
             </ul>
           </motion.div>
         )}
