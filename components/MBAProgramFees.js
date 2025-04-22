@@ -206,10 +206,10 @@ export default function MBAProgramFees() {
 
               {/* University Fees Comparison Table */}
               <div className="border border-gray-200 rounded-lg overflow-hidden">
-                <h3 className="text-center font-bold py-3 bg-blue-900 text-white">
+                <h4 className="text-center font-bold py-3 bg-blue-900 text-white">
                   Fees Comparison between Top Universities that offer online MBA
                   Courses:
-                </h3>
+                </h4>
 
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">

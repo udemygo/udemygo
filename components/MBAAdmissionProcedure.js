@@ -25,9 +25,9 @@ export default function MBAAdmissionProcedure() {
   return (
     <div className="bg-blue-900 text-white py-12 px-4 sm:px-8 ">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">
+        <h3 className="text-3xl font-bold mb-4">
           Online MBA Admission Procedure
-        </h2>
+        </h3>
 
         <p className="mb-8">
           Learn the online MBA course admission process for enrolling in the

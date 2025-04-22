@@ -11,7 +11,7 @@ const PopUpContact = () => {
     <>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-12 right-12 z-40 p-3 rounded-full shadow-xl bg-gradient-to-l from-white to-white/10 cursor-pointer flex justify-center items-center`}
+        className={`fixed bottom-6 right-4 z-40 p-3 rounded-full shadow-xl bg-gradient-to-l from-white to-white/10 cursor-pointer flex justify-center items-center`}
       >
         <BiSupport size={36} color="#023047" />
       </div>

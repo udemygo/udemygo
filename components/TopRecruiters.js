@@ -33,9 +33,9 @@ export default function TopRecruiters() {
 
   return (
     <div className="max-w-6xl mx-auto p-4 bg-gray-50 rounded-2xl">
-      <h1 className="text-xl md:text-2xl font-bold mb-3">
+      <h4 className="text-xl md:text-2xl font-bold mb-3">
         Top Recruiters for Online MBA
-      </h1>
+      </h4>
 
       <p className="text-sm md:text-base mb-4">
         Multiple top recruiters of the top MNCs in India and abroad can hire

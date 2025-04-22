@@ -20,7 +20,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="bg-gradient-to-tl from-white/50 to-cyan-50/90 rounded-3xl min-h-screen  pb-4 pt-30">
-      <div className="w-full p-1">
+      <div className="w-full p-6">
         <marquee
           className="w-full max-w-6xl bg-gradient-to-bl from-white to-white/50 mx-auto rounded-2xl shadow-xl flex justify-center items-center px-2 py-4"
           behavior="infinite"

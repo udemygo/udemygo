@@ -96,13 +96,14 @@ const MBAOverview = () => {
 
       {/* Image Section */}
       <div className="px-2 sm:px-4 md:px-8 py-2">
-        <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96">
+        <div className="relative w-full h-fit sm:h-64 md:h-80 lg:h-96 ">
           <Image
             src={"/assets/mbaBannerOverview.webp"}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1080px"
+            
+            width={1080}
+            height={400}
             priority
-            className="object-cover rounded-lg"
+            className="object-contain rounded-lg w-full h-full"
             alt="MBA Overview"
           />
         </div>
