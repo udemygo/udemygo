@@ -27,9 +27,9 @@ export default function JobOpportunities() {
         </h3>
 
         <main className="max-w-4xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
             Job Opportunity after Online MBA
-          </h1>
+          </h3>
 
           <p className="text-sm md:text-base mb-4 text-slate-700">
             Aspirants can take several job opportunities from the online MBA
