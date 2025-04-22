@@ -81,9 +81,9 @@ export default function TopRecruiters() {
       </div>
 
       {/* Our students work at section */}
-      <h2 className="text-lg md:text-xl font-medium mb-4">
+      <div className="text-lg md:text-xl font-medium mb-4">
         Our students work at
-      </h2>
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
         {companies.map((company, index) => (
           <div key={index} className="flex flex-col items-center">
