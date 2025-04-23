@@ -17,9 +17,9 @@ export default function MBADuration() {
           </p>
 
           <div className="mb-6">
-            <h2 className="text-xl font-semibold mb-2">
+            <span className="text-xl font-semibold mb-2">
               Requirements which necessitate for online MBA Course:
-            </h2>
+            </span>
             <ul className="list-disc list-inside space-y-2">
               <li className="flex items-start">
                 <span className="text-green-500 mr-2">✔</span>

@@ -122,9 +122,9 @@ export default function MBASyllabus() {
         <div className="grid md:grid-cols-2 gap-px bg-gray-200">
           {syllabusData.semesters.map((semester, idx) => (
             <div key={idx} className="bg-white p-4">
-              <h3 className="font-semibold text-lg mb-3 text-gray-800">
+              <span className="font-semibold text-lg mb-3 text-gray-800">
                 {semester.name}
-              </h3>
+              </span>
 
               {semester.coreSubjects && (
                 <>
@@ -174,9 +174,9 @@ export default function MBASyllabus() {
 
         {/* Skills section */}
         <div className="bg-gray-100 text-center p-3 border-t border-gray-300">
-          <h3 className="font-medium text-gray-800">
+          <div className="font-medium text-gray-800">
             Skills obtained in online MBA Course
-          </h3>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-px bg-gray-200">

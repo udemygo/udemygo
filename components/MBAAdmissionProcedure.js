@@ -78,9 +78,9 @@ export default function MBAAdmissionProcedure() {
               className="bg-blue-800 p-6 rounded-lg flex flex-col items-center"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-3 text-center">
+              <div className="text-xl font-bold mb-3 text-center">
                 {feature.title}
-              </h3>
+              </div>
               <p className="text-sm text-center">{feature.description}</p>
             </div>
           ))}

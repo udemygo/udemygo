@@ -127,9 +127,9 @@ export default function MBAProgramFees() {
 
   return (
     <div className="max-w-6xl mx-auto p-4 font-sans">
-      <h3 className="text-2xl font-bold mb-6 text-center">
+      <div className="text-2xl font-bold mb-6 text-center">
         Program Fees for Online MBA
-      </h3>
+      </div>
 
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left Benefits Section */}

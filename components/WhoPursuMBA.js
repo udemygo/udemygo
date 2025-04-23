@@ -61,9 +61,9 @@ const WhoPursuMBA = () => {
         <TopMBAUniversities />
 {/*  Whatsapp Button Here */}
         <div className="w-full max-w-6xl mx-auto px-6 py-10 border border-slate-200 shadow-xl shadow-slate-200 rounded-3xl bg-white flex flex-col items-center gap-6">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 text-center ">
+          <span className="text-xl md:text-2xl font-bold text-gray-800 text-center ">
             Still Confused? <br /> Chat with Our Career Experts on WhatsApp 😄
-          </h2>
+          </span>
 
           <a
             target="_blank"

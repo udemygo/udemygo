@@ -17,15 +17,6 @@ export default function JobOpportunities() {
   return (
     <div className="w-full  flex justify-center items-center p-6">
       <div className=" p-4 md:p-8 bg-gray-50 w-full shadow-lg max-w-6xl rounded-2xl">
-        <h3>
-          <title>Job Opportunities after Online MBA</title>
-          <meta
-            name="description"
-            content="Job opportunities and salary details after completing an online MBA"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </h3>
-
         <main className="max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
             Job Opportunity after Online MBA
