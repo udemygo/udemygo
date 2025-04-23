@@ -61,6 +61,16 @@ export default function RootLayout({ children }) {
       `,
           }}
         />
+
+{/* Event snippet for Page view conversion page */}
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17000517664/gBvaCKjkzrkaEKCgvao_',
+      'value': 1.0,
+      'currency': 'INR'
+  });
+</script>
+
       </head>
 
       <body
