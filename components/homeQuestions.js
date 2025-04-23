@@ -96,6 +96,14 @@ export const onlineMbaQuestions = [
     q: "  Who Should Do an Online MBA?",
     a: "➡️Working professionals with 2–10 years of experience. ➡️ Entrepreneurs or startup founders wanting to scale their business.➡️ Freelancers aiming to upskill in marketing, finance, or operations.➡️ Graduates looking for a career boost without quitting their job.➡️ Mid-career switchers planning to move into leadership or consulting roles",
   },
+  {
+    q: "How much does an online MBA cost?",
+    a: "Our MBA programs start from just ₹80,000 and go up depending on the university and specialization. We also offer EMI options, no-cost financing, and scholarship support.",
+  },
+  {
+    q: "Do I need technical skills to pursue an online MBA?",
+    a: "Not at all. If you can use Zoom, email, and basic online tools, you’re good to go. Our platform is user-friendly and designed for learners of all backgrounds.",
+  },
 ];
 
 export const exploreUniversitiesQuestions = [
