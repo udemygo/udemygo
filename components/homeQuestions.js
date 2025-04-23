@@ -12,7 +12,7 @@ export const homeQuestions = [
 export const aboutQuestions = [
   {
     q: "Who are we?",
-    a: "We are a team dedicated to providing quality online education worldwide.",
+    a: "We are a team dedicated to providing quality education worldwide.",
   },
   {
     q: "What is our mission?",
@@ -23,7 +23,7 @@ export const aboutQuestions = [
 export const contactQuestions = [
   {
     q: "How can I reach you?",
-    a: "You can contact us via WhatsApp at +918104550586 or email at support@udemygo.com.",
+    a: "You can contact us via WhatsApp at +918104550586 or email at info@udemygo.com.",
   },
   {
     q: "What are your office hours?",
@@ -101,7 +101,7 @@ export const onlineMbaQuestions = [
 export const exploreUniversitiesQuestions = [
   {
     q: "How many universities are listed?",
-    a: "We partner with over 50 globally recognized universities.",
+    a: "We partner with over 21+ globally recognized universities.",
   },
   {
     q: "How do I choose a university?",
@@ -112,7 +112,7 @@ export const exploreUniversitiesQuestions = [
 export const courseCatalogQuestions = [
   {
     q: "What courses are available?",
-    a: "We offer courses in business, technology, and more—check our catalog!",
+    a: "We offer courses in:. ➡️ Finance. ➡️ Marketing. ➡️ Human Resource Management. ➡️ Operations Management. ➡️ Information Technology. ➡️ International Business. ➡️ Supply Chain Management. ➡️ Business Analytics. ➡️ Entrepreneurship. ➡️ Strategic Management. ➡️ Retail Management. ➡️ Healthcare Management. ➡️ Agribusiness Management and more—check our catalog!",
   },
   {
     q: "How do I enroll?",

@@ -227,7 +227,7 @@ const Question = ({ questions }) => {
                     animate="visible"
                     exit="exit"
                   >
-                    {item.a.split(".").map((line, i) => (
+                    {item.a.split(". ").map((line, i) => (
                       <p key={i} className="mb-2">
                         {line}
                       </p>
