@@ -170,16 +170,16 @@ const UniversityCardList = () => {
       animate={isInView ? "visible" : "hidden"}
     >
       <div className="w-full flex justify-between items-center md:px-10 px-5 my-6">
-        <motion.div className="flex flex-col" variants={headerVariants}>
-          <p className="text-4xl font-bold">Choose Your University</p>
-          <p className="text-gray-700">
+        <motion.div className="flex flex-col  w-9/12" variants={headerVariants}>
+          <p className="text-xl md:text-4xl font-bold">Choose Your University</p>
+          <p className="text-gray-700 text-[11px] md:text-lg">
             Your dream university could be just a choice away.
           </p>
         </motion.div>
         <motion.div variants={buttonVariants}>
           <Link
             href={"/explore-universities/university-catalog"}
-            className="text-xl w-[50%] md:w-auto font-bold md:px-6 px-4 py-2 md:py-2 border rounded-2xl"
+            className="text-[14px] w-[50%] md:w-auto font-semibold md:px-6 px-3 py-2 md:py-2 border rounded-lg md:rounded-2xl"
           >
             View All
           </Link>

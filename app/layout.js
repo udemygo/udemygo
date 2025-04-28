@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
       >
         <div className=" relative w-screen max-w-[1450px] overflow-x-hidden mx-auto lg:p-10 pt-1   ">
           <Header />
-          <Social />
+          {/* <Social /> */}
           <PopUpContact />
           <ScrollToTop />
           {children}
