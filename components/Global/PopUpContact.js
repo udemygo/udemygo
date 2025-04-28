@@ -5,7 +5,7 @@ import { BiSupport } from "react-icons/bi";
 
 const PopUpContact = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  // console.log(isOpen);
 
   return (
     <>
