@@ -283,6 +283,21 @@ const Header = () => {
             animate="visible"
           >
             <Link
+              href={"/blogs"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
+            >
+              Blogs
+            </Link>
+          </motion.li>
+          <motion.li
+            custom={4}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
               href={"/placement"}
               className={`px-4 py-3 rounded-full transition-all ${
                 pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
