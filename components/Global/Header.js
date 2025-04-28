@@ -487,6 +487,22 @@ const Header = () => {
                 animate="visible"
               >
                 <Link
+                  href="/blogs"
+                  className={`mobile-nav-link ${
+                    pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Blogs
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={5}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
                   href="/placement"
                   className={`mobile-nav-link ${
                     pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white"
