@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/Global/ScrollToTop";
 import Question from "@/components/Home/Question";
 import Footer from "@/components/Global/Footer";
 import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -71,13 +72,22 @@ export default function RootLayout({ children }) {
         <div className=" relative w-screen max-w-[1450px] overflow-x-hidden mx-auto lg:p-10 pt-1   ">
           <Header />
           <Social />
-          <PopUpContact />
+          {/* <PopUpContact /> */}
           <ScrollToTop />
           {children}
           {/* <Outlet /> */}
           {/* <Question /> */}
           <Footer />
         </div>
+        {/* Tawk.to Script */}
+
+
+        <Script
+          src="https://embed.tawk.to/680cab74e41bbb1918cd857f/1iponrgj4"
+          strategy="afterInteractive"
+          async
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );

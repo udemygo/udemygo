@@ -283,6 +283,21 @@ const Header = () => {
             animate="visible"
           >
             <Link
+              href={"/blogs"}
+              className={`px-4 py-3 rounded-full transition-all ${
+                pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
+              }`}
+            >
+              Blogs
+            </Link>
+          </motion.li>
+          <motion.li
+            custom={4}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <Link
               href={"/placement"}
               className={`px-4 py-3 rounded-full transition-all ${
                 pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white cursor-pointer"
@@ -463,6 +478,22 @@ const Header = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
+                </Link>
+              </motion.li>
+              <motion.li
+                custom={5}
+                variants={mobileLinkVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <Link
+                  href="/blogs"
+                  className={`mobile-nav-link ${
+                    pathname === "/placement" ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Blogs
                 </Link>
               </motion.li>
               <motion.li

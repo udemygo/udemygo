@@ -133,8 +133,10 @@ const University = () => {
             >
               <Image
                 src={university.logo}
+                width={500}
+                height={500}
                 alt={`${university.name} Logo`}
-                className="h-12"
+                className="h-12 w-fit"
               />
               {university.emiPlan && (
                 <motion.span
@@ -161,7 +163,7 @@ const University = () => {
               {university.location}
             </motion.p>
             <motion.p
-              className="mt-4 text-gray-700"
+              className="mt-4 text-gray-700 text-justify"
               variants={infoVariants}
             >
               {university.description}
@@ -204,7 +206,7 @@ const University = () => {
             {/* Buttons */}
             <motion.div
               ref={buttonsRef}
-              className="flex gap-3 mt-12"
+              className="flex gap-3 mt-12 *:text-sm *:md:text-[16px] "
               variants={containerVariants}
               initial="hidden"
               animate={isButtonsInView ? "visible" : "hidden"}
@@ -229,7 +231,7 @@ const University = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <button className="px-6 py-3 border-2 border-[#181e2e] rounded-xl font-bold cursor-pointer z-10 text-center">
+                <button className="px-6 py-[14px] border-2 border-[#181e2e] rounded-xl font-bold cursor-pointer z-10 text-center">
                   Learn More
                 </button>
               </motion.a>

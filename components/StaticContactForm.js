@@ -39,12 +39,12 @@ export default function StaticContactForm() {
       
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden">
         {/* Close button */}
-        <button 
+        {/* <button 
           onClick={() => setIsOpen(false)}
           className="absolute right-3 top-3 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors z-10"
         >
           <FaTimes size={20} />
-        </button>
+        </button> */}
         
         {/* Modal Content */}
         <div className="p-6 pt-8 pb-6">
