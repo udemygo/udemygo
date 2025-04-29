@@ -164,7 +164,7 @@ const HeroSection = () => {
 
       {/* Image Section */}
       <motion.div
-        className="z-20 md:h-[600px] md:w-[50%] w-[100%] h-[400px] flex md:p-5 p-2 gap-3"
+        className="z-20 md:h-[600px] md:w-[50%] w-[100%] h-[340px] flex md:p-5 p-2 gap-3 "
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -178,7 +178,7 @@ const HeroSection = () => {
             <StaticContactForm />
           </div>
         </motion.div>
-        <div className="w-[50%] min-h-full flex flex-col gap-3">
+        <div className="w-[50%] min-h-full grid grid-cols-1 pb-0.5 md:flex md:flex-col gap-3">
           <motion.div
             className="w-[100%] overflow-hidden rounded-2xl"
             variants={imageVariants}
