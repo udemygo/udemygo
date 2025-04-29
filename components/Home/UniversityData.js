@@ -752,7 +752,7 @@ export const universityDetailData = {
     description:
       "Shoolini University is a research-driven private university recognized for its focus on innovation, quality placements, and academic excellence.",
     image: "/assets/shoolini.webp",
-    logo: " shoolini.png",
+    logo: "/unilogos/shoolini.png",
     year: 2023,
     naac: "A+",
     rank: "73rd",
@@ -773,7 +773,7 @@ export const universityDetailData = {
     description:
       "Sharda University is a leading educational institution offering a wide range of undergraduate and postgraduate programs with a focus on holistic development.",
     image: "/assets/sharda.avif",
-    logo: " /unilogos/shardalogo.png",
+    logo: "/unilogos/shardalogo.png",
     year: 2023,
     naac: "A",
     rank: "151-200th",
@@ -815,8 +815,8 @@ export const universityDetailData = {
     location: "Dehradun, Uttarakhand",
     description:
       "UPES is a multidisciplinary university known for its industry-aligned programs and emphasis on holistic development.",
-    image: " /assets/UPES.webp",
-    logo: " /unilogos/UPESLOGO.jpg",
+    image: "/assets/UPES.webp",
+    logo: "/unilogos/UPESLOGO.jpg",
     year: 2023,
     naac: "A",
     rank: "46th",
@@ -879,7 +879,7 @@ export const universityDetailData = {
     description:
       "Aligarh Muslim University (AMU) is a public central university in Aligarh, Uttar Pradesh, India. Established in 1920, it originated from the Mohammedan Anglo-Oriental College set up by Sir Syed Ahmed Khan in 1875. AMU offers more than 300 courses in both traditional and modern branches of education.",
     image: "/assets/AMU.jpg",
-    logo: " /unilogos/amuLogo.png",
+    logo: "/unilogos/amuLogo.png",
     year: 2023,
     naac: "A+",
     rank: "10th",
@@ -899,8 +899,8 @@ export const universityDetailData = {
   //   location: "Visakhapatnam, Andhra Pradesh",
   //   description:
   //     "Andhra University is a public university located in Visakhapatnam, Andhra Pradesh, India. Established in 1926, it is one of the oldest universities in India and offers a wide range of undergraduate and postgraduate programs.",
-  //   image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQACYdQibAiUDHvxht7JsHRtXaqJFjokIgB7w&s",
-  //   logo: " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
+  //   image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQACYdQibAiUDHvxht7JsHRtXaqJFjokIgB7w&s",
+  //   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
   //   year: 2023,
   //   naac: "A++",
   //   rank: "36th",
@@ -985,7 +985,7 @@ export const universityDetailData = {
     description:
       "Mizoram University is a central university established in 2001 in Aizawl, Mizoram, India. It offers various undergraduate and postgraduate programs across multiple disciplines.",
     image: "/assets/MizoramUni.webp",
-    logo: " /unilogos/mizoramlogo.png",
+    logo: "/unilogos/mizoramlogo.png",
     year: 2023,
     naac: "A",
     rank: "76th",
@@ -1239,8 +1239,8 @@ export const wikkiUniversities = [
     location: "Solan, Himachal Pradesh",
     description:
       "Shoolini University is a leading research-centric private university that stands out for its commitment to academic excellence, innovation, and global competitiveness. Offering a diverse range of undergraduate and postgraduate programs, the university places strong emphasis on research, entrepreneurship, and industry-oriented learning.Shoolini University is a high-ranking private institution recognized for its strong research output and innovation-driven ecosystem. It provides comprehensive programs across science, engineering, management, and humanities, preparing students for future-ready careers.🎓 Student-Focused Version:At Shoolini University, learning goes beyond classrooms. With world-class faculty, cutting-edge labs, and a strong research focus, students are empowered to innovate, explore, and succeed across various academic disciplines.",
-    image: " /assets/shoolini.webp",
-    logo: "shoolini.png",
+    image: "/assets/shoolini.webp",
+    logo: "/unilogos/shoolini.png",
     year: 2009,
     naac: "B++",
     rank: "Top 150 in India",
@@ -1261,7 +1261,7 @@ export const wikkiUniversities = [
     description:
       "🏛️ Professional Description:Sharda University is a premier multi-disciplinary institution offering a comprehensive range of undergraduate and postgraduate programs. Renowned for its academic excellence, modern infrastructure, and international collaborations, the university fosters a global learning environment that emphasizes holistic development and innovation.Sharda University is a top-tier university known for its dynamic campus life, diverse academic offerings, and a strong focus on global exposure and interdisciplinary learning. With students from over 95 countries, it creates a culturally rich and inclusive educational experience.Sharda University blends academic excellence with global perspectives, offering programs that prepare students for success in a rapidly evolving world.",
     image: "/assets/sharda.avif",
-    logo: " /unilogos/shardalogo.png",
+    logo: "/unilogos/shardalogo.png",
     year: 2009,
     naac: "A",
     rank: "Top 100 in India",
@@ -1302,8 +1302,8 @@ export const wikkiUniversities = [
     location: "Dehradun, Uttarakhand",
     description:
       "🏛️ Professional Description:The University of Petroleum and Energy Studies (UPES) is a premier institution renowned for its specialized programs in energy, petroleum, and allied sectors. In addition to its core focus, UPES also offers cutting-edge programs in law, business, design, computer science, and engineering. With a strong industry-aligned curriculum, modern infrastructure, and emphasis on innovation, UPES prepares students for future-ready careers in high-demand industries.UPES stands out for its niche academic focus in energy and petroleum, while also excelling in areas like law, business, and technology. Its commitment to industry relevance and holistic development makes it a top choice for aspiring professionals.UPES is a specialized university offering industry-driven programs in energy, law, business, and design, known for its innovation and academic excellence.",
-    image: " /assets/UPES.webp",
-    logo: " /unilogos/UPESLOGO.jpg",
+    image: "/assets/UPES.webp",
+    logo: "/unilogos/UPESLOGO.jpg",
     year: 2003,
     naac: "A",
     rank: "Top 100 in India",
@@ -1323,7 +1323,7 @@ export const wikkiUniversities = [
     location: "Guntur, Andhra Pradesh",
     description:
       "Vignan’s Foundation for Science, Technology & Research is a reputed private university dedicated to academic excellence in the fields of engineering, science, and management. The institution fosters a dynamic learning environment with a strong emphasis on research, innovation, and industry collaboration. With state-of-the-art infrastructure and experienced faculty, Vignan’s prepares students to meet global challenges with confidence and competence.Vignan’s University offers top-notch programs in engineering, science, and management. It is recognized for its academic rigor, research orientation, and student-centric approach to learning.Vignan’s is a leading private university focused on engineering, science, and management, known for academic excellence and research-driven education.",
-    image: " /assets/vignanUni.jpg",
+    image: "/assets/vignanUni.jpg",
     logo: "/unilogos/vignanLogo.avif",
     year: 2008,
     naac: "A+",
@@ -1364,8 +1364,8 @@ export const wikkiUniversities = [
     location: "Aligarh, Uttar Pradesh",
     description:
       "🏛️ Professional Description:Aligarh Muslim University (AMU) is one of India’s oldest and most prestigious central universities, renowned for its rich cultural heritage, academic excellence, and commitment to inclusive education. Established in 1920, AMU offers a wide spectrum of undergraduate, postgraduate, and doctoral programs across disciplines such as humanities, sciences, engineering, law, and social sciences. The university fosters intellectual growth and national integration while preserving its deep-rooted traditions and values.Aligarh Muslim University is a central university with a historic legacy, offering diverse UG and PG programs. It is celebrated for its academic excellence, inclusive environment, and cultural richness.AMU is a historic central university known for academic excellence and cultural diversity.Let me know if you’d like this version adapted for your frontend display or metadata for SEO!",
-    image: " /assets/AMU.jpg",
-    logo: " /unilogos/amuLogo.png",
+    image: "/assets/AMU.jpg",
+    logo: "/unilogos/amuLogo.png",
     year: 1875,
     naac: "A+",
     rank: "Top 10 Central Universities",
@@ -1406,7 +1406,7 @@ export const wikkiUniversities = [
     location: "Pune, Maharashtra",
     description:
       "Dr. D. Y. Patil Vidyapeeth, Pune is a reputed deemed-to-be university that has made significant contributions in the domains of health sciences, management, and technology education. Known for its state-of-the-art infrastructure, experienced faculty, and focus on research and innovation, the university provides a dynamic learning environment that nurtures academic excellence and professional growth. It is also recognized for its strong industry interface and emphasis on practical, career-oriented training.Dr. D. Y. Patil Vidyapeeth, Pune is a leading deemed university offering quality education in health sciences, management, and technology, with a focus on innovation, research, and industry relevance.",
-    image: " /assets/DPU.jpg",
+    image: "/assets/DPU.jpg",
     logo: "/unilogos/dpu.webp",
     year: 2003,
     naac: "A++",
@@ -1427,7 +1427,7 @@ export const wikkiUniversities = [
     location: "New Delhi",
     description:
       "Jamia Hamdard is a prestigious deemed university located in New Delhi, widely recognized for its academic excellence in modern medicine, pharmacy, management, and especially Unani and allied medical sciences. With a legacy rooted in healthcare and holistic education, the university offers a wide range of professional courses designed to meet modern industry standards while preserving traditional knowledge systems. Its research-driven environment, experienced faculty, and emphasis on innovation make it a leading institution for aspiring healthcare professionals.",
-    image: " /assets/JHU.jpg",
+    image: "/assets/JHU.jpg",
     logo: "/assets/JMILogo.png",
     year: 1989,
     naac: "A",
@@ -1449,8 +1449,8 @@ export const wikkiUniversities = [
     description:
       "Mizoram University is a central university established by the Government of India, dedicated to providing quality higher education in the northeastern region. The university offers a broad spectrum of academic programs in science, commerce, humanities, and vocational studies. With a focus on regional development, cultural preservation, and academic excellence, Mizoram University fosters a vibrant research environment and promotes inclusive learning. Its scenic campus, diverse student body, and commitment to innovation make it a prominent institution in India’s higher education landscape.",
     image:
-      " /assets/MizoramUni.webp",
-    logo: " /unilogos/mizoramlogo.png",
+      "/assets/MizoramUni.webp",
+    logo: "/unilogos/mizoramlogo.png",
     year: 2001,
     naac: "A",
     rank: "Top 100 in NIRF",
