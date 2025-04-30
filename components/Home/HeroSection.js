@@ -174,7 +174,7 @@ const HeroSection = () => {
           variants={imageVariants}
         >
           {/* ContactForm On Hero Section */}
-          <div className=" w-full rounded-xl h-fit shadow-xl max-w-2xl border ">
+          <div className=" w-full rounded-xl h-fit shadow-xl max-w-2xl  ">
             <StaticContactForm />
           </div>
         </motion.div>
