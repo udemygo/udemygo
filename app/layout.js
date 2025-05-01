@@ -8,7 +8,7 @@ import Question from "@/components/Home/Question";
 import Footer from "@/components/Global/Footer";
 import Script from "next/script";
 
-const geistSans = Geist({
+const geistSans = Geist({ 
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
