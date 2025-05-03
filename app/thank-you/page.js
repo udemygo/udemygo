@@ -1,4 +1,4 @@
-// ThankYou.tsx
+// ThankYou.js
 import React from "react";
 import Link from "next/link";
 import { CheckCircle, ArrowLeft, Share2 } from "lucide-react";
