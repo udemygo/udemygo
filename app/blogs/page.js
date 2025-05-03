@@ -11,7 +11,7 @@ const blogs = [
       "Thinking about pursuing an online MBA? You’re not alone. In 2025, online MBAs have become one of the fastest-growing trends in higher education.",
     image: "/blogs/online-mba.webp",
     date: "April 25, 2025",
-    author: "Anas Malik",
+    author: "UdemyGo",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const blogs = [
       "In 2020, online education was a backup plan. In 2025, it’s the main highway to career growth — not just an alternative.",
     image: "/blogs/online-education.webp",
     date: "April 25, 2025",
-    author: "Anas Malik",
+    author: "UdemyGo",
   },
 ];
 
