@@ -2,12 +2,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { blogs } from "./blogData";
 
-
+const blogs = [
+  {
+    id: 1,
+    title: "Is Online MBA worth it in 2025",
+    description:
+      "Thinking about pursuing an online MBA? You’re not alone. In 2025, online MBAs have become one of the fastest-growing trends in higher education.",
+    image: "/blogs/online-mba.webp",
+    date: "April 25, 2025",
+    author: "Anas Malik",
+  },
+  {
+    id: 2,
+    title: "Online education in 2025",
+    description:
+      "In 2020, online education was a backup plan. In 2025, it’s the main highway to career growth — not just an alternative.",
+    image: "/blogs/online-education.webp",
+    date: "April 25, 2025",
+    author: "Anas Malik",
+  },
+];
 
 const BlogPage = () => {
-  
   return (
     <div className="bg-gradient-to-b from-white via-blue-50 to-white py-16 mt-32 rounded-2xl shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
