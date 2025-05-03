@@ -224,7 +224,7 @@ export default function OnlineMBA() {
           Don’t gamble with your future. Let UdemyGO’s experts guide you toward the best online MBA programs tailored to your career goals.
         </p>
         <p className="text-lg text-blue-600 mb-8 text-center hover:underline transform transition-transform duration-300 hover:scale-105 animate-slide-up">
-          <Link href="/consultation">🔵 Book Your Free Consultation with UdemyGO Now ➔</Link>
+          <Link href="/explore-programs/online-mba">🔵 Book Your Free Consultation with UdemyGO Now ➔</Link>
         </p>
         <div className="text-center animate-slide-up">
           <Link

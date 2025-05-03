@@ -260,7 +260,7 @@ export default function OnlineEducationTrends() {
           The future of online education in 2025 isn’t coming — it’s already here. And it’s powerful, flexible, and full of opportunity for students who know where to look. So don’t get stuck with outdated information or random YouTube advice. Let UdemyGO’s expert consultants guide you toward smart, UGC-recognized online degrees that actually lead to jobs and growth.
         </p>
         <p className="text-lg text-blue-600 mb-8 text-center hover:underline transform transition-transform duration-300 hover:scale-105 animate-slide-up">
-          <Link href="/consultation">
+          <Link href="/explore-programs/online-mba">
             🔵 Book a Free Online Consultation Now ➔
           </Link>
         </p>
