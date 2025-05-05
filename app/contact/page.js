@@ -13,6 +13,7 @@ import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
 import Question from "@/components/Home/Question";
 import { contactQuestions } from "@/components/homeQuestions";
+import { toast, ToastContainer, Zoom } from "react-toastify";
 
 const Contact = () => {
   const {
@@ -54,11 +55,36 @@ const Contact = () => {
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
-      alert("Your message has been sent successfully!");
+      // toast
+      toast.success("Your message has been sent successfully!", {
+        position: "bottom-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Zoom,
+      });
       reset();
     } catch (error) {
       console.error("Error submitting form: ", error);
-      alert("There was an error submitting your form. Please try again.");
+      // toast error
+      toast.error(
+        "There was an error submitting your form. Please try again.",
+        {
+          position: "bottom-left",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Zoom,
+        }
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -144,6 +170,19 @@ const Contact = () => {
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick={true}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Zoom}
+      />
       <motion.div
         className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#bd1e2d] to-[#faa318] p-6 pt-40 rounded-4xl"
         initial={{ opacity: 0 }}
