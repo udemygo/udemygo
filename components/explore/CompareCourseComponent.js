@@ -1,27 +1,83 @@
 "use client";
-
-import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import {
+  FaUser,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
+import { IoSend } from "react-icons/io5";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { motion, useInView } from "framer-motion";
 import ScrollLogo from "../Global/ScrollLogo";
 
 const CompareCourseComponent = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    mobileNumber: "",
-    state: "",
-    specialization: "",
-    subsidyOption: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
+  const formRef = useRef(null);
+  const detailsRef = useRef(null);
+  const mapRef = useRef(null);
+
+  const isFormInView = useInView(formRef, { once: false, amount: 0.3 });
+  const isDetailsInView = useInView(detailsRef, { once: false, amount: 0.3 });
+  const isMapInView = useInView(mapRef, { once: false, amount: 0.3 });
+
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+
+    const params = {
+      from_name: data.name,
+      phone: data.phone,
+      email: data.email,
+      message: data.message,
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
+      alert("Your message has been sent successfully!");
+      reset();
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("There was an error submitting your form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const formVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.7 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.4, type: "spring", stiffness: 120 } },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, scale: 0.85 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { type: "spring", damping: 20, stiffness: 120 },
+    },
   };
 
   return (
     <div className="p-7 flex items-center justify-center">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl flex flex-col md:flex-row overflow-hidden transition duration-300">
-        {/* Left Partition - Info Section */}
+        {/* Left Info Section */}
         <div className="md:w-1/2 p-8 bg-gradient-to-br from-blue-100 to-white flex flex-col justify-between">
           <div>
             <div className="w-full h-fit overflow-hidden">
@@ -30,15 +86,13 @@ const CompareCourseComponent = () => {
             <div className="flex justify-between items-start mb-6">
               <div className="text-left pt-4">
                 <h2 className="text-2xl font-bold text-gray-800">
-                  Compare & Apply from 21+ online MBA Universities No Cost EMI |
-                  ( Early bird Discount )
+                  Compare & Apply from 21+ online MBA Universities No Cost EMI | ( Early bird Discount )
                 </h2>
               </div>
             </div>
 
             <p className="text-blue-600 text-lg font-medium mb-6">
-              India’s leading Online Universities on a Single Platform within
-              two minutes.
+              India’s leading Online Universities on a Single Platform within two minutes.
             </p>
 
             <ul className="text-gray-700 space-y-3 mb-8">
@@ -46,16 +100,13 @@ const CompareCourseComponent = () => {
                 <span className="text-green-500 mr-2">★</span> 21+ Universities
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Comparison
-                Factors
+                <span className="text-green-500 mr-2">★</span> Comparison Factors
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Free Expert
-                Consultation
+                <span className="text-green-500 mr-2">★</span> Free Expert Consultation
               </li>
               <li className="flex items-center">
-                <span className="text-green-500 mr-2">★</span> Post Admission
-                Support
+                <span className="text-green-500 mr-2">★</span> Post Admission Support
               </li>
             </ul>
           </div>
@@ -66,155 +117,102 @@ const CompareCourseComponent = () => {
           </div>
         </div>
 
-        {/* Right Partition - Form Section */}
+        {/* Right Form Section */}
         <div className="md:w-1/2 p-8 bg-white">
           <h2 className="text-3xl tracking-wide text-center font-bold stroke-3 pb-8 text-transparent bg-clip-text bg-gradient-to-l from-violet-800 via-violet-500 to-blue-500">
             Choose Your Best One
           </h2>
-          <form
-            action="https://formsubmit.co/info@udemygo.com"
-            method="POST"
-            className="space-y-6"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Course Comparison Form Submission!"
-            />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://udemygo.com/thank-you"
-            />
-            <input type="hidden" name="_captcha" value="false" />
-            <div className="grid grid-cols-1 gap-4">
+
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <motion.div className="relative" variants={formVariants}>
+              <motion.div variants={iconVariants}>
+                <FaUser className="absolute left-3 top-3 text-gray-500" />
+              </motion.div>
               <input
                 type="text"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                placeholder="Full Name*"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
+                placeholder="Your Name"
+                {...register("name", { required: true })}
+                className="pl-10 w-full p-3 border rounded-md"
               />
+              {errors.name && <span className="text-red-500 text-sm">Name is required</span>}
+            </motion.div>
+
+            <motion.div className="relative" variants={formVariants}>
+              <motion.div variants={iconVariants}>
+                <FaPhoneAlt className="absolute left-3 top-3 text-gray-500" />
+              </motion.div>
+              <input
+                type="tel"
+                placeholder="Your Phone Number"
+                {...register("phone", { required: true })}
+                className="pl-10 w-full p-3 border rounded-md"
+              />
+              {errors.phone && <span className="text-red-500 text-sm">Phone number is required</span>}
+            </motion.div>
+
+            <motion.div className="relative" variants={formVariants}>
+              <motion.div variants={iconVariants}>
+                <FaEnvelope className="absolute left-3 top-3 text-gray-500" />
+              </motion.div>
               <input
                 type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email*"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
+                placeholder="Your Email"
+                {...register("email", { required: true })}
+                className="pl-10 w-full p-3 border rounded-md"
               />
+              {errors.email && <span className="text-red-500 text-sm">Email is required</span>}
+            </motion.div>
 
-              <div className="flex items-center">
-                <span className="p-3 bg-gray-100 border border-r-0 rounded-l-lg">
-                  +91
-                </span>
-                <input
-                  type="tel"
-                  name="mobileNumber"
-                  value={formData.mobileNumber}
-                  onChange={handleChange}
-                  placeholder="Mobile Number*"
-                  className="w-full p-3 border border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <select
-                name="state"
-                value={formData.state}
-                onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              >
-                <option value="">State*</option>
-                <option value="andhra_pradesh">Andhra Pradesh</option>
-                <option value="arunachal_pradesh">Arunachal Pradesh</option>
-                <option value="assam">Assam</option>
-                <option value="bihar">Bihar</option>
-                <option value="chhattisgarh">Chhattisgarh</option>
-                <option value="goa">Goa</option>
-                <option value="gujarat">Gujarat</option>
-                <option value="haryana">Haryana</option>
-                <option value="himachal_pradesh">Himachal Pradesh</option>
-                <option value="jharkhand">Jharkhand</option>
-                <option value="karnataka">Karnataka</option>
-                <option value="kerala">Kerala</option>
-                <option value="madhya_pradesh">Madhya Pradesh</option>
-                <option value="maharashtra">Maharashtra</option>
-                <option value="manipur">Manipur</option>
-                <option value="meghalaya">Meghalaya</option>
-                <option value="mizoram">Mizoram</option>
-                <option value="nagaland">Nagaland</option>
-                <option value="odisha">Odisha</option>
-                <option value="punjab">Punjab</option>
-                <option value="rajasthan">Rajasthan</option>
-                <option value="sikkim">Sikkim</option>
-                <option value="tamil_nadu">Tamil Nadu</option>
-                <option value="telangana">Telangana</option>
-                <option value="tripura">Tripura</option>
-                <option value="uttar_pradesh">Uttar Pradesh</option>
-                <option value="uttarakhand">Uttarakhand</option>
-                <option value="west_bengal">West Bengal</option>
-                <option value="chandigarh">Chandigarh</option>
-                <option value="delhi">Delhi</option>
-                <option value="jammu_and_kashmir">Jammu and Kashmir</option>
-                <option value="ladakh">Ladakh</option>
-                <option value="puducherry">Puducherry</option>
-                <option value="others">Others</option>
-              </select>
-              <select
-                name="specialization"
-                value={formData.specialization}
-                onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              >
-                <option value="">Specialization*</option>
-                <option value="finance">Finance</option>
-                <option value="marketing">Marketing</option>
-                <option value="human_resource_management">
-                  Human Resource Management
-                </option>
-                <option value="operations_management">
-                  Operations Management
-                </option>
-                <option value="information_technology">
-                  Information Technology
-                </option>
-                <option value="international_business">
-                  International Business
-                </option>
-                <option value="supply_chain_management">
-                  Supply Chain Management
-                </option>
-                <option value="business_analytics">Business Analytics</option>
-                <option value="entrepreneurship">Entrepreneurship</option>
-                <option value="strategic_management">
-                  Strategic Management
-                </option>
-                <option value="retail_management">Retail Management</option>
-                <option value="healthcare_management">
-                  Healthcare Management
-                </option>
-                <option value="agribusiness_management">
-                  Agribusiness Management
-                </option>
-                <option value="others">Others</option>
-              </select>
-            </div>
-            <button
+            <motion.div className="relative" variants={formVariants}>
+              <textarea
+                placeholder="Your Message"
+                {...register("message", { required: true })}
+                className="w-full p-3 border rounded-md"
+                rows="4"
+              ></textarea>
+              {errors.message && <span className="text-red-500 text-sm">Message is required</span>}
+            </motion.div>
+
+            <motion.button
               type="submit"
-              className="w-full cursor-pointer bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition duration-300 text-lg font-semibold"
+              disabled={isSubmitting}
+              className={`flex items-center justify-center gap-2 py-3 px-6 rounded-md text-white transition ${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#bd1e2d] to-[#faa318] hover:opacity-90"
+              }`}
+              variants={buttonVariants}
+              whileHover={!isSubmitting ? { scale: 1.05 } : {}}
+              whileTap={!isSubmitting ? { scale: 0.95 } : {}}
             >
-              Find Best University in 2 Mins
-            </button>
+              {isSubmitting ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
+                    ></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                <div className="flex items-center gap-2 cursor-pointer">
+                  <IoSend /> Send Message
+                </div>
+              )}
+            </motion.button>
           </form>
+
           <p className="text-xs text-gray-500 mt-4 text-center">
-            I authorise UdemyGO & its representatives to contact me with updates
-            and notifications via Email/SMS/WhatsApp/Call. This will override on
-            DND/NDNC.
+            I authorise UdemyGO & its representatives to contact me with updates and notifications via Email/SMS/WhatsApp/Call.
+            This will override on DND/NDNC.
           </p>
         </div>
       </div>
