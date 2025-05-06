@@ -10,6 +10,8 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
 import ScrollLogo from "../Global/ScrollLogo";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CompareCourseComponent = () => {
   const {
@@ -45,11 +47,11 @@ const CompareCourseComponent = () => {
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
-      alert("Your message has been sent successfully!");
+      toast.success("Your message has been sent successfully!");
       reset();
     } catch (error) {
       console.error("Error submitting form: ", error);
-      alert("There was an error submitting your form. Please try again.");
+      toast.error("There was an error submitting your form. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -216,6 +218,7 @@ const CompareCourseComponent = () => {
           </p>
         </div>
       </div>
+      <ToastContainer position="bottom-left" autoClose={3000} hideProgressBar={false} />
     </div>
   );
 };
