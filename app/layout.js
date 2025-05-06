@@ -62,6 +62,18 @@ export default function RootLayout({ children }) {
       `,
           }}
         />
+
+          <Script
+  id="google-ads-conversion"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17000517664/aUY_CJul678aEKCgvao_'
+      });
+    `,
+  }}
+/>
       </head>
 
       <body
