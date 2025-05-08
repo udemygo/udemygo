@@ -35,6 +35,20 @@ const CompareCourseComponent = () => {
   const isDetailsInView = useInView(detailsRef, { once: false, amount: 0.3 });
   const isMapInView = useInView(mapRef, { once: false, amount: 0.3 });
 
+
+  const gtag_report_conversion = (url) => {
+    const callback = () => {
+      if (url) window.location = url;
+    };
+  
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17000517664/aUY_CJul678aEKCgvao_",
+        event_callback: callback,
+      });
+    }
+  };
+  
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
@@ -47,6 +61,9 @@ const CompareCourseComponent = () => {
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID);
+
+        // ✅ Trigger Google Ads Conversion
+        gtag_report_conversion();
       toast.success("Your message has been sent successfully!");
       reset();
     } catch (error) {
