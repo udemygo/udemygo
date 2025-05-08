@@ -45,40 +45,23 @@ export default function RootLayout({ children }) {
           }}
         />
 
-      
-  {/* Global Site Tag (gtag.js) */}
-  <Script
-    strategy="afterInteractive"
-    src="https://www.googletagmanager.com/gtag/js?id=AW-17000517664"}
-  />
-  <Script
-    id="gtag-init"
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: `
+        {/* Google Ads */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17000517664"
+        />
+        <Script
+          id="google-ads"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'AW-17000517664');
       `,
-    }}
-  />
-
-  {/* Conversion Tracking Without Redirect */}
-  <Script
-    id="gtag-conversion"
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: `
-        function gtag_report_conversion() {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17000517664/aUY_CJul678aEKCgvao_'
-          });
-        }
-      `,
-    }}
-  />
-
+          }}
+        />
       </head>
 
       <body
