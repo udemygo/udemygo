@@ -23,13 +23,13 @@ const OnlineMbaComponent = () => {
             Online MBA Course
           </h2>
           <p className="text-xs md:text-sm text-gray-500 mt-1">
-            UPDATED AT: April 15, 2025
+            UPDATED AT: May 10, 2025
           </p>
           <h1 className="text-base md:text-lg font-semibold mt-3 md:mt-4 text-blue-600">
             Online MBA Degree Courses
           </h1>
           <p className="mt-2 text-gray-700 text-xs md:text-sm leading-relaxed">
-            A two-year postgraduate program in Business Administration, online
+            A two-year online postgraduate program in Business Administration, online
             MBA degree courses offer a flexible way to gain essential skills,
             with costs ranging from INR 80,000 to INR 4,50,000 depending on the
             university. These programs focus on delivering a quick grasp of
