@@ -223,7 +223,7 @@ const CompareCourseComponent = () => {
                 </>
               ) : (
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <IoSend /> Send Message
+                  <IoSend /> Submit
                 </div>
               )}
             </motion.button>
