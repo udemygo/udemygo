@@ -14,7 +14,7 @@ const WhoPursuMBA = () => {
         </p>
         <ul className="pb-4 *:mb-1">
           <li className="text-gray-500 list-disc ml-12">
-            Busy Working Professionals
+            Working Professionals
           </li>
           <li className="text-gray-500 list-disc ml-12">
             People in Remote Locations
@@ -52,11 +52,8 @@ const WhoPursuMBA = () => {
         </p>
         {/* h4-Top Affordable Universities for Online MBA Courses */}
         <h4 className="text-xl font-bold text-gray-800 mb-4 ">
-          Top Affordable Universities for Online MBA Courses
+          Top Universities for Online MBA Courses
         </h4>
-        <p className="text-gray-700 mb-5 ml-1">
-          Top Universities of Online MBA Courses
-        </p>
         {/* table of universities */}
         <TopMBAUniversities />
 {/*  Whatsapp Button Here */}

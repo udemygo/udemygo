@@ -111,17 +111,10 @@ const MBAOverview = () => {
       </div>
       {/* ................... */}
       <div className="rounded-lg pt-4 my-6 md:my-8 pb-6 md:pb-8">
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
-          Why an Online MBA Course?
-        </h3>
-        <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-5">
-          With countless courses out there, why pick an online MBA? It&#39;s all
-          about what it offers: flexibility, affordability, and career impact.
-          To see how it benefits aspirants, check out the points below
-        </p>
-        <h4 className="text-lg sm:text-xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
+       
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
           Benefits of Online MBA?
-        </h4>
+        </h3>
         <ul className="flex flex-col gap-1 list-disc pl-4 md:pl-6">
           <li className="text-gray-500 text-sm sm:text-base">
             <strong className="text-gray-700">
