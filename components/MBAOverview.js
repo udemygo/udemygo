@@ -71,26 +71,13 @@ const MBAOverview = () => {
       {/* Future Section */}
       <div>
         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4">
-          Where Online MBA Courses be in 2050?
+          Present and Future of Distance Learning MBA Courses?
         </h3>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
-          Online MBA courses are growing fast, and by 2050, they&#39;re expected
-          to be more immersive and widely accessible. Imagine learning through
-          advanced tech like virtual reality (VR) and artificial intelligence
-          (AI), tailored to your needs, with a focus on future-ready skills like
-          sustainability, data analytics, and ethical leadership. Expect
-          features like VR classrooms, AI-driven personal study plans, global
-          teamwork, and real-world case studies. Specializations such as
-          Operations Management, Finance, HR, Marketing, Business Analytics, and
-          Digital Marketing will dominate, offering top-tier opportunities.
+      Online MBA courses will grow more engaging and reachable. Online tools will offer tailored, interactive learning, with virtual setups mimicking real business challenges. The flexibility will suit busy professionals, and global platforms will boost teamwork across borders, readying students for a linked world.
         </p>
         <p className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4">
-          The Graduate Management Admission Council (GMAC) notes MBA graduates
-          already earn significantly more than bachelor&#39;s holders, a gap
-          projected to exceed 77% in 25 years. By 2050, an online MBA could be
-          your smartest move for landing leadership roles and boosting your
-          salary. Check current in-demand roles and pay scales on Pay-scale for
-          a sneak peek.
+          The future of online MBAs will focus on equipping leaders with skills for a dynamic global economy. Expect immersive learning through cutting-edge tech, continuous education via micro-credentials, and curricula emphasizing innovation and adaptability. Online MBAs will remain a top choice for career growth and global competitiveness.
         </p>
       </div>
 
