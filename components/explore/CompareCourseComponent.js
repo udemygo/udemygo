@@ -139,7 +139,7 @@ const CompareCourseComponent = () => {
         {/* Right Form Section */}
         <div className="md:w-1/2 p-8 bg-white">
           <h2 className="text-3xl tracking-wide text-center font-bold stroke-3 pb-8 text-transparent bg-clip-text bg-gradient-to-l from-violet-800 via-violet-500 to-blue-500">
-            Choose Your Best One
+            Application Form
           </h2>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
