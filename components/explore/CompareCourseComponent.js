@@ -131,7 +131,7 @@ const CompareCourseComponent = () => {
           </div>
           <div className="mt-auto">
             <p className="text-sm text-gray-500">
-              Let's get you <b>best of the best!</b>
+              Lets get you <b>best of the best!</b>
             </p>
           </div>
         </div>
