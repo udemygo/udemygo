@@ -719,7 +719,7 @@ export const universitiesCoursesData = [
       name: "Chandigarh University",
       course: "BA", // UG
       degree: "UG",
-      fee: "₹2,22,000",
+      fee: "₹2,19,000",
       duration: "3 Years",
       emiPlan: true,
       logo: "/unilogos/ccsu.png",
@@ -729,7 +729,7 @@ export const universitiesCoursesData = [
       name: "Chandigarh University",
       course: "B.Com", // UG
       degree: "UG",
-      fee: "₹2,22,000",
+      fee: "₹2,19,000",
       duration: "3 Years",
       emiPlan: true,
       logo: "/unilogos/ccsu.png",
@@ -1108,7 +1108,7 @@ export const universitiesCoursesData = [
   // ID 16 - Vivekananda Global University
   [
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "MBA", // masters
       degree: "Master Degree",
@@ -1118,7 +1118,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "MCA", // masters
       degree: "Master Degree",
@@ -1128,7 +1128,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "MA", // masters
       degree: "Master Degree",
@@ -1138,7 +1138,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "BCA", // UG
       degree: "UG",
@@ -1148,7 +1148,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "BBA", // UG
       degree: "UG",
@@ -1158,7 +1158,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "BA", // UG
       degree: "UG",
@@ -1168,7 +1168,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
     {
-      id: 15,
+      id: 16,
       name: "Vignan&apos;s University",
       course: "B.Com", // UG
       degree: "UG",
@@ -1178,84 +1178,11 @@ export const universitiesCoursesData = [
       logo: "/unilogos/vignanLogo.avif",
     },
   ],
-
-  // ID 17 - Aligarh Muslim University
+  
+  // ID 17 - Amrita Vishwa Vidyapeetham
   [
     {
       id: 17,
-      name: "Aligarh Muslim University",
-      course: "MBA", // masters
-      degree: "Master Degree",
-      fee: "₹1,00,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "MCA", // masters
-      degree: "Master Degree",
-      fee: "₹1,00,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "MA", // masters
-      degree: "Master Degree",
-      fee: "₹1,00,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "BCA", // UG
-      degree: "UG",
-      fee: "₹1,00,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "BBA", // UG
-      degree: "UG",
-      fee: "₹1,00,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "BA", // UG
-      degree: "UG",
-      fee: "₹1,00,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-    {
-      id: 17,
-      name: "Aligarh Muslim University",
-      course: "B.Com", // UG
-      degree: "UG",
-      fee: "₹1,00,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/amuLogo.png",
-    },
-  ],
-  // ID 19 - Amrita Vishwa Vidyapeetham
-  [
-    {
-      id: 19,
       name: "Amrita Vishwa Vidyapeetham",
       course: "MBA",
       degree: "Master Degree",
@@ -1265,7 +1192,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "MCA",
       degree: "Master Degree",
@@ -1275,7 +1202,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "MA",
       degree: "Master Degree",
@@ -1285,7 +1212,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "BCA",
       degree: "UG",
@@ -1295,7 +1222,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "BBA",
       degree: "UG",
@@ -1305,7 +1232,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "BA",
       degree: "UG",
@@ -1315,7 +1242,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
     {
-      id: 19,
+      id: 17,
       name: "Amrita Vishwa Vidyapeetham",
       course: "B.Com",
       degree: "UG",
@@ -1325,10 +1252,10 @@ export const universitiesCoursesData = [
       logo: "/unilogos/amritalogo.png",
     },
   ],
-  // ID 20 - Dr. D. Y. Patil Vidyapeeth University (DPU)
+  // ID 18 - Dr. D. Y. Patil Vidyapeeth University (DPU)
   [
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "MBA", // masters
       degree: "Master Degree",
@@ -1338,7 +1265,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "MCA", // masters
       degree: "Master Degree",
@@ -1348,7 +1275,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "MA", // masters
       degree: "Master Degree",
@@ -1358,7 +1285,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "BCA", // UG
       degree: "UG",
@@ -1368,7 +1295,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "BBA", // UG
       degree: "UG",
@@ -1378,7 +1305,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "BA", // UG
       degree: "UG",
@@ -1388,7 +1315,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
     {
-      id: 20,
+      id: 18,
       name: "Dr. D. Y. Patil Vidyapeeth University (DPU)",
       course: "B.Com", // UG
       degree: "UG",
@@ -1398,158 +1325,10 @@ export const universitiesCoursesData = [
       logo: "/unilogos/DPUlogo.jpg",
     },
   ],
-
-  // ID 21 - Jamia Hamdard University
+  // ID 19 - Kurukshetra University
   [
     {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "MBA", // masters
-      degree: "Master Degree",
-      fee: "₹1,10,000",
-      duration: "2 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "MCA", // masters
-      degree: "Master Degree",
-      fee: "₹1,10,000",
-      duration: "2 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "MA", // masters
-      degree: "Master Degree",
-      fee: "₹1,10,000",
-      duration: "2 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "BCA", // UG
-      degree: "UG",
-      fee: "₹1,10,000",
-      duration: "3 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "BBA", // UG
-      degree: "UG",
-      fee: "₹1,10,000",
-      duration: "3 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "BA", // UG
-      degree: "UG",
-      fee: "₹1,10,000",
-      duration: "3 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-    {
-      id: 21,
-      name: "Jamia Hamdard University",
-      course: "B.Com", // UG
-      degree: "UG",
-      fee: "₹1,10,000",
-      duration: "3 Years",
-      emiPlan: true,
-      logo: "/unilogos/JMILogo.png",
-    },
-  ],
-
-  // ID 22 - Mizoram University
-  [
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "MBA", // masters
-      degree: "Master Degree",
-      fee: "₹60,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "MCA", // masters
-      degree: "Master Degree",
-      fee: "₹60,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "MA", // masters
-      degree: "Master Degree",
-      fee: "₹60,000",
-      duration: "2 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "BCA", // UG
-      degree: "UG",
-      fee: "₹60,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "BBA", // UG
-      degree: "UG",
-      fee: "₹60,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "BA", // UG
-      degree: "UG",
-      fee: "₹60,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-    {
-      id: 22,
-      name: "Mizoram University",
-      course: "B.Com", // UG
-      degree: "UG",
-      fee: "₹60,000",
-      duration: "3 Years",
-      emiPlan: false,
-      logo: "/unilogos/mizoramlogo.png",
-    },
-  ],
-  // ID 23 - Kurukshetra University
-  [
-    {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "MBA", // masters
       degree: "Master Degree",
@@ -1559,7 +1338,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "MCA", // masters
       degree: "Master Degree",
@@ -1569,7 +1348,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "MA", // masters
       degree: "Master Degree",
@@ -1579,7 +1358,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "BCA", // UG
       degree: "UG",
@@ -1589,7 +1368,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "BBA", // UG
       degree: "UG",
@@ -1599,7 +1378,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "BA", // UG
       degree: "UG",
@@ -1609,7 +1388,7 @@ export const universitiesCoursesData = [
       logo: "/unilogos/kuru.png",
     },
     {
-      id: 23,
+      id: 19,
       name: "Kurukshetra University",
       course: "B.Com", // UG
       degree: "UG",
@@ -1620,77 +1399,5 @@ export const universitiesCoursesData = [
     },
   ],
 
-  // ID 18 - Andhra University, Visakhapatnam, Andhra Pradesh
-  // [
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "MBA", // masters
-  //     degree: "Master Degree",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "MCA", // masters
-  //     degree: "Master Degree",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "MA", // masters
-  //     degree: "Master Degree",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "BCA", // UG
-  //     degree: "UG",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "BBA", // UG
-  //     degree: "UG",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "BA", // UG
-  //     degree: "UG",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  //   {
-  //     id: 18,
-  //     name: "Andhra University, Visakhapatnam, Andhra Pradesh",
-  //     course: "B.Com", // UG
-  //     degree: "UG",
-  //     fee: "₹70,000",
-  //     duration: "2 Years",
-  //     emiPlan: false,
-  //     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMJ1BwQisVClB5CvBgI40-5Y0ZJkgyYqT3g&s",
-  //   },
-  // ],
+  
 ];
